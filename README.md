@@ -1,6 +1,7 @@
 bedjan.github.io
 =====================
-This is demo data created by [Bednář](http://zivotniprostredi.php5.cz) and used in a [step-by-step beginners guide](http://jmcglone.com/guides/github-pages) to creating and hosting a personal website using GitHub and Jekyll. You can view the demo data at <http://bedjan.github.io> and read the guide at <http://jmcglone.com/guides/github-pages>. 
+Toto jsou osobní stránky vytvořeny [Bednář](http://bedjan.github.io)
 
-Users are free to copy and re-use any and all of the code contained here without contacting me.
+Jsou vytvářeny a hostovány na "Github",  pomocí "GitHub pages a Jekyll". Web si můžete prohlédnout na <http://bedjan.github.io>  a případně přečíst si průvodce na vytváření "Git pages" na stránce  [Github pages rok za krokem](http://jmcglone.com/guides/github-pages). 
 
+Uživatelé mohou volně zkopírovat a znovu použít veškerý zde obsažený kód, aniž by mě kontaktovali.
