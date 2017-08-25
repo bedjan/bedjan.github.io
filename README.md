@@ -62,6 +62,58 @@ http://duchovno.nazory.cz/dokuwiki/doku.php
 http://appnee.com/windows-xp-all-editions-universal-product-keys-collection/
 
 
+#### Odkazy
 
+[[https://is.czu.cz/auth/|IS CZU]]
+
+[[https://www.fzp.czu.cz/dl/43081?lang=cs| Harmonogram FŽP]]
+
+[[https://www.fzp.czu.cz/dl/36809?lang=en|DP metodické pokyny]]
+
+[[https://www.fzp.czu.cz/cache/article-data/FZP/ASFZP/2007-2010/9.11.2009_-_priloha_7_-_Pravidla_diplomove_prace.pdf|METODICKÉ POKYNY PRO ZPRACOVÁNÍ DIPLOMOVÉ PRÁCE NA FŽP ]]
+
+[[http://fzp.czu.cz/~exkurze/_dokumenty/KEZP/literatura_citovani.pdf|DP citace]]
+
+[[https://www.fzp.czu.cz/cs/r-6896-studium/r-7442-studijni-oddeleni|Studijní oddělení]]
+
+[[http://www.sketchman-studio.com/rylstim-screen-recorder/|Xvid recorder screen portable]]
+
+[[http://janitor.cenia.cz/www/j2_intro.php?lang=cze&idmn=31|Janitor]]
+
+[[https://translate.google.cz/|Translate]]
+
+[[https://mail.google.com/mail/u/0/#inbox|Gmail]]
+
+[[https://keep.google.com/|Keep google poznámky]]
+
+[[http://www.tvprogram.cz/|TV program]]
+
+[[http://www.abclinuxu.cz/|Abclinuxu]]
+
+[[http://www.root.cz/|Root]]
+
+[[http://www.tvonlinestreams.com/czech-german/|TV online]]
+
+[[https://cs-cz.facebook.com/|Facebook]]
+
+[[https://uloz.to/|Uloz.to]]
+
+[[https://www.youtube.com/?gl=CZ&hl=cs|Youtube]]
+
+[[https://www.youtube.com/playlist?list=PLirAqAtl_h2r5g8xGajEwdXd3x1sZh8hC|Youtube top]]
+
+[[https://www.youtube.com/user/lugami2011/playlists|Youtube - CANAL EURODANCE]]
+
+[[http://www.onlineocr.net/|Online ocr]]
+
+[[http://www.syedgakbar.com/projects/dst|Subtitle translator]]
+
+[[http://jdownloader.org/download/index|Jdownloader]]
+
+[[https://www.facebook.com/|Facebook]]
+
+[[https://www.filmwatch.cz/|Filmy online]]
+
+[[https://www.webnode.cz/blog/2012/07/rychly-tip-najdete-svuj-novy-web-v-googlu-co-nejdrive/|Seo marketing]]
 
 
