@@ -45,6 +45,20 @@ http://duchovno.nazory.cz/dokuwiki/doku.php
 [[http://www.bushcraftshop.cz/bushcraftshop/eshop/47-1-FILTRACE-VODY/0/5/865-Vodni-cestovni-filtr-SAWYER-SP128-MINI-Filter|Vodní cestovní filtr SAWYER SP128 MINI Filter]]
 [[http://www.zvladnuto.wz.cz/6-Survival-Kids-orientace.html|| Orientace v přírodě]]
 
+#### Cisla
+
+<a href="tel:603524492">Mamka</a>
+<a href="tel:604798597">Sona</a>
+<a href="tel:773696360">Roman</a>
+<a href="tel:773774866">Peta Dixi</a>
+<a href="tel:776150594">Semiska</a>
+
+
+#### Měsíc v úplňku
+
+[[http://lunarni-kalendar.najdise.cz/uplnek|Aktuální úplněk]]
+
+
 
 
 
