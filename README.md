@@ -6,7 +6,14 @@ Jsou vytvářeny a hostovány na "Github",  pomocí "GitHub pages a Jekyll". Web
 
 Uživatelé mohou volně zkopírovat a znovu použít veškerý zde obsažený kód, aniž by mě kontaktovali.
 
-Další weby:
+#### Škola - Aktuální poznámky
+
+<script src="https://gist.github.com/bedjan/4d012486ec919966b50ef4fd615b071a.js"></script>
+
+#### Další weby
+
+http://debianlinux.page.tl/Domu.htm
+
 http://decin.byethost24.com/skola/
 
 http://www.sikovny-muz-ul.cz/
@@ -15,13 +22,14 @@ http://www.sikovny-muz-ul.cz/subdom/eshop/index.php
 
 http://bednarovark.euweb.cz/
 
-
 http://www.vcartuning.eu/index.php
 http://info.vcartuning.eu/subdom/info/
 
 http://manipulace.page.tl/
 
 http://duchovno.nazory.cz/dokuwiki/doku.php
+
+
 
 ===== Lékařství =====
 [[http://www.wikiskripta.eu/index.php/Home|Medicinské studijní materiály]]
