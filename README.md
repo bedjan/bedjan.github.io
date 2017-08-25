@@ -58,6 +58,9 @@ http://duchovno.nazory.cz/dokuwiki/doku.php
 
 [[http://lunarni-kalendar.najdise.cz/uplnek|Aktuální úplněk]]
 
+#### Windows XP (T7C4Q-47VGM-R7J6B-VPJ84-JPJ93)
+http://appnee.com/windows-xp-all-editions-universal-product-keys-collection/
+
 
 
 
