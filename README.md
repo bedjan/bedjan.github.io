@@ -8,7 +8,11 @@ Uživatelé mohou volně zkopírovat a znovu použít veškerý zde obsažený k
 
 #### Škola - Aktuální poznámky
 
+<html>
+
 <script src="https://gist.github.com/bedjan/4d012486ec919966b50ef4fd615b071a.js"></script>
+
+</html>
 
 #### Další weby
 
