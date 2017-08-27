@@ -3,8 +3,8 @@ layout: default
 title: Linux
 ---
 
-	<div class="cv">
-		<a href="#" class="download" title="Download CV as PDF">Download CV</a>			
+<html>
+<a href="#" class="download" title="Download CV as PDF">Download CV</a>			
 					<h1>Hank Quinlan</h1>
 					<address>
 					<strong>Affiliation</strong><br>
@@ -18,8 +18,7 @@ title: Linux
 
 					<p><strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.), <em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.
 
+</html>
 
-	</div>
 
 
-<p>Debian</p>
