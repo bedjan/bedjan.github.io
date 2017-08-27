@@ -1,7 +1,8 @@
 ---
 layout: default
-title: || Bedjan || osobní stránky | Domů 
+title: Domů 
 ---
+
 
 		<div class="blurb">
 			<h1>Jsem <em>Bedjan</em> osobní stránky!</h1>
