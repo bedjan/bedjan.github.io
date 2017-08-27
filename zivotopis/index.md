@@ -14,9 +14,8 @@ title: Životopis Jan Bednář
 					<span class="obfuscate">bedjan@gmail.com</span>
 					</address>
 
-					<h2>Weby</h2>
-https://docs.google.com/document/d/1HHX6lUrBitA7MKG9I4NhMNbLqz6P9LDxsYvNWeiaeWo/edit
-https://docs.google.com/document/d/1HHX6lUrBitA7MKG9I4NhMNbLqz6P9LDxsYvNWeiaeWo/edit?usp=sharing
+				
+
 					<p><strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.), <em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.
 
 						
