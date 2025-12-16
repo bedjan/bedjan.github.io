@@ -1,5 +1,131 @@
+/* ======================================================= */
+/* KOMPLETNÍ STYLOVÁNÍ PRO BEDJAN.GITHUB.IO (Moderní Vzhled) */
+/* ======================================================= */
+
 /* ------------------------------------------- */
-/* 5. VYLEPŠENÍ: Odkazy (A HREF) - Automatické střídání */
+/* 1. Reset, Root a Základní Nastavení */
+/* ------------------------------------------- */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Moderní barevná paleta */
+    --color-primary: #007bff; /* Modrá - pro nadpisy a akcenty */
+    --color-secondary: #6c757d; /* Šedá - pro popisky */
+    --color-background: #eef1f6; /* Velmi světle modrošedé pozadí */
+    --color-text: #2c3e50; /* Tmavá barva textu */
+    
+    /* Barvy pro automaticky se střídající odkazy */
+    --link-color-1: #1abc9c; /* Tyrkysová */
+    --link-color-2: #e74c3c; /* Červená */
+    --link-color-3: #f39c12; /* Oranžová */
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding: 40px 20px;
+    display: flex; 
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------- */
+/* 2. Kontejner, Hlavička a Nadpisy */
+/* ------------------------------------------- */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px; /* Zvýrazněné zaoblení */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.header-title {
+    color: var(--color-text);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    color: var(--color-secondary);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.header-separator {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--color-primary), transparent);
+    margin-top: 15px;
+}
+
+h2 {
+    color: var(--color-primary);
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ------------------------------------------- */
+/* 3. Karty (O mně, Projekty) */
+/* ------------------------------------------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responzivní grid */
+    gap: 30px; 
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+}
+
+/* ------------------------------------------- */
+/* 4. Ohraničené Detaily (DETAIL A SUMMARY) */
+/* ------------------------------------------- */
+
+details {
+    border: 2px solid #bdbdbd; /* Světle šedý rámeček */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+details[open] {
+    border-color: var(--color-primary); /* Modrý rámeček po otevření */
+    background-color: #f7faff;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0;
+    color: var(--color-text);
+}
+
+/* ------------------------------------------- */
+/* 5. Odkazy (A HREF) - Automatické střídání a kroužek */
 /* ------------------------------------------- */
 
 a {
@@ -8,49 +134,116 @@ a {
     display: inline-block; 
     padding: 3px 8px;
     border-radius: 6px;
-    border: 2px solid transparent; /* Základní neviditelný rámeček */
+    border: 2px solid transparent; 
     transition: all 0.3s ease;
+    /* Pro pozicování kroužku */
+    position: relative; 
+    margin-left: 18px; /* Rezerva pro kroužek */
 }
 
 a:hover {
     text-decoration: none;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Barevné schéma pro automatické střídání --- */
+/* --- Kroužek před odkazem (::before) --- */
 
-/* První odkaz a každý třetí po něm (1, 4, 7, ...) - Tyrkysová */
+a::before {
+    content: "•"; 
+    color: var(--color-primary); /* Barva kroužku (shodná s primární barvou) */
+    font-size: 1.3em;
+    position: absolute;
+    left: -18px; /* Posunutí před odkaz */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* --- Barevné schéma pro automatické střídání rámečků --- */
+
+/* 1. Odkaz a každý třetí po něm (1, 4, 7, ...) - Tyrkysová */
 .container a:nth-of-type(3n + 1) {
-    color: var(--link-color-1); /* Tyrkysová */
+    color: var(--link-color-1); 
     border-color: var(--link-color-1);
 }
-
 .container a:nth-of-type(3n + 1):hover {
     background-color: var(--link-color-1);
     color: white;
 }
 
-/* Druhý odkaz a každý třetí po něm (2, 5, 8, ...) - Červená */
+/* 2. Odkaz a každý třetí po něm (2, 5, 8, ...) - Červená */
 .container a:nth-of-type(3n + 2) {
-    color: var(--link-color-2); /* Červená */
+    color: var(--link-color-2); 
     border-color: var(--link-color-2);
 }
-
 .container a:nth-of-type(3n + 2):hover {
     background-color: var(--link-color-2);
     color: white;
 }
 
-/* Třetí odkaz a každý třetí po něm (3, 6, 9, ...) - Oranžová */
+/* 3. Odkaz a každý třetí po něm (3, 6, 9, ...) - Oranžová */
 .container a:nth-of-type(3n) {
-    color: var(--link-color-3); /* Oranžová */
+    color: var(--link-color-3); 
     border-color: var(--link-color-3);
 }
-
 .container a:nth-of-type(3n):hover {
     background-color: var(--link-color-3);
     color: white;
 }
 
-/* Zbývající části style.css zůstanou stejné */
+/* ------------------------------------------- */
+/* 6. Tlačítka (Příklad) */
+/* ------------------------------------------- */
+
+.button {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c0392b; 
+}
+
+/* ------------------------------------------- */
+/* 7. Patička (Footer) */
+/* ------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: var(--color-secondary);
+}
+
+/* ------------------------------------------- */
+/* 8. Responzivita (Optimalizace pro Mobily) */
+/* ------------------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+    .container {
+        padding: 25px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr; /* Karty se na mobilu řadí pod sebe */
+    }
+    header {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
