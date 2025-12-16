@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srovnání nízkorizikových a nízkonákladových aktiv</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        canvas {
+            max-height: 550px; 
+        }
+        .popisky {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Srovnání: Nízkorizikové a Nízkonákladové Finanční Nástroje</h1>
+    <p>Graf ukazuje fiktivní vývoj investice $100 se zaměřením na minimalizaci rizika a poplatků.</p>
+    
+    <canvas id="lowRiskChart"></canvas>
+
+    <div class="popisky">
+        <h2>Klíčové poplatky a rizika</h2>
+        <ul>
+            <li>**Vládní dluhopisy / Spořicí účty:**
+                <ul>
+                    <li>**Vstupní poplatek:** 0 %</li>
+                    <li>**Výkonnostní poplatek:** 0 %</li>
+                    <li>**TER:** Není relevantní.</li>
+                    <li>**Riziko:** Extrémně nízké (chráněno pojištěním/státní zárukou).</li>
+                </ul>
+            </li>
+            <li>**iShares Global Govt Bond ETF (IEGA):**
+                <ul>
+                    <li>**Vstupní poplatek:** 0 % (u většiny brokerů)</li>
+                    <li>**Výkonnostní poplatek:** 0 %</li>
+                    <li>**TER:** ~0,20 % ročně (automaticky odečteno z výnosu)</li>
+                    <li>**Riziko:** Nízké, ale podléhá tržním výkyvům (kolísání ceny).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Fiktivní data reprezentující indexované výnosy (Index 100) od roku 2000 do 2024
+    const data = {
+        labels: [
+            '2000', '2004', '2008', '2012', '2016', '2020', '2024'
+        ],
+        datasets: [
+            {
+                label: 'iShares Global Govt Bond ETF (IEGA) | TER: ~0.20%',
+                data: [100, 110, 125, 140, 155, 170, 180], // Fluktuující, ale stabilní dluhopisy
+                borderColor: '#0d6efd', // Modrá
+                backgroundColor: 'rgba(13, 110, 253, 0.2)',
+                tension: 0.3,
+                borderWidth: 3,
+                fill: false,
+            },
+            {
+                label: 'Státní dluhopisy / Vládní dluh (Pevný úrok)',
+                data: [100, 108, 116, 124, 132, 140, 148], // Velmi plynulý, stabilní růst
+                borderColor: '#20c997', // Tyrkysová (Bezpečnost)
+                backgroundColor: 'rgba(32, 201, 151, 0.2)',
+                tension: 0, // Rovná čára pro co největší stabilitu
+                borderWidth: 3,
+                fill: false,
+            },
+            {
+                label: 'Spořicí účty / Termínované vklady (Nejnižší riziko)',
+                data: [100, 105, 110, 115, 120, 125, 130], // Nejpomalejší růst, ale nejvyšší bezpečnost
+                borderColor: '#dc3545', // Červená (Benchmark nejnižšího rizika)
+                backgroundColor: 'rgba(220, 53, 69, 0.2)',
+                tension: 0,
+                borderWidth: 3,
+                fill: false,
+            }
+        ]
+    };
+
+    const config = {
+        type: 'line', 
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        usePointStyle: true,
+                        padding: 20,
+                        font: {
+                            size: 14 
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: 'Vývoj hodnoty investice (Index 100)'
+                }
+            },
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Hodnota investice (Index 100)'
+                    },
+                    beginAtZero: true
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Rok'
+                    }
+                }
+            }
+        }
+    };
+
+    // Vytvoření instance grafu
+    window.onload = function() {
+        const ctx = document.getElementById('lowRiskChart').getContext('2d');
+        new Chart(ctx, config);
+    };
+</script>
+
+</body>
+</html>

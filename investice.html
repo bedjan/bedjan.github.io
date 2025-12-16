@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srovnání Amundi s konkrétními Indexovými ETF</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        canvas {
+            max-height: 650px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Srovnání: Amundi Balancovaný Fond vs. Konkrétní nízkonákladové ETF</h1>
+    <p>Graf ukazuje fiktivní dlouhodobý vývoj investice $100. V legendě jsou uvedeny kódy a přibližné roční náklady (TER).</p>
+    <canvas id="etfComparisonChart"></canvas>
+</div>
+
+<script>
+    // Fiktivní data reprezentující indexované výnosy (Index 100) od roku 2000 do 2024
+    const data = {
+        labels: [
+            '2000', '2004', '2008', '2012', '2016', '2020', '2024'
+        ],
+        datasets: [
+            // NEJVYŠŠÍ RIZIKO / VÝNOS (Mírně nad S&P 500 díky nelikviditě)
+            {
+                label: 'Private Equity / Venture Capital (Nelikvidní)',
+                data: [100, 120, 160, 250, 400, 650, 800],
+                borderColor: '#6f42c1', 
+                backgroundColor: 'rgba(111, 66, 193, 0.1)',
+                tension: 0.3,
+                borderWidth: 4,
+                fill: false,
+                borderDash: [6, 3] 
+            },
+            // KONKRÉTNÍ AKCIOVÉ ETF (Vysoké riziko)
+            {
+                label: 'SXR8 (iShares Core S&P 500) | TER: ~0.07%',
+                data: [100, 110, 140, 200, 300, 450, 580], // Čistá výkonnost amerického trhu
+                borderColor: '#198754', // Tmavě zelená (Vysoký růst)
+                backgroundColor: 'rgba(25, 135, 84, 0.1)',
+                tension: 0.3,
+                borderWidth: 3,
+                fill: false,
+            },
+            // KONKRÉTNÍ GLOBÁLNÍ ETF (Střední/Vysoké riziko)
+            {
+                label: 'VWCE (Vanguard FTSE All-World) | TER: ~0.22%',
+                data: [100, 108, 135, 185, 280, 420, 530], // Mírně nižší než S&P 500 díky rozvíjejícím se trhům
+                borderColor: '#0dcaf0', // Tyrkysová (Globální)
+                backgroundColor: 'rgba(13, 202, 240, 0.1)',
+                tension: 0.3,
+                borderWidth: 3,
+                fill: false,
+            },
+            {
+                label: 'Agresivní Smíšený Fond',
+                data: [100, 115, 150, 220, 320, 430, 520],
+                borderColor: '#fd7e14', // Oranžová
+                backgroundColor: 'rgba(253, 126, 20, 0.1)',
+                tension: 0.3,
+                borderWidth: 3,
+                fill: false,
+            },
+            // AMUNDI (Balancovaný fond)
+            {
+                label: 'Amundi Smíšený Fond (Balancovaný, Aktivní správa)',
+                data: [100, 115, 135, 180, 250, 350, 420], 
+                borderColor: '#0d6efd', // Modrá (Centrální bod)
+                backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                tension: 0.3,
+                borderWidth: 4, 
+                fill: false,
+            },
+            // DALŠÍ STABILIZÁTORY
+            {
+                label: 'Globální Realitní Fondy (REITs Index)',
+                data: [100, 120, 105, 160, 220, 290, 350],
+                borderColor: '#20c997', 
+                backgroundColor: 'rgba(32, 201, 151, 0.1)',
+                tension: 0.3,
+                borderWidth: 2,
+                fill: false,
+            },
+            {
+                label: 'Zlato / Komodity (Index)',
+                data: [100, 130, 180, 150, 200, 280, 250],
+                borderColor: '#ffc107', 
+                backgroundColor: 'rgba(255, 193, 7, 0.1)',
+                tension: 0.3,
+                borderWidth: 2,
+                fill: false,
+            },
+            // KONKRÉTNÍ DLUHOPISOVÉ ETF (Nízké riziko)
+            {
+                label: 'IEGA (iShares Global Govt Bond) | TER: ~0.20%',
+                data: [100, 110, 125, 140, 155, 170, 180], // Stabilizační prvek
+                borderColor: '#dc3545', // Červená (Nejnižší výnos)
+                backgroundColor: 'rgba(220, 53, 69, 0.1)',
+                tension: 0.3,
+                borderWidth: 3,
+                fill: false,
+            }
+        ]
+    };
+
+    const config = {
+        type: 'line', 
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        usePointStyle: true,
+                        padding: 20,
+                        font: {
+                            size: 14 // Větší písmo pro lepší čitelnost kódů
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: 'Vývoj hodnoty investice v čase (Index 100)'
+                }
+            },
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Hodnota investice (Index 100)'
+                    },
+                    beginAtZero: true
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Rok'
+                    }
+                }
+            }
+        }
+    };
+
+    // Vytvoření instance grafu
+    window.onload = function() {
+        const ctx = document.getElementById('etfComparisonChart').getContext('2d');
+        new Chart(ctx, config);
+    };
+</script>
+
+</body>
+</html>
