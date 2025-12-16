@@ -1,119 +1,56 @@
 /* ------------------------------------------- */
-/* 1. Reset a Základní Typografie */
+/* 5. VYLEPŠENÍ: Odkazy (A HREF) - Automatické střídání */
 /* ------------------------------------------- */
 
-/* Univerzální reset box-sizing pro lepší responzivitu */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    /* Čistý, moderní font bezpatkový */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6; /* Zlepšuje čitelnost textu */
-    color: #333; /* Tmavě šedá barva textu pro dobrý kontrast */
-    background-color: #f4f7f6; /* Velmi světle šedé pozadí */
-    padding: 20px; /* Základní vnější odsazení */
-}
-
-/* ------------------------------------------- */
-/* 2. Layout (Hlavní Kontejner) */
-/* ------------------------------------------- */
-
-.container {
-    max-width: 1000px; /* Maximální šířka pro lepší čitelnost na velkých obrazovkách */
-    margin: 40px auto; /* Centrování kontejneru a vertikální odsazení */
-    background-color: #ffffff; /* Bílé pozadí pro obsah */
-    padding: 30px;
-    border-radius: 12px; /* Zaoblené rohy */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění kontejneru */
-}
-
-/* ------------------------------------------- */
-/* 3. Hlavička a Nadpisy */
-/* ------------------------------------------- */
-
-header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #007bff; /* Modrá linka pod hlavičkou */
-    margin-bottom: 30px;
-}
-
-h1 {
-    color: #007bff; /* Modrá barva pro hlavní nadpis */
-    font-size: 2.5em;
-    margin-bottom: 8px;
-}
-
-h2 {
-    color: #555;
-    font-size: 1.8em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* ------------------------------------------- */
-/* 4. Text a Seznamy */
-/* ------------------------------------------- */
-
-p {
-    margin-bottom: 1em;
-}
-
-ul, ol {
-    margin-left: 25px;
-    margin-bottom: 1em;
-}
-
-/* Zvýraznění odkazů */
 a {
-    color: #007bff;
+    font-weight: 600;
     text-decoration: none;
-    transition: color 0.3s ease;
+    display: inline-block; 
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 2px solid transparent; /* Základní neviditelný rámeček */
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3; /* Tmavší modrá při přejetí myší */
-    text-decoration: underline;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------------------------------- */
-/* 5. Footer (Patička) */
-/* ------------------------------------------- */
+/* --- Barevné schéma pro automatické střídání --- */
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    font-size: 0.85em;
-    color: #888;
+/* První odkaz a každý třetí po něm (1, 4, 7, ...) - Tyrkysová */
+.container a:nth-of-type(3n + 1) {
+    color: var(--link-color-1); /* Tyrkysová */
+    border-color: var(--link-color-1);
 }
 
-/* ------------------------------------------- */
-/* 6. Responzivita (pro menší obrazovky) */
-/* ------------------------------------------- */
-
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        margin: 20px auto;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
+.container a:nth-of-type(3n + 1):hover {
+    background-color: var(--link-color-1);
+    color: white;
 }
+
+/* Druhý odkaz a každý třetí po něm (2, 5, 8, ...) - Červená */
+.container a:nth-of-type(3n + 2) {
+    color: var(--link-color-2); /* Červená */
+    border-color: var(--link-color-2);
+}
+
+.container a:nth-of-type(3n + 2):hover {
+    background-color: var(--link-color-2);
+    color: white;
+}
+
+/* Třetí odkaz a každý třetí po něm (3, 6, 9, ...) - Oranžová */
+.container a:nth-of-type(3n) {
+    color: var(--link-color-3); /* Oranžová */
+    border-color: var(--link-color-3);
+}
+
+.container a:nth-of-type(3n):hover {
+    background-color: var(--link-color-3);
+    color: white;
+}
+
+/* Zbývající části style.css zůstanou stejné */
