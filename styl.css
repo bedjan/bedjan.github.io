@@ -167,8 +167,8 @@ a::before {
     border-color: var(--link-color-1);
 }
 .container a:nth-of-type(3n + 1):hover {
-    background-color: var(--link-color-1);
-    color: white;
+    background-color: #e0f2f1; /* Světlý odstín tyrkysové */
+    color: black; /* Písmo se změní na černé */
 }
 
 /* 2. Odkaz a každý třetí po něm (2, 5, 8, ...) - Červená */
@@ -177,8 +177,8 @@ a::before {
     border-color: var(--link-color-2);
 }
 .container a:nth-of-type(3n + 2):hover {
-    background-color: var(--link-color-2);
-    color: white;
+    background-color: #fbeded; /* Světlý odstín červené */
+    color: black; /* Písmo se změní na černé */
 }
 
 /* 3. Odkaz a každý třetí po něm (3, 6, 9, ...) - Oranžová */
@@ -187,8 +187,8 @@ a::before {
     border-color: var(--link-color-3);
 }
 .container a:nth-of-type(3n):hover {
-    background-color: var(--link-color-3);
-    color: white;
+    background-color: #fff8e1; /* Světlý odstín oranžové */
+    color: black; /* Písmo se změní na černé */
 }
 
 /* ------------------------------------------- */
