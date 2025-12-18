@@ -8,7 +8,7 @@ title: Moje Odkazy
 <base target="_blank">
 
 
-[Osobní stránky](https://github.com/bedjan/bedjan.github.io/blob/main/index.md)
+[Osobní stránky]([https://github.com/bedjan/bedjan.github.io/blob/main/index.md](https://github.com/bedjan/bedjan.github.io/blob/main/index.md))
 
 <details open>
 <summary>Škola</summary>
