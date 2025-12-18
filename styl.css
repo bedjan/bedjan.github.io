@@ -2,91 +2,94 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    max-width: 900px;
-    margin: 0 auto;
+    /* Změna z 900px na 100%, aby to využilo celou plochu */
+    max-width: 100%; 
+    margin: 0;
     background-color: #f0f4f8;
     color: #333;
 }
 
 h1 { 
     text-align: center; 
-    margin: 10px 0; 
-    font-size: 1.4em; 
+    margin: 15px 0; 
+    font-size: 1.6em; 
 }
 
-h1 a { color: #0984e3; text-decoration: none; }
+h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
 
-/* Sekce - odstranění vnějších okrajů (margin) */
+/* Sekce přes celou šířku */
 details {
     background: #ffffff;
-    margin-bottom: 2px; /* Minimální mezera mezi sekcemi */
+    margin-bottom: 4px;
     border-radius: 4px;
     border: 1px solid #e1e4e8;
-    overflow: hidden;
+    width: 100%; /* Roztažení na 100% šířky okna */
 }
 
 summary {
-    padding: 5px 12px; /* Tenké záhlaví sekce */
+    padding: 8px 15px;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 0.95em;
     cursor: pointer;
     background: #fff;
     list-style: none;
+    border-radius: 4px;
 }
-
-summary::-webkit-details-marker { display: none; } /* Schová defaultní šipku v Chrome */
 
 summary:hover { background: #f8f9fa; }
 
-/* Mřížka - nahuštěná na sebe */
+/* Mřížka - nyní se roztáhne a vyskládá tolik tlačítek, kolik se jich vedle sebe vejde */
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Ještě užší sloupce */
-    gap: 4px; /* Minimální mezera mezi tlačítky */
-    padding: 8px; /* Malý vnitřní okraj mřížky */
+    /* 'auto-fill' zajistí, že se vedle sebe naskládá maximum tlačítek podle šířky okna */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+    gap: 6px;
+    padding: 10px;
     background: #fff;
     border-top: 1px solid #eee;
 }
 
-/* Odkazy (tlačítka) - bez zbytečného místa okolo */
+/* Kompaktní tlačítka */
 .links-grid a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 6px; /* Minimální vnitřní prostor */
-    margin: 0; /* Natvrdo zrušen vnější okraj */
+    padding: 6px 10px;
     background: #fdfdfd;
     border: 1px solid #eee;
-    border-radius: 4px;
+    border-radius: 5px;
     text-decoration: none;
     color: #444;
-    font-size: 0.8em;
+    font-size: 0.85em;
     text-align: center;
-    min-height: 28px; /* Velmi nízká tlačítka */
-    transition: 0.2s;
+    min-height: 32px;
+    transition: all 0.2s ease;
 }
 
 .links-grid a:hover {
     background: #0984e3;
     color: #fff !important;
     border-color: #0984e3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Nadpisy předmětů v mřížce */
+/* Nadpisy předmětů */
 .subject-heading {
     grid-column: 1 / -1;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 2px;
     font-size: 0.75em;
-    color: #aaa;
+    color: #999;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Mobilní zobrazení */
+/* Mobilní zobrazení - na telefonu zůstanou 2 sloupce, aby to bylo čitelné */
 @media (max-width: 600px) {
     .links-grid { 
         grid-template-columns: repeat(2, 1fr); 
-        gap: 3px; 
     }
 }
