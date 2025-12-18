@@ -1,110 +1,92 @@
-/* Celkový vzhled stránky */
+/* Resetování základních okrajů */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.4;
-    padding: 15px;
-    max-width: 1000px;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #f0f4f8;
-    color: #2d3436;
+    color: #333;
 }
 
-/* Hlavní nadpis */
 h1 { 
     text-align: center; 
-    margin: 10px 0 25px 0; 
-    font-size: 1.8em;
+    margin: 10px 0; 
+    font-size: 1.4em; 
 }
 
-h1 a { 
-    color: #0984e3; 
-    text-decoration: none; 
-    font-weight: 800;
-}
+h1 a { color: #0984e3; text-decoration: none; }
 
-/* Sekce (karty) */
+/* Sekce - odstranění vnějších okrajů (margin) */
 details {
     background: #ffffff;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2px; /* Minimální mezera mezi sekcemi */
+    border-radius: 4px;
+    border: 1px solid #e1e4e8;
     overflow: hidden;
 }
 
 summary {
-    padding: 10px 15px; /* Menší okraje záhlaví */
+    padding: 5px 12px; /* Tenké záhlaví sekce */
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.9em;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
+    background: #fff;
+    list-style: none;
 }
 
-summary:hover { background: #fafbfc; }
+summary::-webkit-details-marker { display: none; } /* Schová defaultní šipku v Chrome */
 
-/* Šipka */
-summary::after {
-    content: '→';
-    font-size: 1em;
-    color: #0984e3;
-    transition: transform 0.2s;
-}
+summary:hover { background: #f8f9fa; }
 
-details[open] summary::after {
-    transform: rotate(90deg);
-}
-
-/* Mřížka s tlačítky - kompaktnější */
+/* Mřížka - nahuštěná na sebe */
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Užší sloupce */
-    gap: 8px; /* Menší mezery mezi tlačítky */
-    padding: 10px 15px 15px;
-    background: #ffffff;
-    border-top: 1px solid #f1f2f6;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Ještě užší sloupce */
+    gap: 4px; /* Minimální mezera mezi tlačítky */
+    padding: 8px; /* Malý vnitřní okraj mřížky */
+    background: #fff;
+    border-top: 1px solid #eee;
 }
 
-/* Tlačítka - kompaktnější vzhled */
+/* Odkazy (tlačítka) - bez zbytečného místa okolo */
 .links-grid a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 8px; /* Výrazně menší vnitřní okraj */
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 6px;
+    padding: 4px 6px; /* Minimální vnitřní prostor */
+    margin: 0; /* Natvrdo zrušen vnější okraj */
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 4px;
     text-decoration: none;
     color: #444;
-    font-size: 0.82em; /* Trochu menší písmo */
-    font-weight: 500;
+    font-size: 0.8em;
     text-align: center;
-    min-height: 34px; /* Menší minimální výška */
-    transition: all 0.2s;
+    min-height: 28px; /* Velmi nízká tlačítka */
+    transition: 0.2s;
 }
 
 .links-grid a:hover {
     background: #0984e3;
-    color: #ffffff !important;
+    color: #fff !important;
     border-color: #0984e3;
-    transform: translateY(-1px);
 }
 
-/* Nadpisy předmětů */
+/* Nadpisy předmětů v mřížce */
 .subject-heading {
     grid-column: 1 / -1;
-    margin: 10px 0 2px;
-    font-size: 0.8em;
+    margin-top: 5px;
+    font-size: 0.75em;
+    color: #aaa;
     text-transform: uppercase;
-    color: #b2bec3;
 }
 
-/* Mobily */
+/* Mobilní zobrazení */
 @media (max-width: 600px) {
     .links-grid { 
-        grid-template-columns: 1fr 1fr; 
-        gap: 6px; 
-        padding: 10px; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 3px; 
     }
 }
