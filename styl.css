@@ -1,0 +1,120 @@
+/* Celkový vzhled stránky */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #f0f4f8; /* Jemně modrošedé pozadí */
+    color: #2d3436;
+}
+
+/* Hlavní nadpis */
+h1 { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    letter-spacing: -1px;
+}
+
+h1 a { 
+    color: #0984e3; 
+    text-decoration: none; 
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+h1 a:hover { color: #00acee; }
+
+/* Elegantní karty (sekce) */
+details {
+    background: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details[open] {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+summary {
+    padding: 16px 25px;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    outline: none;
+}
+
+summary:hover { background: #fafbfc; }
+
+/* Stylová šipka */
+summary::after {
+    content: '→';
+    font-size: 1.2em;
+    color: #0984e3;
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+/* Mřížka s tlačítky */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    padding: 20px 25px 25px;
+    background: #ffffff;
+    border-top: 1px solid #f1f2f6;
+}
+
+/* Vzhled tlačítek */
+.links-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    min-height: 50px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.links-grid a:hover {
+    background: #0984e3;
+    color: #ffffff !important;
+    border-color: #0984e3;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(9, 132, 227, 0.3);
+}
+
+/* Podnadpisy v mřížce */
+.subject-heading {
+    grid-column: 1 / -1;
+    margin: 15px 0 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b2bec3;
+}
+
+/* Mobily */
+@media (max-width: 600px) {
+    .links-grid { grid-template-columns: 1fr 1fr; gap: 8px; padding: 15px; }
+    body { padding: 15px 10px; }
+}
