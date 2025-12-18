@@ -434,5 +434,14 @@
         </details>
 
     </div>
+
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log("Offline režim aktivní"))
+      .catch(err => console.log("Chyba registrace:", err));
+  }
+</script>
+    
 </body>
 </html>
