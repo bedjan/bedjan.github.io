@@ -4,90 +4,95 @@ title: Osobní stránky
 ---
 
 <style>
-/* Zde je váš CSS styl pro hezčí vzhled */
-:root {
-    --primary-color: #2c3e50;
-    --bg-color: #f4f7f6;
-    --card-bg: #ffffff;
-}
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    line-height: 1.6;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    background-color: #f4f7f9;
+    color: #1a1a1b;
 }
 
-.container {
-    background: var(--card-bg);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-h1 a {
-    color: var(--primary-color);
-    text-decoration: none;
-    border-bottom: 2px solid var(--primary-color);
-}
+h1 { text-align: center; margin-bottom: 30px; }
+h1 a { color: #007bff; text-decoration: none; font-weight: 800; border-bottom: 2px solid transparent; transition: 0.3s; }
+h1 a:hover { border-bottom-color: #007bff; }
 
 details {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
 summary {
-    font-weight: bold;
+    padding: 12px 20px;
+    font-weight: 600;
     cursor: pointer;
-    padding: 5px;
-    font-size: 1.2em;
-    color: #2980b9;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
 }
+
+summary:hover { background: #f8f9fa; }
+summary::after { content: '▼'; font-size: 0.8em; color: #aaa; transition: 0.3s; }
+details[open] summary::after { transform: rotate(180deg); }
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 8px;
+    padding: 15px 20px 20px;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
 }
 
 .links-grid a {
-    display: block;
-    padding: 8px 12px;
-    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    background: #fdfdfd;
     border: 1px solid #eee;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
-    color: #34495e;
-    font-size: 0.9em;
-    transition: all 0.2s ease;
+    color: #444;
+    font-size: 0.82em;
+    text-align: center;
+    min-height: 42px;
+    transition: all 0.2s;
 }
 
 .links-grid a:hover {
-    background: #3498db;
+    background: #007bff;
     color: #fff;
-    transform: translateY(-2px);
+    border-color: #007bff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .subject-heading {
     grid-column: 1 / -1;
-    margin: 15px 0 5px 0;
+    margin: 15px 0 5px;
+    font-size: 0.95rem;
+    color: #d35400;
     border-bottom: 1px solid #eee;
-    color: #e67e22;
+    padding-bottom: 3px;
+}
+
+@media (max-width: 600px) {
+    .links-grid { grid-template-columns: 1fr 1fr; padding: 10px; }
+    body { padding: 10px; }
 }
 </style>
 
 <base target="_blank">
 
-<div class="container">
-
 # [Osobní stránky](https://github.com/bedjan/bedjan.github.io/blob/main/index.html)
-
 <details open>
 <summary>Škola</summary>
 <div class="links-grid">
