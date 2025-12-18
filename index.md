@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Moje Odkazy
+title: Osobní stránky
 ---
 
 <link rel="stylesheet" href="styl.css">
@@ -8,7 +8,7 @@ title: Moje Odkazy
 <base target="_blank">
 
 
-[Osobní stránky](https://github.com/bedjan/bedjan.github.io/blob/main/index.md)
+
 
 <details open>
 <summary>Škola</summary>
@@ -122,5 +122,7 @@ title: Moje Odkazy
     <a href="https://dillinger.io/">Markdown editor</a>
 </div>
 </details>
+
+<a href="https://github.com/bedjan/bedjan.github.io/blob/main/index.md">Osobní stránky úprava</a>
 
 </div>
