@@ -5,114 +5,103 @@
 <style>
     body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; background-color: #f4f4f4; }
     .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    h1 { color: #0055b3; border-bottom: 2px solid #0055b3; padding-bottom: 10px; }
-    h2 { color: #0078d4; margin-top: 30px; border-left: 5px solid #0078d4; padding-left: 10px; }
+    h1 { color: #d82211; border-bottom: 2px solid #d82211; padding-bottom: 10px; }
+    h2 { color: #333; margin-top: 30px; background: #eee; padding: 10px; border-radius: 5px; }
     .item-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     .item-table th, .item-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-    .item-table th { background-color: #f8f8f8; }
-    .price { font-weight: bold; color: #d00; }
-    .link-button { background: #ff9900; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px; font-weight: bold; font-size: 0.9em; }
-    .step { margin-bottom: 20px; padding: 15px; background: #eef7ff; border-radius: 5px; }
-    .warning { background: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin: 20px 0; }
-    .total { font-size: 1.4em; font-weight: bold; text-align: right; margin-top: 20px; color: #000; }
+    .item-table th { background-color: #f2f2f2; }
+    .price { font-weight: bold; color: #d82211; }
+    .link-button { background: #0078d4; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px; font-weight: bold; }
+    .step { margin-bottom: 15px; padding: 15px; border-left: 5px solid #d82211; background: #fafafa; }
+    .total { font-size: 1.5em; font-weight: bold; text-align: right; margin-top: 20px; }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Projekt: Chytré větrání sklepa (12V Bezpečný systém)</h1>
-    <p>Tento systém hlídá vnitřní vlhkost a automaticky se vypne, pokud venku mrzne. Vše běží na bezpečném napětí 12V.</p>
-
-    <h2>1. Nákupní seznam (Alza.cz)</h2>
+    <h1>Finální nákupní seznam: 12V Bezpečný systém</h1>
+    
     <table class="item-table">
         <tr>
-            <th>Položka</th>
-            <th>Popis a funkce</th>
-            <th>Cena cca</th>
+            <th>Produkt na Alze</th>
+            <th>K čemu to je</th>
+            <th>Cena</th>
             <th>Odkaz</th>
         </tr>
         <tr>
-            <td><strong>Větrák Noctua NF-P12</strong></td>
-            <td>12V, extrémní tlak, tichý, nezničitelný.</td>
-            <td class="price">380 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/noctua-nf-p12-redux-1700-pwm-d5364103.htm">KOUPIT</a></td>
+            <td><strong>COMPASS Odhlučňovací materiál 100x50x1cm</strong></td>
+            <td>Ta 10mm "odlehčovací" guma na obalení roury.</td>
+            <td class="price">329 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/hobby/compass-odhlucnovaci-material-100-50-cm-10-mm-d6153683.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Plastová trubka 125mm</strong></td>
-            <td>Délka 1m (uřízneš na 60cm).</td>
-            <td class="price">180 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/hobby/vents-plastove-potrubi-kulate-125-1m-d5558156.htm">KOUPIT</a></td>
+            <td><strong>Noctua NF-P12 redux-1700 PWM</strong></td>
+            <td>Výkonný 12V větrák místo 230V verze.</td>
+            <td class="price">379 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/noctua-nf-p12-redux-1700-pwm-d5364103.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Klapka EMPIRE PTK 125</strong></td>
-            <td>Magnetická, těsná, nepustí zimu.</td>
-            <td class="price">450 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/empire-ptk-125-pachutesna-klapka-125-mm-pro-rad-vent-a-dig-d6108169.htm">KOUPIT</a></td>
+            <td><strong>Vents plastové potrubí 125mm (1m)</strong></td>
+            <td>Vnitřní roura (uřízneš na 60 cm).</td>
+            <td class="price">179 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/hobby/vents-plastove-potrubi-kulate-125-1m-d5558156.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Mřížka Vents 125mm</strong></td>
-            <td>Venkovní gravitační žaluzie.</td>
-            <td class="price">160 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/hobby/vents-mrizka-venkovni-gravitacni-125x125-125mm-d5558169.htm">KOUPIT</a></td>
+            <td><strong>EMPIRE PTK 125</strong></td>
+            <td>Magnetická klapka proti průvanu.</td>
+            <td class="price">449 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/empire-ptk-125-pachutesna-klapka-125-mm-pro-rad-vent-a-dig-d6108169.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Guma COMPASS (10mm)</strong></td>
-            <td>Samolepicí izolace (100x50 cm).</td>
-            <td class="price">320 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/hobby/compass-odhlucnovaci-material-100-50-cm-10-mm-d6153683.htm">KOUPIT</a></td>
+            <td><strong>Vents mřížka 125mm gravitační</strong></td>
+            <td>Venkovní žaluzie.</td>
+            <td class="price">159 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/hobby/vents-mrizka-venkovni-gravitacni-125x125-125mm-d5558169.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Zdroj 12V / 2A</strong></td>
-            <td>Napájecí adaptér do zásuvky.</td>
-            <td class="price">250 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/sencor-ps-122-d8118029.htm">KOUPIT</a></td>
+            <td><strong>Digitální termostat 12V DC</strong></td>
+            <td>Mozeček systému (nastavíš Start/Stop).</td>
+            <td class="price">299 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/search.htm?exps=digitalni%20termostat%2012v">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>Termostat + Hygrostat 12V</strong></td>
-            <td>Digitální řízení vlhkosti a mrazu.</td>
-            <td class="price">450 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/search.htm?exps=digitalni%20termostat%2012v">KOUPIT</a></td>
+            <td><strong>Sencor PS 122 (12V/2A)</strong></td>
+            <td>Napájecí zdroj (dělá z 230V bezpečných 12V).</td>
+            <td class="price">249 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/sencor-ps-122-d8118029.htm">Zobrazit</a></td>
         </tr>
         <tr>
-            <td><strong>WAGO svorky + Kabely</strong></td>
-            <td>Wago 221 a dvoulinka 0.75mm.</td>
-            <td class="price">150 Kč</td>
-            <td><a class="link-button" href="https://www.alza.cz/wago-221-413-spojovaci-svorka-s-packami-3-vodicova-10ks-d6158230.htm">KOUPIT</a></td>
+            <td><strong>WAGO svorky (Sada 10ks)</strong></td>
+            <td>Na spojování drátů bez pájení.</td>
+            <td class="price">119 Kč</td>
+            <td><a class="link-button" href="https://www.alza.cz/wago-221-412-spojovaci-svorka-s-packami-2-vodicova-10ks-d6158229.htm">Zobrazit</a></td>
         </tr>
     </table>
-    <div class="total">Celková investice: cca 2 340 Kč</div>
 
-    <h2>2. Postup montáže "Vzduchového náboje"</h2>
+    <div class="total">Celkem: cca 2 162 Kč</div>
+
+    <h2>Postup montáže krok za krokem:</h2>
+    
     <div class="step">
-        <strong>Krok 1: Trubka</strong><br>
-        Uřízni plastovou trubku 125mm na délku 60 cm (tloušťka tvé zdi). Do poloviny délky vlož klapku Empire (pozor na směr otevírání - šipka ven!).
+        <strong>1. Příprava roury:</strong> Uřízni 125mm plastovou trubku na délku 60 cm. Doprostřed vlož klapku Empire.
     </div>
+    
     <div class="step">
-        <strong>Krok 2: Větrák a dráty</strong><br>
-        Větrák Noctua vlož na vnitřní konec trubky. Vyvrtej malou dírku do trubky pro vyvedení kabelu větráku a drátu k venkovnímu čidlu.
+        <strong>2. Montáž větráku:</strong> Větrák Noctua (12V) vlož na konec trubky. Protože je čtvercový a trubka kulatá, použij odřezky té 10mm gumy Compass, abys větrák v trubce vystředil a utěsnil.
     </div>
+    
     <div class="step">
-        <strong>Krok 3: Izolace (Gumovník)</strong><br>
-        Z desky Compass uřízni kus 60x41 cm. Trubku do něj zabal. Guma zvýší průměr na 145mm, což skvěle padne do tvé 150mm hliníkové roury.
+        <strong>3. Obalení (Izolace):</strong> Celou 60cm trubku obal tou deskou Compass (10mm tloušťka). Tím se průměr zvětší na cca 145mm a krásně to "vleze" do tvé hliníkové roury 150mm ve zdi.
     </div>
+    
     <div class="step">
-        <strong>Krok 4: Venkovní čidlo</strong><br>
-        Tenký drátek venkovního čidla protáhni pod izolací až k venkovní mřížce. Čidlo přichyť páskou tak, aby bylo za žaluzií, ale ne úplně venku na dešti.
+        <strong>4. Čidla a elektronika:</strong> Drát k venkovnímu čidlu protáhni pod gumou až k venkovní mřížce. Termostat a zdroj nech uvnitř na zdi.
     </div>
 
-    <h2>3. Schéma zapojení (Elektronika)</h2>
-    <div class="warning">
-        <strong>Logika propojení:</strong><br>
-        Zdroj 12V -> Venkovní termostat (Mrazová pojistka) -> Vnitřní hygrostat (Vlhkost) -> Větrák.
+    <div class="step">
+        <strong>5. Zapojení:</strong> Zdroj (12V) zapojíš do termostatu. Termostat bude spínat větrák podle toho, co nastavíš (např. sepnout při 65% vlhkosti a jen pokud je venku nad +2°C).
     </div>
-    <ul>
-        <li><strong>Venkovní termostat:</strong> Nastav Start na +5°C, Stop na +2°C. Pokud je venku mráz, tento termostat vypne proud do zbytku systému.</li>
-        <li><strong>Vnitřní hygrostat:</strong> Nastav Start na 65%, Stop na 55%. Zapne větrák, jen když je vlhko.</li>
-        <li><strong>Propojení:</strong> Použij WAGO svorky. Všechny mínusy (modré/černé) spoj dohromady. Plusy (červené) spínej přes relátka termostatů.</li>
-    </ul>
 
-    <h2>4. Finální nastavení</h2>
-    <p>Vše ovládáš zevnitř. Čidlo vlhkosti nech volně u termostatu na zdi. Venkovní čidlo v mřížce se stará o to, aby větrák v mrazu nenasával ledový vzduch a sklep nepromrzl.</p>
 </div>
 
 </body>
