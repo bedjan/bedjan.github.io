@@ -1,70 +1,28 @@
-/* Základní nastavení */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* ... váš stávající kód ... */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 6px;
     padding: 10px;
-    background-color: #f0f4f8;
 }
 
-h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
-h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
-
-/* Stylování samotného tagu details */
-details {
-    background: #ffffff;
-    margin-bottom: 4px;
-    border-radius: 4px;
-    border: 1px solid #e1e4e8;
-    width: 100%;
+/* KLÍČOVÁ OPRAVA: Ignoruje odstavce, které tam Jekyll vkládá */
+.links-grid p {
+    display: contents;
 }
 
-summary {
-    padding: 10px 15px;
-    font-weight: 600;
-    cursor: pointer;
-    list-style: none;
-}
-
-summary:hover { background: #f8f9fa; }
-
-/* MAGIE: Styl pro vnitřek otevřeného details bez divu */
-details[open] {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Všechny odkazy uvnitř details se vyskládají do mřížky */
-details[open] > a {
+/* Všechny odkazy uvnitř mřížky jako tlačítka */
+.links-grid a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    margin: 5px; /* Mezera mezi tlačítky */
+    padding: 6px 10px;
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 5px;
     text-decoration: none;
     color: #444;
     font-size: 0.85em;
-    text-align: center;
-    min-height: 35px;
-}
-
-/* Nastavení mřížky přímo na otevřený details */
-details[open] {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    padding-bottom: 10px;
-}
-
-/* Summary musí zabrat celou šířku nahoře */
-summary {
-    grid-column: 1 / -1;
-    border-bottom: 1px solid #eee;
-}
-
-details[open] > a:hover {
-    background: #0984e3;
-    color: #fff !important;
+    min-height: 32px;
 }
