@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-<link rel="stylesheet" href="{{ '/styl.css' | relative_url }}">
+    
+    <base target="_blank">
+    
+    <link rel="stylesheet" href="{{ '/styl.css' | relative_url }}">
 </head>
 <body>
     <div class="container">
-        
-        <!-- <h1><a href="{{ '/' | relative_url }}">Osobní stránky</a></h1>    -->
-        {{ content }}
+        <header>
+            <h1><a href="{{ '/' | relative_url }}" target="_self">Osobní stránky</a></h1>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
     </div>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}");
+        }
+    </script>
 </body>
 </html>
