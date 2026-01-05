@@ -1,3 +1,8 @@
+---
+layout: default
+title: Osobní stránky
+---
+
 [Osobní stránky](https://github.com/bedjan/bedjan.github.io/blob/main/index.md)
 =================================================================================
 
