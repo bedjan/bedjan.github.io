@@ -9,18 +9,8 @@
 </head>
 <body>
     <div class="container">
-    
-
+        <h1><a href="{{ '/' | relative_url }}" target="_self">Osobní stránky</a></h1>
         {{ content }}
-
     </div>
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
-          .then(() => console.log("Offline režim aktivní"))
-          .catch(err => console.log("Chyba registrace:", err));
-      }
-    </script>
 </body>
 </html>
