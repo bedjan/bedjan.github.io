@@ -1,51 +1,46 @@
+/* Základní nastavení */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    max-width: 100%; 
-    margin: 0;
     background-color: #f0f4f8;
-    color: #333;
 }
 
 h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
 h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
 
+/* Stylování samotného tagu details */
 details {
     background: #ffffff;
     margin-bottom: 4px;
     border-radius: 4px;
     border: 1px solid #e1e4e8;
-    width: 100%; 
+    width: 100%;
 }
 
 summary {
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-weight: 600;
-    font-size: 0.95em;
     cursor: pointer;
-    background: #fff;
     list-style: none;
-    border-radius: 4px;
 }
 
 summary:hover { background: #f8f9fa; }
 
-.links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
-    gap: 6px;
-    padding: 10px;
-    background: #fff;
-    border-top: 1px solid #eee;
+/* MAGIE: Styl pro vnitřek otevřeného details bez divu */
+details[open] {
+    display: flex;
+    flex-direction: column;
 }
 
-.links-grid a {
+/* Všechny odkazy uvnitř details se vyskládají do mřížky */
+details[open] > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 10px;
+    padding: 8px;
+    margin: 5px; /* Mezera mezi tlačítky */
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -53,29 +48,23 @@ summary:hover { background: #f8f9fa; }
     color: #444;
     font-size: 0.85em;
     text-align: center;
-    min-height: 32px;
-    transition: all 0.2s ease;
+    min-height: 35px;
 }
 
-.links-grid a:hover {
+/* Nastavení mřížky přímo na otevřený details */
+details[open] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    padding-bottom: 10px;
+}
+
+/* Summary musí zabrat celou šířku nahoře */
+summary {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #eee;
+}
+
+details[open] > a:hover {
     background: #0984e3;
     color: #fff !important;
-    border-color: #0984e3;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.subject-heading {
-    grid-column: 1 / -1;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 0.75em;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-left: 5px;
-}
-
-@media (max-width: 600px) {
-    .links-grid { grid-template-columns: repeat(2, 1fr); }
 }
