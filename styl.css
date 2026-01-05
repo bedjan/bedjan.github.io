@@ -1,36 +1,56 @@
-/* Nastavení mřížky přímo na tag details */
+/* Reset a základ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: #f0f4f8;
+}
+
+h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
+h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
+
+/* Kontejner mřížky přímo v details */
+details {
+    background: #ffffff;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border: 1px solid #e1e4e8;
+    width: 100%;
+}
+
+/* Nastavení mřížky při otevření */
 details[open] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 8px;
+    gap: 6px;
     padding: 10px;
-    background: #ffffff;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
 }
 
-/* Summary musí zabrat celou šířku nahoře a nesmí být součástí mřížky */
 summary {
-    grid-column: 1 / -1;
     padding: 10px 15px;
     font-weight: 600;
     cursor: pointer;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    /* Summary musí zabrat celou šířku řádku mřížky */
+    grid-column: 1 / -1; 
 }
 
-/* KLÍČOVÝ TRIK: Jekyll vloží <p>, ale my ho vizuálně zrušíme, 
-   takže odkazy uvnitř něj "vypadnou" přímo do mřížky details */
-details[open] p {
+summary:hover { background: #f8f9fa; }
+
+/* KLÍČOVÝ TRIK PRO JEKYLL:
+   Zruší vizuální vliv odstavců <p>, které Jekyll vkládá do Markdownu.
+   Odkazy se pak chovají, jako by byly přímo v details. */
+details p {
     display: contents;
 }
 
-/* Styl pro samotné odkazy (tlačítka) */
-details[open] a {
+/* Vzhled tlačítek (odkazů) */
+details a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 8px 10px;
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -39,10 +59,25 @@ details[open] a {
     font-size: 0.85em;
     text-align: center;
     min-height: 35px;
-    transition: background 0.2s;
+    transition: all 0.2s;
 }
 
-details[open] a:hover {
+details a:hover {
     background: #0984e3;
     color: #fff !important;
+    transform: translateY(-1px);
+}
+
+/* Nadpisy předmětů v mřížce */
+.subject-heading {
+    grid-column: 1 / -1;
+    margin: 10px 0 2px 5px;
+    font-size: 0.75em;
+    color: #999;
+    text-transform: uppercase;
+}
+
+/* Mobilní zobrazení */
+@media (max-width: 600px) {
+    details[open] { grid-template-columns: repeat(2, 1fr); }
 }
