@@ -1,28 +1,48 @@
-/* ... váš stávající kód ... */
-
-.links-grid {
+/* Nastavení mřížky přímo na tag details */
+details[open] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 6px;
+    gap: 8px;
     padding: 10px;
+    background: #ffffff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
-/* KLÍČOVÁ OPRAVA: Ignoruje odstavce, které tam Jekyll vkládá */
-.links-grid p {
+/* Summary musí zabrat celou šířku nahoře a nesmí být součástí mřížky */
+summary {
+    grid-column: 1 / -1;
+    padding: 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* KLÍČOVÝ TRIK: Jekyll vloží <p>, ale my ho vizuálně zrušíme, 
+   takže odkazy uvnitř něj "vypadnou" přímo do mřížky details */
+details[open] p {
     display: contents;
 }
 
-/* Všechny odkazy uvnitř mřížky jako tlačítka */
-.links-grid a {
+/* Styl pro samotné odkazy (tlačítka) */
+details[open] a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 10px;
+    padding: 8px;
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 5px;
     text-decoration: none;
     color: #444;
     font-size: 0.85em;
-    min-height: 32px;
+    text-align: center;
+    min-height: 35px;
+    transition: background 0.2s;
+}
+
+details[open] a:hover {
+    background: #0984e3;
+    color: #fff !important;
 }
