@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    
     <base target="_blank">
-    
     <link rel="stylesheet" href="{{ '/styl.css' | relative_url }}">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1><a href="{{ '/' | relative_url }}" target="_self">Osobní stránky</a></h1>
-        </header>
-
-        <main>
-            {{ content }}
-        </main>
-    </div>
     
+
+        {{ content }}
+
+    </div>
+
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}");
-        }
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
+          .then(() => console.log("Offline režim aktivní"))
+          .catch(err => console.log("Chyba registrace:", err));
+      }
     </script>
 </body>
 </html>
