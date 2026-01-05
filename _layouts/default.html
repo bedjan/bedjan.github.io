@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        /* Vaše CSS upravené pro generování z Markdownu */
+        body { font-family: sans-serif; background: #f0f4f8; padding: 10px; }
+        .container { max-width: 100%; margin: 0 auto; }
+        details { background: #fff; margin-bottom: 5px; border: 1px solid #d1d8e0; border-radius: 4px; }
+        summary { padding: 10px; font-weight: bold; cursor: pointer; }
+        .links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 6px; padding: 10px; border-top: 1px solid #eee; }
+        .links-grid a { display: flex; align-items: center; justify-content: center; padding: 8px; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px; text-decoration: none; color: #444; text-align: center; min-height: 40px; }
+        .links-grid a:hover { background: #0984e3; color: #fff; }
+        h1 a { color: #0984e3; text-decoration: none; }
+        /* Styl pro samotný obsah Markdownu */
+        .markdown-content { padding: 20px; background: white; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="{{ '/' | relative_url }}">Osobní stránky</a></h1>
+        
+        {{ content }}
+    </div>
+</body>
+</html>
