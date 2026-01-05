@@ -3,8 +3,7 @@ layout: default
 title: Osobní stránky
 ---
 
-[Osobní stránky](https://github.com/bedjan/bedjan.github.io/blob/main/index.md)
-=================================================================================
+
 
 Škola
 
@@ -109,4 +108,6 @@ Programování
 
 [Github](https://github.com/bedjan/) [Github\_all](https://github.com/bedjan/debian/blob/master/skripty/all.sh) [Zdrojak](https://zdrojak.cz/) [Jak začít programovat](https://www.itnetwork.cz/jak-zacit-programovat-tvorit-aplikace-programy) [Jak se naučit programovat](https://www.startitup.cz/11-stranek-ktere-te-nauci-programovat-z-pohodli-domova/) [Thinfi](https://thinfi.com/) [Bitly](https://bitly.com/) [Jdem](http://jdem.cz/) [Protectedtext](https://www.protectedtext.com/) [Markdown editor](https://dillinger.io/) [Githack](https://raw.githack.com/) [Tinyurl](https://tinyurl.com/app) [Link with password](https://thinfi.com/) [Link short](https://bitly.com/) [Raw githack - dev](https://raw.githack.com/)
 
-if ('serviceWorker' in navigator) { navigator.serviceWorker.register('./sw.js') .then(() => console.log("Offline režim aktivní")) .catch(err => console.log("Chyba registrace:", err)); }
+================================================================================= 
+[Osobní stránky editace](https://github.com/bedjan/bedjan.github.io/blob/main/index.md)
+
