@@ -1,90 +1,127 @@
-/* Globální nastavení */
+/* Základní nastavení */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f6f8fa;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
     margin: 0;
+    padding: 20px;
+    color: #333;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Styl pro sekce */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+h1 a:hover {
+    color: #3498db;
+}
+
+/* Styl pro harmoniku (details) */
 details {
-    background: #fff;
-    border: 1px solid #d0d7de;
-    border-radius: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details[open] {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 summary {
-    padding: 12px 16px;
-    font-weight: 600;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    font-weight: bold;
     cursor: pointer;
-    background-color: #f6f8fa;
-    border-bottom: 1px solid transparent;
-    transition: background 0.2s;
+    list-style: none; /* Skryje defaultní šipku v některých prohlížečích */
+    outline: none;
+    user-select: none;
 }
 
-details[open] summary {
-    border-bottom: 1px solid #d0d7de;
+summary::-webkit-details-marker {
+    display: none; /* Skryje šipku v Safari/Chrome */
 }
 
 summary:hover {
-    background-color: #eaeef2;
+    background-color: #e9ecef;
 }
 
-/* CHYTRÁ MŘÍŽKA: 
-   Zacílíme na vnitřek details bez ohledu na to, zda je tam <div>, <p> nebo jen volné <a> */
-details[open] {
+/* Mřížka odkazů */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* Styl jednotlivých odkazů (tlačítek) */
+.links-grid a {
     display: block;
-}
-
-/* Toto vytvoří mřížku přímo z obsahu */
-details[open] > p, 
-details[open] > div.links-grid,
-details[open] {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 10px;
-    padding: 15px;
-}
-
-/* Výjimka: summary a nadpisy nesmí být součástí mřížky jako malé dlaždice */
-summary, h3 {
-    grid-column: 1 / -1;
-}
-
-/* TLAČÍTKA */
-details a {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    background: #ffffff;
-    border: 1px solid #d0d7de;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    border: 1px solid #dcdfe3;
     border-radius: 6px;
-    color: #0969da;
+    color: #34495e;
     text-decoration: none;
-    font-size: 14px;
-    transition: 0.2s;
-    min-height: 40px;
+    text-align: center;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+    /* Zajistí, že dlouhý text nerozbije mřížku */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-details a:hover {
-    background-color: #0969da;
-    color: #ffffff;
-    border-color: #0969da;
-    transform: translateY(-1px);
+.links-grid a:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Mobilní zobrazení */
+/* Nadpisy předmětů uvnitř mřížky */
+.subject-heading {
+    grid-column: 1 / -1; /* Roztáhne nadpis přes celou šířku mřížky */
+    margin: 15px 0 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+/* Responzivita pro mobily */
 @media (max-width: 600px) {
-    details[open] > p, details[open] {
-        grid-template-columns: 1fr 1fr;
+    .container {
+        padding: 15px;
+    }
+    
+    .links-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .links-grid a {
+        font-size: 0.85em;
+        padding: 10px 5px;
     }
 }
