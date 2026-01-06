@@ -1,354 +1,58 @@
- layout: default
-
+---
+layout: default
 title: Osobní stránky
-
 ---
 
-<details open>
-
-<summary>Škola</summary>
-
-<a href="https://github.com/bedjan/ucitel/blob/main/rozvrh.md" target="_blank">Rozvrh</a>
-
-<a href="https://portal.ujep.cz" target="_blank">Stag</a>
-
-<a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a>
-
-<a href="https://portal.ujep.cz/portal/studium/uchazec/eprihlaska.html" target="_blank">Epřihláška ke studiu</a>
-
-<a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a>
-
-<a href="https://github.com/bedjan/ucitel" target="_blank">Ucitel</a>
-
-<a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>
-
-</details>
-
-
-<details close>
-
-<summary>Oblíbené</summary>
-
-<a href="investice.html" target="_blank">Investice</a>
-
-<a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
-
-<a href="https://wttr.in/duchcov" target="_blank">Počasí</a>
-
-<a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a>
-
-<a href="https://app.raindrop.io/account/login" target="_blank">Raindrop.io</a>
-
-<a href="https://uiwjs.github.io/react-md-editor/" target="_blank">Markdown editor</a>
-
-<a href="https://vault.bitwarden.com/#/vault" target="_blank">Bitwarden</a>
-
-<a href="http://free-website-translation.com/" target="_blank">Web prekladac</a>
-
-<a href="https://hackmd.io/?nav=overview" target="_blank">Hackmd</a>
-
-<a href="https://lastpass.com/?ac=1" target="_blank">Lastpass</a>
-
-<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
-
-<a href="https://keep.google.com/#home" target="_blank">Gkeep</a>
-
-<a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-
-<a href="https://translate.google.cz/" target="_blank">Gtranslate</a>
-
-<a href="https://www.facebook.com/" target="_blank">Facebook</a>
-
-<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-
-<a href="https://www.youtube.com/" target="_blank">Youtube</a>
-
-<a href="https://uloz.to" target="_blank">Uloz.to</a>
-
-<a href="https://prehraj.to/" target="_blank">Prehraj.to</a>
-
-<a href="https://www.csfd.cz/" target="_blank">Čsfd</a>
-
-<a href="https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/" target="_blank">Filmy nfa</a>
-
-<a href="https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==" target="_blank">Filmy stazeni</a>
-
-<a href="https://github.com/bedjan/openbox" target="_blank">Openbox</a>
-
-<a href="https://www.onlineocr.net/" target="_blank">OCR</a>
-
-<a href="https://vyzivujicitradice.cz/" target="_blank">Zdrava vyziva</a>
-
-<a href="https://ceskepodcasty.cz/" target="_blank">Podcasty</a>
-
-<a href="https://lindat.mff.cuni.cz/services/translation/" target="_blank">Matfyz prekladac</a>
-
-<a href="https://lindat.cz/translation/" target="_blank">Ukrajinsky prekladac vs. CZ</a>
-
-<a href="https://www.postaonline.cz/trackandtrace" target="_blank">Posta dorucene sledovani</a>
-
-<a href="https://claude.ai/onboarding?returnTo=%2F%3F" target="_blank">Claude AI</a>
-
-<a href="https://www.sledujserialy.io" target="_blank">Sleduj serialy</a>
-
-<a href="https://www.rajce.idnes.cz/lipova-lipka/album/kulisci/1511277136" target="_blank">Jirka fotky</a>
-
-<a href="https://app.gisonline.cz/chytre-mapy/" target="_blank">Chytre mapy</a>
-
-<a href="https://www.epochtimes.cz/" target="_blank">Epochtimes</a>
-
-</details>
-
-
-<details close>
-
-<summary>TV</summary>
-
-<a href="https://rdy.cz/tv" target="_blank">Zkracene tv</a>
-
-<a href="https://mrkaj.si/" target="_blank">Mrkaj si</a>
-
-<a href="https://uzi.si/" target="_blank">Uzi si</a>
-
-<a href="https://www.bombuj.si/" target="_blank">Bombuj</a>
-
-<a href="https://filmyzadara.cz/" target="_blank">Filmová zadara</a>
-
-<a href="https://serialyzadara.cz/" target="_blank">Sériová zadara</a>
-
-<a href="https://tv.prehraj.me/cs/" target="_blank">Přehraj to</a>
-
-<a href="https://filmyzadara.cz/" target="_blank">Filmy zadara</a>
-
-<a href="https://mrkaj.si/tv/breaking-bad/S01E01" target="_blank">Mrkaj si - pernik. táta</a>
-
-<a href="https://www.najserialy.io/" target="_blank">Nejseriály</a>
-
-<a href="https://serialyzadara.cz/" target="_blank">Seriály zadara</a>
-
-<a href="https://www.najserialy.io/?page=7" target="_blank">Naj seriály</a>
-
-<a href="https://dupe.cz/serialy/" target="_blank">Dupe seriály</a>
-
-<a href="https://www.serialzone.cz/serialy/" target="_blank">Seriálzone</a>
-
-<a href="https://sledujserialy.io/" target="_blank">Sleduj seriály</a>
-
-<a href="https://www.iprima.cz/serialy/pad" target="_blank">Iprima Pad</a>
-
-<a href="https://www.spustit.cz/" target="_blank">Spustit</a>
-
-<a href="https://www.youtube.com" target="_blank">Youtube</a>
-
-<a href="https://www.iprima.cz/" target="_blank">Iprima</a>
-
-<a href="https://sledovanitv.cz/" target="_blank">Sledování TV</a>
-
-<a href="https://www.hellspy.to/" target="_blank">Hellspy</a>
-
-<a href="https://www.ivysilani.cz/" target="_blank">Ivysilani</a>
-
-<a href="https://tv.sosac.tv/cs/" target="_blank">Sosac</a>
-
-</details>
-
-
-<details close>
-
-<summary>Radia m3u playlist</summary>
-
-<a href="https://raw.githubusercontent.com/bedjan/mm/refs/heads/master/radia_online.m3u" target="_blank">Radia m3u</a>
-
-</details>
-
-
-<details close>
-
-<summary>Knihy</summary>
-
-<a href="an.html" target="_blank">Atomové návyky</a>
-
-<a href="https://oceanofpdf.com/" target="_blank">Knihy online ke stažení</a>
-
-</details>
-
-<details close>
-
-<summary>Rádiové Streamy</summary>
-
-<a href="https://stream.rcs.revma.com/asn0cmvb938uv" target="_blank">Kiss</a>
-
-<a href="http://mpc1.mediacp.eu:8342/stream" target="_blank">Radio 4U</a>
-
-<a href="http://ice.actve.net/fm-evropa2-128" target="_blank">Evropa 2</a>
-
-<a href="https://westradio.cz/radio/8010/radio.mp3" target="_blank">Comedy klubové rádio Diana</a>
-
-<a href="https://stream.rcs.revma.com/3d47nqvb938uv" target="_blank">Radio Beat</a>
-
-<a href="http://ice.abradio.cz:8000/hitmi128.mp3" target="_blank">City milenium</a>
-
-<a href="http://ice.abradio.cz/city90128.mp3" target="_blank">City 90</a>
-
-<a href="http://ice.abradio.cz/city80128.mp3" target="_blank">City 80</a>
-
-<a href="http://stream.funradio.sk:8000/cs128.mp3" target="_blank">Zábavné rádio</a>
-
-<a href="https://ice.abradio.cz/fajnfresh128.mp3" target="_blank">Zábavné rádio čerstvé</a>
-
-<a href="http://ice.abradio.cz:8000/helax128.mp3" target="_blank">Helax</a>
-
-<a href="http://ice.abradio.cz/cernahora64.mp3" target="_blank">Cerna hora</a>
-
-<a href="https://ice.abradio.cz/rockradio128.mp3" target="_blank">Rock radio</a>
-
-<a href="http://ice.actve.net/dance-radio128.mp3" target="_blank">Taneční rádio</a>
-
-<a href="http://icecast5.play.cz/expres128mp3" target="_blank">Express rádio</a>
-
-<a href="https://ice.abradio.cz/fajn128.mp3" target="_blank">rádio Fajn</a>
-
-<a href="https://ice3.abradio.cz/hitradiocontact128.mp3" target="_blank">Kontaktní rádio</a>
-
-<a href="http://ice.abradio.cz:8000/hitpoprock128.mp3" target="_blank">Poprock radio</a>
-
-<a href="http://stream.nonstopradio.cz:8080" target="_blank">Nonstop rádio</a>
-
-<a href="http://ice.abradio.cz/oldiesradio128.mp3" target="_blank">Oldies radio</a>
-
-<a href="http://icecast1.play.cz/radio1.mp3" target="_blank">Radio1</a>
-
-<a href="http://ice.actve.net/fm-bonton-128" target="_blank">Bonton</a>
-
-<a href="http://sc.ipip.cz:8046/" target="_blank">Cesky jukebox</a>
-
-<a href="https://ice4.abradio.cz/depeche128.mp3" target="_blank">režim Depeche</a>
-
-<a href="http://icecast3.play.cz/hey-radio128.mp3" target="_blank">Radio Hey</a>
-
-<a href="http://icecast5.play.cz/impuls128.mp3" target="_blank">Radio Impuls</a>
-
-<a href="http://icecast4.play.cz/spin128.mp3" target="_blank">Radio Spin</a>
-
-<a href="http://live.seejay.cz/seejay128.mp3" target="_blank">Radio Seejay</a>
-
-<a href="http://sc.ipip.cz:7980" target="_blank">Radio Sex radio</a>
-
-<a href="http://mp3stream4.abradio.cz/chillout128.mp3" target="_blank">Chillout</a>
-
-<a href="http://mp3stream4.abradio.cz:8000/humor.mp3" target="_blank">Humor 64</a>
-
-<a href="http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3" target="_blank">Radio Harmony FM DE 128 mp3</a>
-
-<a href="http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3" target="_blank">Hity Sky Radio 80</a>
-
-<a href="http://mp3stream4.abradio.cz:8000/humor128.mp3" target="_blank">Humor 128</a>
-
-<a href="http://mp3stream2.abradio.cz:8000/folk.mp3" target="_blank">Folk</a>
-
-<a href="http://ice.abradio.cz/blanikcz128.mp3" target="_blank">Blanik</a>
-
-<a href="http://icecast5.play.cz:8000/dechovka128.mp3" target="_blank">Dechovka</a>
-
-<a href="http://ice.abradio.cz/oldiesradio128.mp3" target="_blank">Oldies</a>
-
-<a href="http://mp3stream4.abradio.cz/oldiesrock128.mp3" target="_blank">Oldies Rock</a>
-
-<a href="http://mp3stream4.abradio.cz/chillout128.mp3" target="_blank">Chillout</a>
-
-<a href="http://ice3.abradio.cz/alternative128.mp3" target="_blank">Alternativní časy</a>
-
-<a href="http://ice6.abradio.cz/relax-sea128.mp3" target="_blank">Více</a>
-
-<a href="http://ice6.abradio.cz/relax-thunder-rain128.mp3" target="_blank">Bourka</a>
-
-<a href="http://ice6.abradio.cz/relax-morning-birds128.mp3" target="_blank">Zpev_ptaku</a>
-
-<a href="http://ice6.abradio.cz/relax-fire128.mp3" target="_blank">Ohen v krvi</a>
-
-<a href="http://ice6.abradio.cz/relax-fire128.mp3" target="_blank">Ohen_v_krbu 128</a>
-
-<a href="http://ice3.abradio.cz/pohadka128.mp3" target="_blank">Pohadka 128</a>
-
-<a href="http://ice3.abradio.cz/povidka128.mp3" target="_blank">Povidka 128</a>
-
-<a href="http://mp3stream4.abradio.cz/domino128.mp3" target="_blank">Pohadky_domino</a>
-
-<a href="https://185.33.21.112/atr_128?icy=https%22" target="_blank">Trance</a>
-
-</details>
-
-
-<details close>
-
-<summary>Google</summary>
-
-<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
-
-<a href="http://free-website-translation.com/" target="_blank">Web prekladac</a>
-
-<a href="https://calendar.google.com/calendar/u/0/r" target="_blank">Kalendář</a>
-
-</details>
-
-
-<details close>
-
-<summary>AI</summary>
-
-<a href="https://chatgpt.com/" target="_blank">Chat gpt</a>
-
-<a href="https://gemini.google.com" target="_blank">Gemini</a>
-
-<a href="https://qwen.ai/home" target="_blank">Qwen ai</a>
-
-<a href="https://claude.ai/onboarding?returnTo=%2F%3F" target="_blank">Claude AI</a>
-
-<a href="https://chat.openai.com" target="_blank">ChatGPT</a>
-
-<a href="https://bard.google.com/chat" target="_blank">Bard</a>
-
-<a href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
-
-<a href="https://www.craiyon.com/" target="_blank">Craiyon</a>
-
-<a href="https://you.com/?chatMode=default" target="_blank">You - chatgpt 4 zdarma</a>
-
-<a href="https://www.codebreakeredu.com/chat/" target="_blank">Codebreaker - dotaz vygeneruje téma</a>
-
-<a href="https://www.perplexity.ai/" target="_blank">Perplexity - dotaz vygeneruje téma</a>
-
-<a href="https://talkai.info/cs/" target="_blank">Talkai - chat gpr bez registrace</a>
-
-<a href="https://www.copy.ai/" target="_blank">Copy AI - vytváření obsahu, hledání zákazníků</a>
-
-<a href="https://goatchat.ai/cs" target="_blank">Goat ai - chat gpt 4</a>
-
-<a href="https://www.closerscopy.com/" target="_blank">Closer copy - copywriting</a>
-
-<a href="https://rytr.me/" target="_blank">Rytr - tvorba obsahu</a>
-
-<a href="https://www.jasper.ai/chat" target="_blank">Jasper - chatbot</a>
-
-<a href="https://writesonic.com/" target="_blank">Writesonic - SEO, klíčová slova</a>
-
-<a href="https://www.hyperwriteai.com/" target="_blank">Hyperwrite - marketing, výzkum</a>
-
-<a href="https://aichat.com/" target="_blank">AI chat - marketing, prodej, zákaznický servis</a>
-
-<a href="https://cleanup.pictures/" target="_blank">vymazání částí obrazovky</a>
-
-<a href="https://gamma.app/create" target="_blank">vytvoření prezentace</a>
-
-</details>
-
-
-<details close>
-
-<summary>Online videa</summary>
-
-<a href="https://odysee.com/" target="_blank">Odysee</a>
-
-<a href="https://rumble.com/" target="_blank">Rumble</a>
-
-</details> 
+<div class="main-content">
+    <h1><a href="https://github.com/bedjan/bedjan.github.io/blob/main/index.html" target="_blank">Osobní stránky</a></h1>
+
+    <details open>
+        <summary>Škola</summary>
+        <div class="links-grid">
+            <a href="https://github.com/bedjan/ucitel/blob/main/rozvrh.md" target="_blank">Rozvrh</a><a href="https://portal.ujep.cz" target="_blank">Stag</a><a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a><a href="https://portal.ujep.cz/portal/studium/uchazec/eprihlaska.html" target="_blank">Epřihláška ke studiu</a><a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a><a href="https://github.com/bedjan/ucitel" target="_blank">Ucitel</a><a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>Oblíbené</summary>
+        <div class="links-grid">
+            <a href="investice.html" target="_blank">Investice</a><a href="https://app.simplenote.com/" target="_blank">Simplenote</a><a href="https://wttr.in/duchcov" target="_blank">Počasí</a><a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a><a href="https://app.raindrop.io/account/login" target="_blank">Raindrop.io</a><a href="https://uiwjs.github.io/react-md-editor/" target="_blank">Markdown editor</a><a href="https://vault.bitwarden.com/#/vault" target="_blank">Bitwarden</a><a href="http://free-website-translation.com/" target="_blank">Web prekladac</a><a href="https://hackmd.io/?nav=overview" target="_blank">Hackmd</a><a href="https://lastpass.com/?ac=1" target="_blank">Lastpass</a><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a><a href="https://keep.google.com/#home" target="_blank">Gkeep</a><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a><a href="https://translate.google.cz/" target="_blank">Gtranslate</a><a href="https://www.facebook.com/" target="_blank">Facebook</a><a href="https://www.instagram.com/" target="_blank">Instagram</a><a href="https://www.youtube.com/" target="_blank">Youtube</a><a href="https://uloz.to" target="_blank">Uloz.to</a><a href="https://prehraj.to/" target="_blank">Prehraj.to</a><a href="https://www.csfd.cz/" target="_blank">Čsfd</a><a href="https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/" target="_blank">Filmy nfa</a><a href="https://claude.ai/" target="_blank">Claude AI</a><a href="https://www.epochtimes.cz/" target="_blank">Epochtimes</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>TV</summary>
+        <div class="links-grid">
+            <a href="https://rdy.cz/tv" target="_blank">Zkracene tv</a><a href="https://mrkaj.si/" target="_blank">Mrkaj si</a><a href="https://uzi.si/" target="_blank">Uzi si</a><a href="https://www.bombuj.si/" target="_blank">Bombuj</a><a href="https://tv.prehraj.me/cs/" target="_blank">Přehraj to</a><a href="https://www.najserialy.io/" target="_blank">Nejseriály</a><a href="https://sledujserialy.io/" target="_blank">Sleduj seriály</a><a href="https://www.ivysilani.cz/" target="_blank">Ivysilani</a><a href="https://tv.sosac.tv/cs/" target="_blank">Sosac</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>Radia m3u playlist</summary>
+        <div class="links-grid">
+            <a href="https://raw.githubusercontent.com/bedjan/mm/refs/heads/master/radia_online.m3u" target="_blank">Radia m3u</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>Knihy</summary>
+        <div class="links-grid">
+            <a href="an.html" target="_blank">Atomové návyky</a><a href="https://oceanofpdf.com/" target="_blank">Knihy online ke stažení</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>AI</summary>
+        <div class="links-grid">
+            <a href="https://chatgpt.com/" target="_blank">Chat gpt</a><a href="https://gemini.google.com" target="_blank">Gemini</a><a href="https://qwen.ai/home" target="_blank">Qwen ai</a><a href="https://claude.ai/" target="_blank">Claude AI</a><a href="https://copilot.microsoft.com/" target="_blank">Copilot</a><a href="https://www.perplexity.ai/" target="_blank">Perplexity</a><a href="https://talkai.info/cs/" target="_blank">Talkai</a><a href="https://cleanup.pictures/" target="_blank">Cleanup.pics</a><a href="https://gamma.app/create" target="_blank">Gamma</a>
+        </div>
+    </details>
+
+    <details>
+        <summary>Banky, pojišťovny, služby</summary>
+        <div class="links-grid">
+            <a href="https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz" target="_blank">Česká spořitelna</a><a href="https://www.pre.cz/cs/moje-pre/neprihlaseny-uzivatel/prihlaseni-uzivatele/" target="_blank">PRE online</a><a href="https://moje.goldengate.cz/dashboards" target="_blank">Goldengate</a><a href="https://wise.com/login/" target="_blank">Wise</a><a href="https://cezonline.cez.cz/irj/portal/profil-uzivatele#/profil" target="_blank">Cez online</a>
+        </div>
+    </details>
+
+</div>
