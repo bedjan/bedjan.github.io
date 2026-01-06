@@ -1,24 +1,25 @@
 const cacheName = 'moje-odkazy-v1';
+// Seznam souborů, které se mají uložit pro offline režim
 const assets = [
   './',
   './index.html',
   './styl.css'
 ];
 
-// Instalace - uložení souborů do paměti
+// Při instalaci uloží soubory do cache
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
-      cache.addAll(assets);
+      return cache.addAll(assets);
     })
   );
 });
 
-// Aktivace při zapnutí offline režimu
+// Při požadavku zkusí nejdřív cache, pak síť
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(res => {
-      return res || fetch(e.request);
+    caches.match(e.request).then(response => {
+      return response || fetch(e.request);
     })
   );
 });
