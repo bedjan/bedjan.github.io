@@ -1,20 +1,19 @@
-/* Celkové nastavení pro využití celé šířky */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     margin: 0;
-    padding: 10px; /* Menší padding pro více místa */
+    padding: 10px;
 }
 
 .main-content {
-    max-width: 100%; /* Využije celou šířku obrazovky */
+    max-width: 100%; /* Využije celou šířku stránky */
     margin: 0 auto;
 }
 
 h1 {
     text-align: center;
     color: #0087eb;
-    font-size: 20px; /* Menší písmo nadpisu */
+    font-size: 20px;
     margin: 15px 0;
 }
 
@@ -23,7 +22,6 @@ h1 a {
     color: inherit;
 }
 
-/* Karty sekcí */
 details {
     background: #fff;
     margin-bottom: 5px;
@@ -34,14 +32,13 @@ details {
 
 summary {
     padding: 10px 15px;
-    font-size: 13px; /* Menší písmo pro názvy sekcí */
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
     outline: none;
     color: #333;
 }
 
-/* Mřížka s odkazy */
 .links-grid {
     display: flex;
     flex-wrap: wrap;
@@ -50,39 +47,44 @@ summary {
     border-top: 1px solid #f9f9f9;
 }
 
-/* Styl pro zašedlé a menší odkazy */
+/* Upravený styl: Všechny odkazy jsou v základu zašedlé */
 .links-grid a {
     text-decoration: none !important;
-    color: #999; /* Více zašedlá barva textu */
+    color: #999 !important; /* Více zašedlá barva */
     background: #fff;
     border: 1px solid #e0e0e0;
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 12px; /* Menší písmo odkazů */
+    font-size: 12px; /* Menší písmo */
     transition: 0.2s;
 }
 
-/* Hover efekt - při najetí ztmavnou */
+/* Modrý efekt pouze při najetí myší */
 .links-grid a:hover {
-    background: #f5f5f5;
-    color: #333;
-    border-color: #ccc;
-}
-
-/* Modrá tlačítka (první v sekci nebo vybraná) */
-.links-grid a:first-of-type, 
-.links-grid a.active {
-    background: #0087eb;
-    color: white !important; /* Bílá pro kontrast na modré */
+    background: #0087eb !important;
+    color: #fff !important;
     border-color: #0076cd;
 }
 
-/* Pojistka proti Markdownu */
+/* Odstraněno automatické modré podbarvení prvního prvku */
+.links-grid a:first-of-type {
+    background: #fff;
+    color: #999 !important;
+}
+
+.subject-heading {
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+}
+
 .links-grid p {
     display: contents !important;
 }
 
-/* Responzivita - na velmi malých displejích */
 @media (max-width: 480px) {
     .links-grid a {
         flex-grow: 1;
