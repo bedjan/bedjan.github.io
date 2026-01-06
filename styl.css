@@ -1,118 +1,119 @@
+/* Celkové nastavení stránky */
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f0f2f5; /* Světlejší šedé pozadí pro kontrast */
+    background-color: #f8f9fa; /* Světle šedé pozadí pro kontrast s kartami */
     margin: 0;
     padding: 20px;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nadpis Osobní stránky */
+h1 {
+    color: #0087eb;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .main-content {
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
 }
 
-/* Stylování kontejneru pro sekce */
+/* Styl jednotlivých sekcí (karet) */
 details {
     background: #ffffff;
-    margin-bottom: 12px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* Jemný stín jako na obrázku */
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-details[open] {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 /* Hlavička sekce (Škola, Oblíbené...) */
 summary {
-    padding: 16px 20px;
-    font-weight: 600;
-    font-size: 1.1em;
+    padding: 12px 20px;
+    font-weight: 500;
     cursor: pointer;
-    background-color: #ffffff;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #333;
+    outline: none;
 }
 
 summary::-webkit-details-marker {
     display: none;
 }
 
-/* Přidání šipky vpravo */
+/* Ikona šipky vpravo */
 summary::after {
-    content: '▼';
-    font-size: 0.8em;
-    color: #aaa;
-    transition: 0.3s;
+    content: '▲';
+    font-size: 10px;
+    color: #ccc;
+    transition: transform 0.2s;
 }
 
-details[open] summary::after {
+details:not([open]) summary::after {
     transform: rotate(180deg);
 }
 
-/* Mřížka s odkazy */
+/* Mřížka pro tlačítka uvnitř rozbalené sekce */
 .links-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 20px;
-    background-color: #fafafa;
-    border-top: 1px solid #eee;
+    padding: 15px 20px 20px 20px;
+    border-top: 1px solid #f5f5f5;
+    background-color: #ffffff;
 }
 
-/* Samotná tlačítka */
+/* Vzhled tlačítek (odkazů) */
 .links-grid a {
-    text-decoration: none;
-    color: #444;
+    text-decoration: none !important; /* Důležité: odstraní podtržení */
+    color: #666;
     background: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
+    border: 1px solid #ddd;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 13px;
     transition: all 0.2s ease;
     display: inline-block;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
-/* Efekt při najetí myší */
-.links-grid a:hover {
-    background: #ffffff;
-    border-color: #0087eb;
-    color: #0087eb;
-    transform: translateY(-2px); /* Tlačítko se lehce nadzvedne */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* První modré tlačítko */
+/* První tlačítko v každé sekci - modré */
 .links-grid a:first-of-type {
     background: #0087eb;
-    color: #ffffff;
+    color: #ffffff !important;
+    border-color: #0087eb;
+}
+
+/* Hover efekt pro všechna tlačítka */
+.links-grid a:hover {
+    background: #f0f0f0;
+    border-color: #bbb;
+    color: #333;
+}
+
+/* Speciální hover pro modré tlačítko */
+.links-grid a:first-of-type:hover {
+    background: #0076cd;
     border-color: #0076cd;
 }
 
-.links-grid a:first-of-type:hover {
-    background: #0076cd;
-    color: #ffffff;
-}
-
-/* Nadpisy předmětů (Matematika atd.) */
-.subject-heading {
-    width: 100%;
-    margin: 15px 0 10px 0;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #888;
-    padding-left: 5px;
-}
-
-/* Oprava pro Markdown */
+/* Klíčová oprava pro Jekyll/Markdown (odstraní vnořené odstavce) */
 .links-grid p {
     display: contents !important;
+}
+
+/* Stylování nadpisů uvnitř předmětů */
+.subject-heading {
+    width: 100%;
+    margin: 15px 0 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
 }
