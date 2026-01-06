@@ -6,7 +6,7 @@ body {
 }
 
 .main-content {
-    max-width: 100%; /* Využije celou šířku stránky */
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -47,29 +47,33 @@ summary {
     border-top: 1px solid #f9f9f9;
 }
 
-/* Upravený styl: Všechny odkazy jsou v základu zašedlé */
+/* Základní vzhled všech odkazů - šedé a bílé pozadí */
 .links-grid a {
     text-decoration: none !important;
-    color: #999 !important; /* Více zašedlá barva */
-    background: #fff;
+    color: #999 !important;
+    background-color: #ffffff !important;
     border: 1px solid #e0e0e0;
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 12px; /* Menší písmo */
+    font-size: 12px;
     transition: 0.2s;
+    outline: none !important; /* Odstraní modrý rámeček prohlížeče */
 }
 
-/* Modrý efekt pouze při najetí myší */
-.links-grid a:hover {
-    background: #0087eb !important;
-    color: #fff !important;
-    border-color: #0076cd;
-}
-
-/* Odstraněno automatické modré podbarvení prvního prvku */
-.links-grid a:first-of-type {
-    background: #fff;
+/* Reset pro jakékoliv automatické stavy (focus, first-child) */
+.links-grid a:first-of-type,
+.links-grid a:focus,
+.links-grid a:active {
+    background-color: #ffffff !important;
     color: #999 !important;
+    box-shadow: none !important;
+}
+
+/* Modrá barva se aktivuje POUZE při najetí myší */
+.links-grid a:hover {
+    background-color: #0087eb !important;
+    color: #ffffff !important;
+    border-color: #0076cd;
 }
 
 .subject-heading {
@@ -81,6 +85,7 @@ summary {
     padding-bottom: 3px;
 }
 
+/* Oprava pro zobrazení obsahu v Markdownu */
 .links-grid p {
     display: contents !important;
 }
