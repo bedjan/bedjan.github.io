@@ -1,34 +1,65 @@
-/* Vynucení mřížky i přes odstavce Jekyllu */
-details[open] {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
-    gap: 8px !important;
-    padding: 10px !important;
-    background: #ffffff !important;
-    border: 1px solid #e1e4e8 !important;
-    border-radius: 4px !important;
-    margin-bottom: 5px !important;
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: #f0f4f8;
 }
 
-/* ODSTRANĚNÍ PŘEKÁŽKY: Jekyllův <p> se přestane chovat jako blok */
+h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
+h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
+
+/* Kontejner sekce */
+details {
+    background: #ffffff;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #e1e4e8;
+    width: 100%;
+    display: block !important;
+}
+
+summary {
+    padding: 12px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    list-style: none;
+}
+
+/* MAGICKÁ ČÁST: Vynucení mřížky i přes odstavce <p> */
+details[open] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 10px !important;
+    gap: 8px !important;
+}
+
+/* Řekneme prohlížeči, aby ignoroval Jekyllův <p> obal */
 details[open] p {
     display: contents !important;
 }
 
-/* Styl tlačítek (odkazů) */
+/* Styl pro samotné odkazy (tlačítka) */
 details[open] a {
     display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 10px !important;
-    background: #fdfdfd !important;
-    border: 1px solid #eee !important;
-    border-radius: 5px !important;
-    text-decoration: none !important;
-    color: #444 !important;
-    font-size: 0.85em !important;
-    min-height: 40px !important;
-    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #444;
+    font-size: 0.85em;
+    text-align: center;
+    /* Dynamická šířka: na PC cca 5 v řadě, na mobilu 2 */
+    flex: 1 1 calc(20% - 10px); 
+    min-width: 150px;
+    min-height: 40px;
+    transition: all 0.2s;
 }
 
 details[open] a:hover {
@@ -36,12 +67,10 @@ details[open] a:hover {
     color: #fff !important;
 }
 
-summary {
-    grid-column: 1 / -1 !important; /* Summary musí být vždy nahoře */
-    padding: 12px 15px !important;
-    font-weight: 600 !important;
-    cursor: pointer !important;
-    background: #fff !important;
-    border: 1px solid #e1e4e8 !important;
-    border-radius: 4px !important;
+/* Úprava pro mobilní zařízení */
+@media (max-width: 600px) {
+    details[open] a {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 120px;
+    }
 }
