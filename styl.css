@@ -1,127 +1,68 @@
-/* Základní nastavení */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-}
-
+/* Hlavní kontejner */
 .container {
     max-width: 1000px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: sans-serif;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-h1 a:hover {
-    color: #3498db;
-}
-
-/* Styl pro harmoniku (details) */
+/* Styl pro rozbalovací sekce */
 details {
-    margin-bottom: 15px;
+    background: #ffffff;
     border: 1px solid #e1e4e8;
     border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: box-shadow 0.3s;
 }
 
 details[open] {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 summary {
-    padding: 15px 20px;
-    background-color: #f8f9fa;
     font-weight: bold;
+    font-size: 1.1rem;
     cursor: pointer;
-    list-style: none; /* Skryje defaultní šipku v některých prohlížečích */
+    padding: 5px;
     outline: none;
-    user-select: none;
+    color: #24292e;
 }
 
-summary::-webkit-details-marker {
-    display: none; /* Skryje šipku v Safari/Chrome */
-}
-
-summary:hover {
-    background-color: #e9ecef;
-}
-
-/* Mřížka odkazů */
+/* TA NEJDŮLEŽITĚJŠÍ ČÁST: Mřížka odkazů */
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* Vytvoří sloupce, které se samy naskládají podle šířky displeje */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 12px;
-    padding: 20px;
-    background-color: #fff;
-    border-top: 1px solid #eee;
+    padding: 15px 5px;
 }
 
-/* Styl jednotlivých odkazů (tlačítek) */
 .links-grid a {
-    display: block;
-    padding: 12px 15px;
-    background-color: #ffffff;
-    border: 1px solid #dcdfe3;
+    background: #f6f8fa;
+    border: 1px solid #d1d5da;
     border-radius: 6px;
-    color: #34495e;
+    color: #0366d6;
+    padding: 12px 8px;
     text-decoration: none;
     text-align: center;
-    font-size: 0.95em;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
     transition: all 0.2s ease;
-    /* Zajistí, že dlouhý text nerozbije mřížku */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .links-grid a:hover {
-    background-color: #3498db;
-    color: white;
-    border-color: #3498db;
+    background: #0366d6;
+    color: #ffffff;
+    border-color: #0366d6;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Nadpisy předmětů uvnitř mřížky */
-.subject-heading {
-    grid-column: 1 / -1; /* Roztáhne nadpis přes celou šířku mřížky */
-    margin: 15px 0 5px 0;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #3498db;
-    font-size: 1.1em;
-    color: #2c3e50;
-}
-
-/* Responzivita pro mobily */
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-    
-    .links-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        padding: 10px;
-        gap: 8px;
-    }
-    
-    .links-grid a {
-        font-size: 0.85em;
-        padding: 10px 5px;
-    }
+/* Schování případných prázdných odstavců, které tam Jekyll vkládá */
+details p {
+    margin: 0;
+    padding: 0;
 }
