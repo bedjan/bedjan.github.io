@@ -1,70 +1,118 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f9;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Světlejší šedé pozadí pro kontrast */
     margin: 0;
     padding: 20px;
+    color: #333;
 }
 
 .main-content {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
-    color: #0087eb;
-}
-
-h1 a {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* Stylování kontejneru pro sekce */
 details {
-    background: #fff;
-    margin-bottom: 8px;
-    border: 1px solid #eee;
-    border-radius: 4px;
+    background: #ffffff;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* Jemný stín jako na obrázku */
+    overflow: hidden;
+    transition: transform 0.2s ease;
 }
 
+details[open] {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Hlavička sekce (Škola, Oblíbené...) */
 summary {
-    padding: 15px;
-    font-weight: bold;
+    padding: 16px 20px;
+    font-weight: 600;
+    font-size: 1.1em;
     cursor: pointer;
-    outline: none;
+    background-color: #ffffff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Přidání šipky vpravo */
+summary::after {
+    content: '▼';
+    font-size: 0.8em;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+/* Mřížka s odkazy */
 .links-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px;
-    border-top: 1px solid #f9f9f9;
+    gap: 8px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
 }
 
+/* Samotná tlačítka */
 .links-grid a {
     text-decoration: none;
-    color: #333;
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 8px 15px;
-    border-radius: 5px;
+    color: #444;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 10px 18px;
+    border-radius: 6px;
     font-size: 14px;
-    transition: 0.2s;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
+/* Efekt při najetí myší */
 .links-grid a:hover {
-    background: #f0f0f0;
+    background: #ffffff;
+    border-color: #0087eb;
+    color: #0087eb;
+    transform: translateY(-2px); /* Tlačítko se lehce nadzvedne */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Modré první tlačítko v každé sekci */
+/* První modré tlačítko */
 .links-grid a:first-of-type {
     background: #0087eb;
-    color: white;
+    color: #ffffff;
     border-color: #0076cd;
 }
 
-/* Pojistka proti nechtěným odstavcům z Markdownu */
+.links-grid a:first-of-type:hover {
+    background: #0076cd;
+    color: #ffffff;
+}
+
+/* Nadpisy předmětů (Matematika atd.) */
+.subject-heading {
+    width: 100%;
+    margin: 15px 0 10px 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    padding-left: 5px;
+}
+
+/* Oprava pro Markdown */
 .links-grid p {
-    display: contents;
+    display: contents !important;
 }
