@@ -1,98 +1,108 @@
+/* Základní nastavení celé stránky */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderní bezpatkové písmo */
+    background-color: #f8f9fa; /* Velmi světlé šedé pozadí stránky */
+    margin: 0; /* Odstranění výchozích okrajů prohlížeče */
+    padding: 10px; /* Mezera od okrajů obrazovky */
 }
 
+/* Hlavní kontejner pro obsah - nastaveno na plnou šířku */
 .main-content {
-    max-width: 100%;
+    max-width: 100%; 
     margin: 0 auto;
 }
 
+/* Styl hlavního nadpisu stránky */
 h1 {
-    text-align: center;
-    color: #0087eb;
+    text-align: center; /* Zarovnání na střed */
+    color: #0087eb; /* Modrá barva nadpisu */
     font-size: 20px;
     margin: 15px 0;
 }
 
+/* Odstranění podtržení, pokud je nadpis zároveň odkazem */
 h1 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Styl pro rozbalovací sekce (harmonika) */
 details {
-    background: #fff;
-    margin-bottom: 5px;
-    border: 1px solid #eee;
-    border-radius: 4px;
+    background: #fff; /* Bílé pozadí bloku */
+    margin-bottom: 5px; /* Mezera mezi jednotlivými sekcemi */
+    border: 1px solid #eee; /* Velmi světlý vnější rámeček */
+    border-radius: 4px; /* Jemné zaoblení rohů */
     width: 100%;
 }
 
+/* Styl pro klikatelný titulek sekce */
 summary {
-    padding: 10px 15px;
+    padding: 10px 15px; /* Vnitřní prostor kolem textu */
     font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    color: #333;
+    font-weight: bold; /* Tučné písmo */
+    cursor: pointer; /* Změna kurzoru na ruku při najetí */
+    outline: none; /* Odstranění obrysu po kliknutí */
+    color: #333; /* Tmavě šedá barva textu titulku */
 }
 
+/* Mřížka pro odkazy uvnitř sekce */
 .links-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: flex; /* Flexbox pro řazení prvků vedle sebe */
+    flex-wrap: wrap; /* Pokud se odkazy nevejdou, skočí na další řádek */
+    gap: 8px; /* Mezera mezi jednotlivými tlačítky */
     padding: 12px;
-    border-top: 1px solid #f9f9f9;
+    border-top: 1px solid #f9f9f9; /* Jemná linka oddělující titulek od obsahu */
 }
 
-/* Základní vzhled všech odkazů - šedé a bílé pozadí */
+/* VZHLED ODKAZŮ - zašedlé */
 .links-grid a {
-    text-decoration: none !important;
-    color: #999 !important;
-    background-color: #ffffff !important;
-    border: 1px solid #e0e0e0;
+    text-decoration: none !important; /* Odstranění podtržení textu */
+    color: #777 !important; /* Více šedé písmo (tmavší šedá pro čitelnost) */
+    background-color: #ffffff !important; /* Bílé pozadí tlačítek */
+    border: 1px solid #ccc; /* Více šedý rámeček (tmavší než původně) */
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 12px;
-    transition: 0.2s;
-    outline: none !important; /* Odstraní modrý rámeček prohlížeče */
+    font-size: 12px; /* Menší velikost písma v tlačítkách */
+    transition: 0.2s; /* Plynulost animace při najetí myší */
+    outline: none !important; /* Zákaz modrého rámečku prohlížeče */
 }
 
-/* Reset pro jakékoliv automatické stavy (focus, first-child) */
+/* Pojistka: Resetuje jakékoliv automatické modré stavy (první prvek, zaměření klávesnicí) */
 .links-grid a:first-of-type,
 .links-grid a:focus,
 .links-grid a:active {
     background-color: #ffffff !important;
-    color: #999 !important;
+    color: #777 !important;
+    border-color: #ccc !important;
     box-shadow: none !important;
 }
 
-/* Modrá barva se aktivuje POUZE při najetí myší */
+/* EFEKT PŘI NAJETÍ MYŠÍ - Odkaz zmodrá */
 .links-grid a:hover {
-    background-color: #0087eb !important;
-    color: #ffffff !important;
-    border-color: #0076cd;
+    background-color: #0087eb !important; /* Modré pozadí při hoveru */
+    color: #ffffff !important; /* Bílý text při hoveru */
+    border-color: #0076cd; /* Tmavší modrý rámeček */
 }
 
+/* Styl pro podnadpisy uvnitř sekcí (např. u Matematiky) */
 .subject-heading {
-    width: 100%;
+    width: 100%; /* Nadpis zabere celý řádek */
     font-size: 14px;
     margin: 10px 0 5px 0;
     color: #555;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee; /* Spodní linka pod nadpisem předmětu */
     padding-bottom: 3px;
 }
 
-/* Oprava pro zobrazení obsahu v Markdownu */
+/* Oprava pro Markdown: Zajišťuje, aby odstavce nerozbíjely mřížku */
 .links-grid p {
     display: contents !important;
 }
 
+/* Nastavení pro mobilní telefony */
 @media (max-width: 480px) {
     .links-grid a {
-        flex-grow: 1;
+        flex-grow: 1; /* Odkazy se roztáhnou na celou šířku mobilu */
         text-align: center;
     }
 }
