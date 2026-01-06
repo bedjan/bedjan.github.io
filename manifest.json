@@ -1,0 +1,15 @@
+{
+  "name": "Moje Odkazy",
+  "short_name": "Odkazy",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#0087eb",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
