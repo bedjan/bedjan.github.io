@@ -360,7 +360,6 @@ title: Osobní stránky
         
 <details close>
             <summary>Programování</summary>
-
                 <a href="https://github.com/bedjan/" target="_blank">Github</a>
                 <a href="https://github.com/bedjan/debian/blob/master/skripty/all.sh" target="_blank">Github_all</a>
                 <a href="https://zdrojak.cz/" target="_blank">Zdrojak</a>
@@ -376,7 +375,6 @@ title: Osobní stránky
                 <a href="https://thinfi.com/" target="_blank">Link with password</a>
                 <a href="https://bitly.com/" target="_blank">Link short</a>
                 <a href="https://raw.githack.com/" target="_blank">Raw githack - dev</a>
-
 </details>
 
 
