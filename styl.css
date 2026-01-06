@@ -1,76 +1,74 @@
-/* Reset */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
+/* Celkový vzhled jako v původní verzi */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
     background-color: #f0f4f8;
+    padding: 15px;
 }
 
-h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
-h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
-
-/* Kontejner sekce */
-details {
-    background: #ffffff;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    border: 1px solid #e1e4e8;
-    width: 100%;
-    display: block !important;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-summary {
-    padding: 12px 15px;
-    font-weight: 600;
-    cursor: pointer;
+/* Udělá z každého nadpisu H1 "hlavičku" sekce */
+h1 {
     background: #fff;
-    border-bottom: 1px solid #eee;
-    list-style: none;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #0984e3;
+    cursor: pointer;
 }
 
-/* MAGICKÁ ČÁST: Vynucení mřížky i přes odstavce <p> */
-details[open] {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    padding: 10px !important;
-    gap: 8px !important;
+/* Udělá z odstavce pod nadpisem mřížku (grid) */
+h1 + p {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+    padding: 10px;
 }
 
-/* Řekneme prohlížeči, aby ignoroval Jekyllův <p> obal */
-details[open] p {
-    display: contents !important;
-}
-
-/* Styl pro samotné odkazy (tlačítka) */
-details[open] a {
-    display: flex !important;
+/* Promění Markdown odkazy na tlačítka */
+h1 + p a {
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: #fdfdfd;
-    border: 1px solid #eee;
-    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     text-decoration: none;
-    color: #444;
+    color: #333;
     font-size: 0.85em;
     text-align: center;
-    /* Dynamická šířka: na PC cca 5 v řadě, na mobilu 2 */
-    flex: 1 1 calc(20% - 10px); 
-    min-width: 150px;
-    min-height: 40px;
+    min-height: 45px;
     transition: all 0.2s;
 }
 
-details[open] a:hover {
-    background: #0984e3 !important;
+/* Efekt při najetí myší */
+h1 + p a:hover {
+    background: #0984e3;
     color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Úprava pro mobilní zařízení */
+/* Podpora pro podkategorie (### Matematika) */
+h3 {
+    grid-column: 1 / -1;
+    font-size: 0.8em;
+    color: #999;
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Mobilní zobrazení */
 @media (max-width: 600px) {
-    details[open] a {
-        flex: 1 1 calc(50% - 10px);
-        min-width: 120px;
+    h1 + p {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
