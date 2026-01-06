@@ -1,68 +1,80 @@
-/* Hlavní kontejner */
-.container {
+/* Celkový vzhled */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-content {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 15px;
-    font-family: sans-serif;
-}
-
-/* Styl pro rozbalovací sekce */
-details {
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
     border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 10px;
-    transition: box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-details[open] {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+h1 {
+    text-align: center;
+    color: #0087eb;
+}
+
+/* Sekce details */
+details {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #fff;
 }
 
 summary {
+    padding: 12px;
     font-weight: bold;
-    font-size: 1.1rem;
     cursor: pointer;
-    padding: 5px;
-    outline: none;
-    color: #24292e;
+    background: #fdfdfd;
+    border-bottom: 1px solid transparent;
 }
 
-/* TA NEJDŮLEŽITĚJŠÍ ČÁST: Mřížka odkazů */
+details[open] summary {
+    border-bottom: 1px solid #eee;
+}
+
+/* Mřížka tlačítek */
 .links-grid {
-    display: grid;
-    /* Vytvoří sloupce, které se samy naskládají podle šířky displeje */
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
-    padding: 15px 5px;
+    display: flex;
+    flex-wrap: wrap; /* Tlačítka se řadí vedle sebe */
+    gap: 10px;
+    padding: 15px;
 }
 
+/* Vzhled tlačítek */
 .links-grid a {
-    background: #f6f8fa;
-    border: 1px solid #d1d5da;
-    border-radius: 6px;
-    color: #0366d6;
-    padding: 12px 8px;
     text-decoration: none;
-    text-align: center;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40px;
-    transition: all 0.2s ease;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s;
+    display: inline-block;
 }
 
 .links-grid a:hover {
-    background: #0366d6;
-    color: #ffffff;
-    border-color: #0366d6;
-    transform: translateY(-2px);
+    background: #f0f0f0;
+    border-color: #bbb;
 }
 
-/* Schování případných prázdných odstavců, které tam Jekyll vkládá */
-details p {
-    margin: 0;
-    padding: 0;
+/* Zvýrazněné tlačítko (jako Rozvrh na obrázku) */
+.links-grid a:first-child {
+    background: #0087eb;
+    color: white;
+    border-color: #0076cd;
+}
+
+/* Odstranění nechtěných odstavců z Jekyllovu */
+.links-grid p {
+    display: contents;
 }
