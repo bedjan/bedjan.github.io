@@ -1,100 +1,100 @@
-/* Základní nastavení celé stránky */
+/* ZÁKLADNÍ NASTAVENÍ STRÁNKY */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Světlý podklad webu */
+    background-color: #f8f9fa; /* Světlé šedé pozadí celého webu */
     margin: 0;
     padding: 10px;
 }
 
-/* Kontejner pro obsah - plná šířka okna */
+/* KONTEJNER PRO OBSAH */
 .main-content {
-    max-width: 100%; 
+    max-width: 100%; /* Stránka využije celou šířku okna */
     margin: 0 auto;
 }
 
-/* Hlavní nadpis "Osobní stránky" */
+/* STYL NADPISU */
 h1 {
     text-align: center;
-    color: #0087eb; /* Modrá barva nadpisu */
+    color: #0087eb; /* Modrá barva hlavního nadpisu */
     font-size: 20px;
     margin: 15px 0;
 }
 
-/* Styl pro rozbalovací sekce */
+/* STYL ROZBALOVACÍCH SEKCÍ */
 details {
-    background: #fff;
+    background: #fff; /* Bílé pozadí bloku sekce */
     margin-bottom: 5px;
-    border: 1px solid #ddd; /* Šedý vnější rámeček sekce */
+    border: 1px solid #ccc; /* Šedý vnější rámeček celé sekce */
     border-radius: 4px;
 }
 
-/* Titulek sekce (např. Škola, Oblíbené) */
+/* TITULEK SEKCE (NÁZEV) */
 summary {
     padding: 10px 15px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    color: #333; /* Téměř černý text pro dobrou čitelnost */
+    color: #222; /* Téměř černé písmo pro jasný název sekce */
 }
 
-/* Mřížka, ve které jsou odkazy (tlačítka) */
+/* MŘÍŽKA S ODKAZY (TLAČÍTKA) */
 .links-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-wrap: wrap; /* Tlačítka se řadí vedle sebe a pod sebe */
+    gap: 8px; /* Mezera mezi tlačítky */
     padding: 12px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd; /* Oddělovací čára pod titulkem */
 }
 
-/* VZHLED ODKAZŮ - Nastaveno na výrazně šedou */
+/* VZHLED ODKAZŮ (TLAČÍTEK) - MAXIMÁLNĚ ŠEDÁ VERZE */
 .links-grid a {
     text-decoration: none !important;
-    color: #555 !important; /* TMAVŠÍ ŠEDÁ: Písmo je teď výrazněji šedé */
-    background-color: #ffffff !important;
-    border: 1px solid #999; /* TMAVŠÍ ŠEDÁ: Rámeček je teď jasně viditelný */
+    color: #333 !important; /* TMAVĚ ŠEDÉ PÍSMO: Velmi výrazná šedá */
+    background-color: #ffffff !important; /* Bílé pozadí tlačítek */
+    border: 1px solid #777; /* TMAVĚ ŠEDÝ RÁMEČEK: Pevný a jasný obrys */
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 12px;
-    transition: 0.2s;
-    outline: none !important;
+    transition: 0.2s; /* Plynulé přepnutí barvy při najetí */
+    outline: none !important; /* Odstraní modrý obrys od prohlížeče */
 }
 
-/* POJISTKA: Zákaz modré barvy u prvního odkazu a při kliknutí */
+/* POJISTKA PROTI MODRÉ BARVĚ (PRVNÍ ODKAZ, FOCUS) */
 .links-grid a:first-of-type,
 .links-grid a:focus,
 .links-grid a:active {
     background-color: #ffffff !important;
-    color: #555 !important;
-    border-color: #999 !important;
+    color: #333 !important;
+    border-color: #777 !important;
     box-shadow: none !important;
 }
 
-/* EFEKT PŘI NAJETÍ MYŠÍ - Odkaz zmodrá a text zbělá */
+/* EFEKT PŘI NAJETÍ MYŠÍ (HOVER) */
 .links-grid a:hover {
-    background-color: #0087eb !important; /* Sytě modrá */
+    background-color: #0087eb !important; /* Modré pozadí */
     color: #ffffff !important; /* Bílé písmo */
     border-color: #0076cd;
 }
 
-/* Podnadpisy uvnitř sekcí (např. Matematika, Fyzika) */
+/* NADPISY PŘEDMĚTŮ UVNITŘ MŘÍŽKY */
 .subject-heading {
     width: 100%;
     font-size: 14px;
     margin: 10px 0 5px 0;
-    color: #444;
-    border-bottom: 1px solid #ddd;
+    color: #111;
+    border-bottom: 1px solid #bbb; /* Linka pod názvem předmětu */
     padding-bottom: 3px;
 }
 
-/* Oprava pro Markdown: Ignoruje odstavce, aby tlačítka zůstala v mřížce */
+/* OPRAVA PRO MARKDOWN ODSTAVCE */
 .links-grid p {
     display: contents !important;
 }
 
-/* Úprava pro mobilní telefony - tlačítka se roztáhnou na šířku */
+/* MOBILNÍ ZOBRAZENÍ */
 @media (max-width: 480px) {
     .links-grid a {
-        flex-grow: 1;
+        flex-grow: 1; /* Na mobilu se tlačítka roztáhnou do šířky */
         text-align: center;
     }
 }
