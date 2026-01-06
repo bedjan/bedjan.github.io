@@ -359,7 +359,7 @@ title: Osobní stránky
                 <a href="https://generaliceskacz.b2clogin.com/login.kz.generaliceska.cz/oauth2/v2.0/authorize?p=B2C_1_Prod_Flow&nonce=defaultNonce&redirect_uri=https://kz.generaliceska.cz/token&client_id=894f4eb9-5e98-4957-baa9-e1cc6350e9f5&prompt=login&scope=openid%20offline_access&response_type=code&login_hint=" target="_blank">Generali</a>
                 <a href="https://cezonline.cez.cz/irj/portal/profil-uzivatele#/profil" target="_blank">Cez online</a>
             </div>
-        </details>
+</details>
 
 <details close>
             <summary>Úprava textu</summary>
