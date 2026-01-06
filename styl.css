@@ -1,83 +1,47 @@
-/* Reset a základ */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    background-color: #f0f4f8;
-}
-
-h1 { text-align: center; margin: 15px 0; font-size: 1.6em; }
-h1 a { color: #0984e3; text-decoration: none; font-weight: 800; }
-
-/* Kontejner mřížky přímo v details */
-details {
-    background: #ffffff;
-    margin-bottom: 4px;
-    border-radius: 4px;
-    border: 1px solid #e1e4e8;
-    width: 100%;
-}
-
-/* Nastavení mřížky při otevření */
+/* Vynucení mřížky i přes odstavce Jekyllu */
 details[open] {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 6px;
-    padding: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    gap: 8px !important;
+    padding: 10px !important;
+    background: #ffffff !important;
+    border: 1px solid #e1e4e8 !important;
+    border-radius: 4px !important;
+    margin-bottom: 5px !important;
+}
+
+/* ODSTRANĚNÍ PŘEKÁŽKY: Jekyllův <p> se přestane chovat jako blok */
+details[open] p {
+    display: contents !important;
+}
+
+/* Styl tlačítek (odkazů) */
+details[open] a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    background: #fdfdfd !important;
+    border: 1px solid #eee !important;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+    color: #444 !important;
+    font-size: 0.85em !important;
+    min-height: 40px !important;
+    text-align: center !important;
+}
+
+details[open] a:hover {
+    background: #0984e3 !important;
+    color: #fff !important;
 }
 
 summary {
-    padding: 10px 15px;
-    font-weight: 600;
-    cursor: pointer;
-    background: #fff;
-    /* Summary musí zabrat celou šířku řádku mřížky */
-    grid-column: 1 / -1; 
-}
-
-summary:hover { background: #f8f9fa; }
-
-/* KLÍČOVÝ TRIK PRO JEKYLL:
-   Zruší vizuální vliv odstavců <p>, které Jekyll vkládá do Markdownu.
-   Odkazy se pak chovají, jako by byly přímo v details. */
-details p {
-    display: contents;
-}
-
-/* Vzhled tlačítek (odkazů) */
-details a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 10px;
-    background: #fdfdfd;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #444;
-    font-size: 0.85em;
-    text-align: center;
-    min-height: 35px;
-    transition: all 0.2s;
-}
-
-details a:hover {
-    background: #0984e3;
-    color: #fff !important;
-    transform: translateY(-1px);
-}
-
-/* Nadpisy předmětů v mřížce */
-.subject-heading {
-    grid-column: 1 / -1;
-    margin: 10px 0 2px 5px;
-    font-size: 0.75em;
-    color: #999;
-    text-transform: uppercase;
-}
-
-/* Mobilní zobrazení */
-@media (max-width: 600px) {
-    details[open] { grid-template-columns: repeat(2, 1fr); }
+    grid-column: 1 / -1 !important; /* Summary musí být vždy nahoře */
+    padding: 12px 15px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    background: #fff !important;
+    border: 1px solid #e1e4e8 !important;
+    border-radius: 4px !important;
 }
