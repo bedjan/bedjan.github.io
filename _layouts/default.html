@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <base target="_blank">
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/styl.css">
-    <style>
-        /* Pojistka přímo v HTML pro případ, že se CSS načte pozdě */
-        details[open] { display: grid !important; }
-        details p { display: contents !important; }
-    </style>
+    <link rel="stylesheet" href="styl.css">
+    
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register("{{ '/service-worker.js' | relative_url }}").then(function(registration) {
+            console.log('ServiceWorker registrován!');
+          }, function(err) {
+            console.log('ServiceWorker selhal: ', err);
+          });
+        });
+      }
+    </script>
 </head>
 <body>
-    <div class="container">
-        {{ content }}
-    </div>
+    {{ content }}
 </body>
 </html>
