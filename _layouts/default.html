@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <base target="_blank">
-    <link rel="stylesheet" href="{{ '/styl.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/styl.css">
+    <style>
+        /* Pojistka přímo v HTML pro případ, že se CSS načte pozdě */
+        details[open] { display: grid !important; }
+        details p { display: contents !important; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1><a href="{{ '/' | relative_url }}" target="_self">Osobní stránky</a></h1>
         {{ content }}
     </div>
 </body>
