@@ -427,7 +427,7 @@ title: Osobní stránky
         </details>
 
 <details close>
-            <summary>Programování</summary>
+            <summary>Bottom</summary>
             <div class="links-grid">
 <a href="https://github.com/bedjan/bedjan.github.io/blob/main/index.md" target="_blank">Osobní stránky</a>
             </div>
