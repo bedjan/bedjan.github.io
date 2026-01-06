@@ -1,8 +1,6 @@
-/* Celkový vzhled */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f9;
     margin: 0;
     padding: 20px;
 }
@@ -10,10 +8,6 @@ body {
 .main-content {
     max-width: 1000px;
     margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 h1 {
@@ -21,60 +15,56 @@ h1 {
     color: #0087eb;
 }
 
-/* Sekce details */
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 details {
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    margin-bottom: 10px;
     background: #fff;
+    margin-bottom: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
 }
 
 summary {
-    padding: 12px;
+    padding: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: #fdfdfd;
-    border-bottom: 1px solid transparent;
+    outline: none;
 }
 
-details[open] summary {
-    border-bottom: 1px solid #eee;
-}
-
-/* Mřížka tlačítek */
 .links-grid {
     display: flex;
-    flex-wrap: wrap; /* Tlačítka se řadí vedle sebe */
+    flex-wrap: wrap;
     gap: 10px;
     padding: 15px;
+    border-top: 1px solid #f9f9f9;
 }
 
-/* Vzhled tlačítek */
 .links-grid a {
     text-decoration: none;
-    color: #555;
+    color: #333;
     background: #fff;
     border: 1px solid #ddd;
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 8px 15px;
+    border-radius: 5px;
     font-size: 14px;
-    transition: all 0.2s;
-    display: inline-block;
+    transition: 0.2s;
 }
 
 .links-grid a:hover {
     background: #f0f0f0;
-    border-color: #bbb;
 }
 
-/* Zvýrazněné tlačítko (jako Rozvrh na obrázku) */
-.links-grid a:first-child {
+/* Modré první tlačítko v každé sekci */
+.links-grid a:first-of-type {
     background: #0087eb;
     color: white;
     border-color: #0076cd;
 }
 
-/* Odstranění nechtěných odstavců z Jekyllovu */
+/* Pojistka proti nechtěným odstavcům z Markdownu */
 .links-grid p {
     display: contents;
 }
