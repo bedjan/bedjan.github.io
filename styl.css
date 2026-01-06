@@ -1,108 +1,100 @@
 /* Základní nastavení celé stránky */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderní bezpatkové písmo */
-    background-color: #f8f9fa; /* Velmi světlé šedé pozadí stránky */
-    margin: 0; /* Odstranění výchozích okrajů prohlížeče */
-    padding: 10px; /* Mezera od okrajů obrazovky */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Světlý podklad webu */
+    margin: 0;
+    padding: 10px;
 }
 
-/* Hlavní kontejner pro obsah - nastaveno na plnou šířku */
+/* Kontejner pro obsah - plná šířka okna */
 .main-content {
     max-width: 100%; 
     margin: 0 auto;
 }
 
-/* Styl hlavního nadpisu stránky */
+/* Hlavní nadpis "Osobní stránky" */
 h1 {
-    text-align: center; /* Zarovnání na střed */
+    text-align: center;
     color: #0087eb; /* Modrá barva nadpisu */
     font-size: 20px;
     margin: 15px 0;
 }
 
-/* Odstranění podtržení, pokud je nadpis zároveň odkazem */
-h1 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Styl pro rozbalovací sekce (harmonika) */
+/* Styl pro rozbalovací sekce */
 details {
-    background: #fff; /* Bílé pozadí bloku */
-    margin-bottom: 5px; /* Mezera mezi jednotlivými sekcemi */
-    border: 1px solid #eee; /* Velmi světlý vnější rámeček */
-    border-radius: 4px; /* Jemné zaoblení rohů */
-    width: 100%;
+    background: #fff;
+    margin-bottom: 5px;
+    border: 1px solid #ddd; /* Šedý vnější rámeček sekce */
+    border-radius: 4px;
 }
 
-/* Styl pro klikatelný titulek sekce */
+/* Titulek sekce (např. Škola, Oblíbené) */
 summary {
-    padding: 10px 15px; /* Vnitřní prostor kolem textu */
+    padding: 10px 15px;
     font-size: 13px;
-    font-weight: bold; /* Tučné písmo */
-    cursor: pointer; /* Změna kurzoru na ruku při najetí */
-    outline: none; /* Odstranění obrysu po kliknutí */
-    color: #333; /* Tmavě šedá barva textu titulku */
+    font-weight: bold;
+    cursor: pointer;
+    color: #333; /* Téměř černý text pro dobrou čitelnost */
 }
 
-/* Mřížka pro odkazy uvnitř sekce */
+/* Mřížka, ve které jsou odkazy (tlačítka) */
 .links-grid {
-    display: flex; /* Flexbox pro řazení prvků vedle sebe */
-    flex-wrap: wrap; /* Pokud se odkazy nevejdou, skočí na další řádek */
-    gap: 8px; /* Mezera mezi jednotlivými tlačítky */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 12px;
-    border-top: 1px solid #f9f9f9; /* Jemná linka oddělující titulek od obsahu */
+    border-top: 1px solid #eee;
 }
 
-/* VZHLED ODKAZŮ - zašedlé */
+/* VZHLED ODKAZŮ - Nastaveno na výrazně šedou */
 .links-grid a {
-    text-decoration: none !important; /* Odstranění podtržení textu */
-    color: #777 !important; /* Více šedé písmo (tmavší šedá pro čitelnost) */
-    background-color: #ffffff !important; /* Bílé pozadí tlačítek */
-    border: 1px solid #ccc; /* Více šedý rámeček (tmavší než původně) */
+    text-decoration: none !important;
+    color: #555 !important; /* TMAVŠÍ ŠEDÁ: Písmo je teď výrazněji šedé */
+    background-color: #ffffff !important;
+    border: 1px solid #999; /* TMAVŠÍ ŠEDÁ: Rámeček je teď jasně viditelný */
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 12px; /* Menší velikost písma v tlačítkách */
-    transition: 0.2s; /* Plynulost animace při najetí myší */
-    outline: none !important; /* Zákaz modrého rámečku prohlížeče */
+    font-size: 12px;
+    transition: 0.2s;
+    outline: none !important;
 }
 
-/* Pojistka: Resetuje jakékoliv automatické modré stavy (první prvek, zaměření klávesnicí) */
+/* POJISTKA: Zákaz modré barvy u prvního odkazu a při kliknutí */
 .links-grid a:first-of-type,
 .links-grid a:focus,
 .links-grid a:active {
     background-color: #ffffff !important;
-    color: #777 !important;
-    border-color: #ccc !important;
+    color: #555 !important;
+    border-color: #999 !important;
     box-shadow: none !important;
 }
 
-/* EFEKT PŘI NAJETÍ MYŠÍ - Odkaz zmodrá */
+/* EFEKT PŘI NAJETÍ MYŠÍ - Odkaz zmodrá a text zbělá */
 .links-grid a:hover {
-    background-color: #0087eb !important; /* Modré pozadí při hoveru */
-    color: #ffffff !important; /* Bílý text při hoveru */
-    border-color: #0076cd; /* Tmavší modrý rámeček */
+    background-color: #0087eb !important; /* Sytě modrá */
+    color: #ffffff !important; /* Bílé písmo */
+    border-color: #0076cd;
 }
 
-/* Styl pro podnadpisy uvnitř sekcí (např. u Matematiky) */
+/* Podnadpisy uvnitř sekcí (např. Matematika, Fyzika) */
 .subject-heading {
-    width: 100%; /* Nadpis zabere celý řádek */
+    width: 100%;
     font-size: 14px;
     margin: 10px 0 5px 0;
-    color: #555;
-    border-bottom: 1px solid #eee; /* Spodní linka pod nadpisem předmětu */
+    color: #444;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 3px;
 }
 
-/* Oprava pro Markdown: Zajišťuje, aby odstavce nerozbíjely mřížku */
+/* Oprava pro Markdown: Ignoruje odstavce, aby tlačítka zůstala v mřížce */
 .links-grid p {
     display: contents !important;
 }
 
-/* Nastavení pro mobilní telefony */
+/* Úprava pro mobilní telefony - tlačítka se roztáhnou na šířku */
 @media (max-width: 480px) {
     .links-grid a {
-        flex-grow: 1; /* Odkazy se roztáhnou na celou šířku mobilu */
+        flex-grow: 1;
         text-align: center;
     }
 }
