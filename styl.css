@@ -1,119 +1,91 @@
-/* Celkové nastavení stránky */
+/* Celkové nastavení pro využití celé šířky */
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f8f9fa; /* Světle šedé pozadí pro kontrast s kartami */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Nadpis Osobní stránky */
-h1 {
-    color: #0087eb;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
+    padding: 10px; /* Menší padding pro více místa */
 }
 
 .main-content {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 100%; /* Využije celou šířku obrazovky */
+    margin: 0 auto;
 }
 
-/* Styl jednotlivých sekcí (karet) */
+h1 {
+    text-align: center;
+    color: #0087eb;
+    font-size: 20px; /* Menší písmo nadpisu */
+    margin: 15px 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Karty sekcí */
 details {
-    background: #ffffff;
-    margin-bottom: 10px;
-    border: 1px solid #e0e0e0;
+    background: #fff;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
     border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    overflow: hidden;
+    width: 100%;
 }
 
-/* Hlavička sekce (Škola, Oblíbené...) */
 summary {
-    padding: 12px 20px;
-    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 13px; /* Menší písmo pro názvy sekcí */
+    font-weight: bold;
     cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #333;
     outline: none;
+    color: #333;
 }
 
-summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Ikona šipky vpravo */
-summary::after {
-    content: '▲';
-    font-size: 10px;
-    color: #ccc;
-    transition: transform 0.2s;
-}
-
-details:not([open]) summary::after {
-    transform: rotate(180deg);
-}
-
-/* Mřížka pro tlačítka uvnitř rozbalené sekce */
+/* Mřížka s odkazy */
 .links-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 15px 20px 20px 20px;
-    border-top: 1px solid #f5f5f5;
-    background-color: #ffffff;
+    padding: 12px;
+    border-top: 1px solid #f9f9f9;
 }
 
-/* Vzhled tlačítek (odkazů) */
+/* Styl pro zašedlé a menší odkazy */
 .links-grid a {
-    text-decoration: none !important; /* Důležité: odstraní podtržení */
-    color: #666;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 7px 15px;
-    border-radius: 5px;
-    font-size: 13px;
-    transition: all 0.2s ease;
-    display: inline-block;
+    text-decoration: none !important;
+    color: #999; /* Více zašedlá barva textu */
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px; /* Menší písmo odkazů */
+    transition: 0.2s;
 }
 
-/* První tlačítko v každé sekci - modré */
-.links-grid a:first-of-type {
-    background: #0087eb;
-    color: #ffffff !important;
-    border-color: #0087eb;
-}
-
-/* Hover efekt pro všechna tlačítka */
+/* Hover efekt - při najetí ztmavnou */
 .links-grid a:hover {
-    background: #f0f0f0;
-    border-color: #bbb;
+    background: #f5f5f5;
     color: #333;
+    border-color: #ccc;
 }
 
-/* Speciální hover pro modré tlačítko */
-.links-grid a:first-of-type:hover {
-    background: #0076cd;
+/* Modrá tlačítka (první v sekci nebo vybraná) */
+.links-grid a:first-of-type, 
+.links-grid a.active {
+    background: #0087eb;
+    color: white !important; /* Bílá pro kontrast na modré */
     border-color: #0076cd;
 }
 
-/* Klíčová oprava pro Jekyll/Markdown (odstraní vnořené odstavce) */
+/* Pojistka proti Markdownu */
 .links-grid p {
     display: contents !important;
 }
 
-/* Stylování nadpisů uvnitř předmětů */
-.subject-heading {
-    width: 100%;
-    margin: 15px 0 5px 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: #444;
+/* Responzivita - na velmi malých displejích */
+@media (max-width: 480px) {
+    .links-grid a {
+        flex-grow: 1;
+        text-align: center;
+    }
 }
