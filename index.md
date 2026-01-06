@@ -4,7 +4,6 @@ title: Osobní stránky
 ---
 <details open>
             <summary>Škola</summary>
-            <div class="links-grid">
                 <a href="https://github.com/bedjan/ucitel/blob/main/rozvrh.md" target="_blank">Rozvrh</a>
                 <a href="https://portal.ujep.cz" target="_blank">Stag</a>
                 <a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a>
@@ -12,12 +11,10 @@ title: Osobní stránky
                 <a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a>
                 <a href="https://github.com/bedjan/ucitel" target="_blank">Ucitel</a>
                 <a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>                
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Oblíbené</summary>
-            <div class="links-grid">
                 <a href="investice.html" target="_blank">Investice</a>
                 <a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
                 <a href="https://wttr.in/duchcov" target="_blank">Počasí</a>
@@ -52,12 +49,10 @@ title: Osobní stránky
                 <a href="https://www.rajce.idnes.cz/lipova-lipka/album/kulisci/1511277136" target="_blank">Jirka fotky</a>
                 <a href="https://app.gisonline.cz/chytre-mapy/" target="_blank">Chytre mapy</a>
                 <a href="https://www.epochtimes.cz/" target="_blank">Epochtimes</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>TV</summary>
-            <div class="links-grid">
                 <a href="https://rdy.cz/tv" target="_blank">Zkracene tv</a>
                 <a href="https://mrkaj.si/" target="_blank">Mrkaj si</a>
                 <a href="https://uzi.si/" target="_blank">Uzi si</a>
@@ -81,27 +76,21 @@ title: Osobní stránky
                 <a href="https://www.hellspy.to/" target="_blank">Hellspy</a>
                 <a href="https://www.ivysilani.cz/" target="_blank">Ivysilani</a>
                <a href="https://tv.sosac.tv/cs/" target="_blank">Sosac</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Radia m3u playlist</summary>
-            <div class="links-grid">
                 <a href="https://raw.githubusercontent.com/bedjan/mm/refs/heads/master/radia_online.m3u" target="_blank">Radia m3u</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Knihy</summary>
-            <div class="links-grid">
         <a href="an.html" target="_blank">Atomové návyky</a>
         <a href="https://oceanofpdf.com/" target="_blank">Knihy online ke stažení</a>
-            </div>
 </details>
         
-<details>
+<details close>
             <summary>Rádiové Streamy</summary>
-            <div class="links-grid">
                 <a href="https://stream.rcs.revma.com/asn0cmvb938uv" target="_blank">Kiss</a>
                 <a href="http://mpc1.mediacp.eu:8342/stream" target="_blank">Radio 4U</a>
                 <a href="http://ice.actve.net/fm-evropa2-128" target="_blank">Evropa 2</a>
@@ -152,21 +141,17 @@ title: Osobní stránky
                 <a href="http://ice3.abradio.cz/povidka128.mp3" target="_blank">Povidka 128</a>
                 <a href="http://mp3stream4.abradio.cz/domino128.mp3" target="_blank">Pohadky_domino</a>
                 <a href="https://185.33.21.112/atr_128?icy=https%22" target="_blank">Trance</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Google</summary>
-            <div class="links-grid">
                 <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
                 <a href="http://free-website-translation.com/" target="_blank">Web prekladac</a>
                 <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">Kalendář</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>AI</summary>
-            <div class="links-grid">
                 <a href="https://chatgpt.com/" target="_blank">Chat gpt</a>
                 <a href="https://gemini.google.com" target="_blank">Gemini</a>
                 <a href="https://qwen.ai/home" target="_blank">Qwen ai</a>
@@ -189,20 +174,16 @@ title: Osobní stránky
                 <a href="https://aichat.com/"  target="_blank">AI chat - marketing, prodej, zákaznický servis</a>
                 <a href="https://cleanup.pictures/"  target="_blank">vymazání částí obrazovky</a>
                 <a href="https://gamma.app/create"  target="_blank">vytvoření prezentace</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Online videa</summary>
-            <div class="links-grid">
                 <a href="https://odysee.com/" target="_blank">Odysee</a>
                 <a href="https://rumble.com/" target="_blank">Rumble</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Download</summary>
-            <div class="links-grid">
                 <a href="https://snapsave.app/cs" target="_blank">Facebook download 1</a>
                 <a href="https://fdown.net/" target="_blank">Facebook download 2</a>
                 <a href="https://ytop1.com/en9" target="_blank">Youtube video download</a>
@@ -213,12 +194,10 @@ title: Osobní stránky
                 <a href="https://downloadatwittervideo.com/" target="_blank">Twitter download</a>
                 <a href="https://sktorrent.eu" target="_blank">Torrent download</a>
                 <a href="https://online.sktorrent.eu/" target="_blank">Filmy online</a>
-            </div>
 </details>
 
- <details>
+<details close>
             <summary>Úložiště</summary>
-            <div class="links-grid">
                 <a href="https://fastshare.cz"  target="_blank">Fastshare</a>
                 <a href="https://datoid.cz"  target="_blank">Datoid</a>
                 <a href="https://webshare.cz/"  target="_blank">Webshare</a>
@@ -232,33 +211,27 @@ title: Osobní stránky
                 <a href="https://dropbox.com"  target="_blank">Dropbox</a>
                 <a href="https://idrive.com"  target="_blank">Idrive</a>
                 <a href="https://onecloud.com"  target="_blank">Onecloud</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Užitečné zdroje obrázků bez porušení autorských práv</summary>
-            <div class="links-grid">
                 <a href="https://www.pexels.com/" target="_blank">Pexels – Obrázky a videa zdarma</a>
                 <a href="https://pixabay.com/" target="_blank">Pixabay – Fotky, ilustrace a vektory</a>
                 <a href="https://unsplash.com/" target="_blank">Unsplash – Kolekce fotografií ve vysoké kvalitě</a>
                 <a href="https://commons.wikimedia.org/wiki/Hlavn%C3%AD_strana" target="_blank">Wikimedia Commons – Mediální soubory s volnou licencí</a>
                 <a href="https://burst.shopify.com/" target="_blank">Burst – Knihovna fotografií pro podnikání</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Html šablony</summary>
-            <div class="links-grid">
                 <a href="https://html5up.net/?utm_source=chatgpt.com"  target="_blank">Html 5 UP</a>
                 <a href="https://templatemo.com/"  target="_blank">Template mo</a>
                 <a href="https://startbootstrap.com/"  target="_blank">Start bootstrap</a>
                 <a href="https://www.awardspace.com/"  target="_blank">Awardspace.net hosting</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Testy - Výběr povolání</summary>
-            <div class="links-grid">
                 <a href="http://www.emiero.cz"  target="_blank">Emiero</a>
                 <a href="http://www.infoabsolvent.cz/Profitest"  target="_blank">Profitest</a>
                 <a href="https://dotaznik.zlkraj.cz"  target="_blank">Dotazník</a>
@@ -271,13 +244,11 @@ title: Osobní stránky
                 <a href="https://www.comdi.cz"  target="_blank">Comdi</a>
                 <a href="https://www.regio-advisor.cz"  target="_blank">Advisor</a>
                 <a href="https://cs.wikipedia.org/wiki/Coping"  target="_blank">Coping</a>
-            </div>
 </details>
 
 
-<details>
+<details close>
             <summary>Předměty</summary>
-            <div class="links-grid">
                 <h3 class="subject-heading">Matematika</h3>
                 <a href="https://wordwall.net/cs-cz/community/matematika/kv%C3%ADz-z-matematiky"  target="_blank">Matematika kviz</a>
                 <a href="https://www.skolasnadhledem.cz/"  target="_blank">Škola s nadhledem</a>
@@ -294,13 +265,11 @@ title: Osobní stránky
                 <a href="https://www.e-fyzika.cz/priklady/"  target="_blank">Fyzika - Příklady na středoškolskou fyziku</a>
                 <h3 class="subject-heading">Chemie</h3>
                 <a href="https://chemicke-vypocty.cz/"  target="_blank">Chemické výpočty</a>
-            </div>
 </details>
 
 
-<details>
+<details close>
             <summary>Obecné</summary>
-            <div class="links-grid">
                 <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                 <a href="https://twitter.com/home" target="_blank">Twitter</a>
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -312,23 +281,19 @@ title: Osobní stránky
                 <a href="https://www.vodafone.cz/muj/prihlaseni" target="_blank">Muj vodafone</a>
                 <a href="https://moje.oskarta.cz/" target="_blank">Oskarta</a>
                 <a href="https://www.jidelny.me.cz/jidelna14/" target="_blank">Jidelny</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Html šablony</summary>
-            <div class="links-grid">
                 <a href="https://html5up.net/?utm_source=chatgpt.com"  target="_blank">Html 5 UP</a>
                 <a href="https://templatemo.com/"  target="_blank">Template mo</a>
                 <a href="https://startbootstrap.com/"  target="_blank">Start bootstrap</a>
                 <a href="https://www.awardspace.com/"  target="_blank">Awardspace.net hosting</a>
-            </div>
 </details>
 
 
-<details>
+<details close>
             <summary>Google</summary>
-            <div class="links-grid">
                 <a href="https://translate.google.cz/" target="_blank">Gtranslate</a>
                 <a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a>
                 <a href="https://www.youtube.com/" target="_blank">Youtube</a>
@@ -339,14 +304,12 @@ title: Osobní stránky
                 <a href="https://photos.google.com/?hl=cs&pli=1" target="_blank">Gphotos</a>
                 <a href="https://sites.google.com/site/bedjansite/" target="_blank">Gsites</a>
                 <a href="https://takeout.google.com/settings/takeout?pli=1" target="_blank">Gtakeout</a>
-            </div>
 </details>
 
 
 
-<details>
+<details close>
             <summary>Banky, pojišťovny, služby</summary>
-            <div class="links-grid">
                 <a href="https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz" target="_blank">Česká spořitelna</a>
                 <a href="https://www.pre.cz/cs/moje-pre/neprihlaseny-uzivatel/prihlaseni-uzivatele/" target="_blank">PRE online</a>
                 <a href="https://www.equabanking.cz/IBS/" target="_blank">Equa</a>
@@ -355,24 +318,20 @@ title: Osobní stránky
                 <a href="https://wise.com/login/" target="_blank">Wise</a>
                 <a href="https://generaliceskacz.b2clogin.com/login.kz.generaliceska.cz/oauth2/v2.0/authorize?p=B2C_1_Prod_Flow&nonce=defaultNonce&redirect_uri=https://kz.generaliceska.cz/token&client_id=894f4eb9-5e98-4957-baa9-e1cc6350e9f5&prompt=login&scope=openid%20offline_access&response_type=code&login_hint=" target="_blank">Generali</a>
                 <a href="https://cezonline.cez.cz/irj/portal/profil-uzivatele#/profil" target="_blank">Cez online</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Úprava textu</summary>
-            <div class="links-grid">
                 <a href="https://write-box.appspot.com/" target="_blank">Psani textu online 1</a>
                 <a href="https://www.editpad.org/" target="_blank">Psani textu online 22</a>
                 <a href="https://dillinger.io/" target="_blank">markdown editor online</a>
                 <a href="http://petrfaltus.net/petr-faltus-konverze-textu-odstraneni-cestiny-z-textu.php" target="_blank">Odstranění diakritiky češtiny</a>
                 <a href="https://nlp.fi.muni.cz/cz_accent/" target="_blank">Přidání diakritiky češtiny</a>
-            </div>
 </details>
 
 
-<details>
+<details close>
             <summary>Linux</summary>
-            <div class="links-grid">
                 <a href="https://www.abclinuxu.cz/" target="_blank">Abclinuxu</a>
                 <a href="https://www.root.cz/" target="_blank">Root</a>
                 <a href="https://www.linuxexpres.cz/" target="_blank">Linuxexpress</a>
@@ -386,26 +345,22 @@ title: Osobní stránky
                 <a href="https://github.com/bedjan/debian/blob/master/poznamky/debian.md" target="_blank">Moje poznámky k debianu</a>
                 <a href="https://github.com/bedjan/debian/blob/master/poznamky/linux.md" target="_blank">Obecně</a>
                 <a href="https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md" target="_blank">Cli - příkazový řádek</a>
-            </div>
 </details>
 
-<details>
+<details close>
             <summary>Platformy pro vývojáře</summary>
-            <div class="links-grid">
                 <a href="https://docs.github.com/en/pages/quickstart" target="_blank">Github pages</a>
                 <a href="https://dashboard.render.com/" target="_blank">Render</a>
                 <a href="https://vercel.com/bedjans-projects" target="_blank">Vercel</a>
                 <a href="https://app.netlify.com/teams/bedjan/projects" target="_blank">Netlify</a>
-            </div>
 </details>
 
+ 
 
         
-
-        
-<details>
+<details close>
             <summary>Programování</summary>
-            <div class="links-grid">
+
                 <a href="https://github.com/bedjan/" target="_blank">Github</a>
                 <a href="https://github.com/bedjan/debian/blob/master/skripty/all.sh" target="_blank">Github_all</a>
                 <a href="https://zdrojak.cz/" target="_blank">Zdrojak</a>
@@ -421,7 +376,7 @@ title: Osobní stránky
                 <a href="https://thinfi.com/" target="_blank">Link with password</a>
                 <a href="https://bitly.com/" target="_blank">Link short</a>
                 <a href="https://raw.githack.com/" target="_blank">Raw githack - dev</a>
-            </div>
+
 </details>
 
 
