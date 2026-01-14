@@ -1,5 +1,3 @@
-# Mito Light Bulb 5.0 - Praktický přehled body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; } h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; } h2 { color: #1976d2; margin-top: 30px; } .box { background: #f4f4f4; padding: 15px; border-left: 5px solid #d32f2f; margin: 20px 0; } .warning { background: #fff3e0; padding: 10px; border: 1px solid #ff9800; border-radius: 5px; font-size: 0.9em; } ul { padding-left: 20px; } li { margin-bottom: 10px; } table { width: 100%; border-collapse: collapse; margin-top: 10px; } th, td { text-align: left; padding: 10px; border-bottom: 1px solid #ddd; } th { background: #eee; }
-
 Mito Light Bulb 5.0: Praktické použití
 ======================================
 
