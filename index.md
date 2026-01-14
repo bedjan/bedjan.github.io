@@ -444,8 +444,10 @@ title: Osobní stránky
             <summary>Bottom</summary>
             <div class="links-grid">
 <a href="https://github.com/bedjan/bedjan.github.io/blob/main/index.md" target="_blank">Osobní stránky</a>
+ <a href="./mitolight" target="_blank">Mito light</a>
+               
             </div>
         </details>
 
-[Mito light](./mitolight) 
+
 </div>
