@@ -1,11 +1,8 @@
 ---
 layout: default
-title: "Mito Light Bulb 5.0"
-permalink: /mitolight/
----
-
+title: 
 Mito Light Bulb 5.0: Praktické použití
-======================================
+---
 
 **Hlavní výhoda:** Žárovka je ideální pro **cílenou lokální terapii**. Díky 6 vlnovým délkám (včetně 810 nm pro mozek a 670 nm pro oči) jde o nejvýkonnější malé zařízení na trhu.
 
