@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Mito Light Bulb 5.0"
+permalink: /mitolight/
+---
+
 Mito Light Bulb 5.0: Praktické použití
 ======================================
 
