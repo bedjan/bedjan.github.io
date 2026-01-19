@@ -50,6 +50,9 @@ Pozor: Nepoužívejte na hliník a barevné kovy, může způsobit skvrny.
 ------
 
 ​💡 Obecné rady pro Cleamen:
+
 ​Míchání: Nikdy nemíchejte různé přípravky dohromady (zejména Cleamen 242 s chlórem a kyselé čističe jako 300/400) – může dojít k uvolnění nebezpečných plynů!
+
 ​Ochrana: Při práci s koncentráty (zejména 242 a 300/400) doporučuji používat gumové rukavice.
+
 ​Teplota vody: Pro ředění používejte ideálně vlažnou vodu, nikoliv horkou (snižuje se tím odpar chemie do vzduchu).
