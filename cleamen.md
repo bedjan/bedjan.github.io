@@ -1,3 +1,8 @@
+---
+layout: default
+title: Cleamen
+---
+
 ​1. Cleamen 102/202 (Neutralizátor pachů)
 ​K čemu slouží: Likviduje pachy v ovzduší i na površích (tabák, kuchyň, toalety).
 ​Jak upravit: Neředí se. Používá se přímo v rozprašovači tak, jak je v lahvi.
