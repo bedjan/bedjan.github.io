@@ -174,6 +174,14 @@ title: Osobní stránky
                 <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">Kalendář</a>
             </div>
         </details>
+<details>
+            <summary>Windows</summary>
+            <div class="links-grid">
+                <a href="https://mail.google.com/mail/u/0/#inbox](https://github.com/Raphire/Win11Debloat" target="_blank">Win 11 Debloat</a>
+            </div>
+        </details>
+        
+
 
 
 <details>
