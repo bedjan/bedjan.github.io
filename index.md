@@ -22,6 +22,7 @@ title: Osobní stránky
 <details>
             <summary>Oblíbené</summary>
             <div class="links-grid">
+                <a href="https://www.dropbox.com/scl/fo/w3x5naidjcghoyhwep3wn/AGoYubQUkgXLRpw30je_hcY?rlkey=pmpgz4soem6w0a59bmspkx8x4&st=8zztvg1l&dl=0" target="_blank">Torrenty</a>
                 <a href="investice.html" target="_blank">Investice</a>
                 <a href="https://sssstp-login.edookit.net" target="_blank">Edookit</a>
                 <a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
