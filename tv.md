@@ -21,5 +21,12 @@ winget install Microsoft.PowerToys
 winget install FilesCommunity.Files
 
 
+# Windows 11 čištění
+
+winget install OandO.ShutUp10
+
+irm christitus.com/win | iex
+
+winget install Win11Debloat
 
 
