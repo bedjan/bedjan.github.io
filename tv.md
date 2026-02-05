@@ -20,6 +20,8 @@ winget install Microsoft.PowerToys
 
 winget install FilesCommunity.Files
 
+winget install DropIt.DropIt
+
 
 # Windows 11 čištění
 
