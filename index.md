@@ -10,6 +10,7 @@ title: Osobní stránky
             <div class="links-grid">
                 <a href="https://github.com/bedjan/ucitel/blob/main/rozvrh.md" target="_blank">Rozvrh</a>
                 <a href="https://portal.ujep.cz" target="_blank">Stag</a>
+                <a href="https://moodle.pf.ujep.cz/my/" target="_blank">Moodle</a>
                 <a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a>
                <a href="https://portal.ujep.cz/portal/studium/uchazec/eprihlaska.html" target="_blank">Epřihláška ke studiu</a>
                 <a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a>
