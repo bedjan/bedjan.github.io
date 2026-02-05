@@ -1,3 +1,7 @@
+# Torrent
+
+[Torrent soubory](https://www.dropbox.com/home/Torrent)
+
 # Torrent klienti
 
 winget install qBittorrent.qBittorrent
