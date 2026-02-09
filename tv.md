@@ -92,3 +92,30 @@ Moje doporučení:
 Pokud chcete jedno kliknutí a hotovo, stáhněte si Agent DVR. Je to robustní, opensource (komunitní verze) a ušetří vám to hodiny nastavování skriptů.
 
 Chcete, abych vám pomohl sepsat přesný postup, jak v Agent DVR nastavit, aby vám ukládal fotky pro ten váš informační panel?
+
+# Qbittorent stahovaní
+
+V qBittorrentu se tato funkce jmenuje Fronta (Queuing). Nastavíte ji snadno v několika krocích, díky čemuž se budou stahovat vždy jen 3 soubory a ostatní budou čekat v pořadí.
+Postup nastavení:
+
+    Otevřete qBittorrent a jděte do Nástroje → Možnosti (nebo stiskněte klávesovou zkratku Alt + O).
+
+    V levém sloupci vyberte kartu BitTorrent.
+
+    Sjeďte úplně dolů k sekci Fronta torrentů.
+
+    Zaškrtněte políčko Zapnout frontu torrentů.
+
+    U položky Maximální aktivní stahování nastavte hodnotu 3.
+
+    (Volitelné) U položky Maximální aktivní torrenty nastavte také číslo, které omezuje celkový počet stahování i odesílání (např. pokud chcete odesílat neomezeně, dejte tam vysoké číslo, ale pokud chcete celkově držet provoz na uzdě, nastavte odpovídající limit).
+
+    Potvrďte tlačítkem OK.
+
+Jak to funguje v praxi:
+
+    Jakmile přidáte více než 3 torrenty, ty další se automaticky přepnou do stavu Ve frontě (Queued).
+
+    Ve chvíli, kdy se jedno ze 3 aktivních stahování dokončí, qBittorrent automaticky spustí další torrent, který je první v pořadí.
+
+    Pořadí stahování můžete sami měnit pomocí šipek (nahoru/dolů) v horní liště programu.
