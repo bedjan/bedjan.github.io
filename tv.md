@@ -40,6 +40,8 @@ winget install Win11Debloat
 
 # Kamery 
 
+[Onvif device manager](https://sourceforge.net/projects/onvifdm/)
+
 Pokud hledáte opensource řešení pro Windows 11, které kombinuje FTP server, správu kamer a automatický převod obrazu na klasické formáty, mám pro vás dva jasné vítěze.
 1. Agent DVR (Doporučeno)
 
