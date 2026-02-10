@@ -7,13 +7,25 @@
     <link rel="stylesheet" href="styl.css">
     
     <style>
+        /* Pouze hlavní název stránky na střed */
         .page-header-title {
             text-align: center;
-            text-transform: uppercase; /* Všechna písmena velká */
-            font-size: 3em;           /* Pořádná velikost */
-            font-weight: 900;          /* Hodně tučné */
-            margin: 40px 0;            /* Mezera nad a pod nadpisem */
-            letter-spacing: 2px;       /* Mírné rozestupy mezi písmeny pro styl */
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: 900;
+            margin: 40px 0;
+            letter-spacing: 2px;
+            display: block; /* Zajistí, že zabere celou šířku pro centrování */
+        }
+
+        /* Všechny ostatní nadpisy a text v obsahu budou vlevo */
+        main {
+            text-align: left;
+        }
+
+        main h1, main h2, main h3, main h4 {
+            text-align: left;
+            margin-top: 1.5em;
         }
     </style>
 
