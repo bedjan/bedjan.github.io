@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: page.name | replace: ".md", "" | capitalize }}</title>
+    <title>{{ page.name | replace: ".md", "" | capitalize }}</title>
     <link rel="stylesheet" href="styl.css">
     
     <style>
-        .page-title {
+        .page-header-title {
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-transform: capitalize;
+            text-transform: uppercase; /* Všechna písmena velká */
+            font-size: 3em;           /* Pořádná velikost */
+            font-weight: 900;          /* Hodně tučné */
+            margin: 40px 0;            /* Mezera nad a pod nadpisem */
+            letter-spacing: 2px;       /* Mírné rozestupy mezi písmeny pro styl */
         }
     </style>
 
@@ -31,7 +33,9 @@
 <body>
 
     <header>
-        <h1 class="page-title">{{ page.title | default: page.name | replace: ".md", "" }}</h1>
+        <h1 class="page-header-title">
+            {{ page.name | replace: ".md", "" }}
+        </h1>
     </header>
 
     <main>
