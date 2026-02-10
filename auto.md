@@ -1,7 +1,6 @@
 ---
 layout: default
-title: 
-Auto
+title: Auto
 ---
 
 [Autoškola testy ministerstva dopravy](https://etesty.md.gov.cz/ro/Home)
