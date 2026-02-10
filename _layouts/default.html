@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="styl.css">
     
     <style>
-        /* Pouze hlavní název stránky na střed */
+        /* 1. HLAVNÍ NÁZEV STRÁNKY (ten nahoře) */
         .page-header-title {
-            text-align: center;
+            text-align: center;      /* Pouze tento bude uprostřed */
             text-transform: uppercase;
             font-size: 3em;
             font-weight: 900;
             margin: 40px 0;
-            letter-spacing: 2px;
-            display: block; /* Zajistí, že zabere celou šířku pro centrování */
+            display: block;
         }
 
-        /* Všechny ostatní nadpisy a text v obsahu budou vlevo */
+        /* 2. OBSAH STRÁNKY (Markdown text) */
         main {
-            text-align: left;
+            text-align: left;        /* Vše v obsahu bude vlevo */
+            max-width: 800px;        /* Aby text nebyl přes celou šířku monitoru */
+            margin: 0 auto;          /* Vycentrování celého bloku obsahu */
+            padding: 0 20px;         /* Odsazení od krajů na mobilu */
         }
 
-        main h1, main h2, main h3, main h4 {
-            text-align: left;
+        /* 3. OPRAVA NADPISŮ V MARKDOWNU */
+        /* Toto zajistí, že # Torrent klienti atd. budou vlevo */
+        main h1, main h2, main h3 {
+            text-align: left !important; 
             margin-top: 1.5em;
+            text-transform: none;    /* Ostatní nadpisy nebudou mít všechna písmena velká, pokud nechceš */
         }
     </style>
 
