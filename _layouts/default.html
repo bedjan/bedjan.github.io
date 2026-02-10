@@ -6,31 +6,46 @@
     <title>{{ page.name | replace: ".md", "" | capitalize }}</title>
     <link rel="stylesheet" href="styl.css">
     
-    <style>
-        /* 1. HLAVNÍ NÁZEV STRÁNKY (ten nahoře) */
+<style>
+        /* 1. CELÉ TĚLO STRÁNKY */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif; /* Nebo tvé oblíbené písmo */
+        }
+
+        /* 2. HLAVNÍ NÁZEV (vždy nahoře uprostřed) */
         .page-header-title {
-            text-align: center;      /* Pouze tento bude uprostřed */
+            text-align: center;
             text-transform: uppercase;
-            font-size: 3em;
+            font-size: clamp(1.5em, 8vw, 3em); /* Responzivní velikost písma */
             font-weight: 900;
-            margin: 40px 0;
-            display: block;
+            margin: 30px 0;
+            width: 100%;
         }
 
-        /* 2. OBSAH STRÁNKY (Markdown text) */
+        /* 3. OBSAH (vždy vlevo, responzivní) */
         main {
-            text-align: left;        /* Vše v obsahu bude vlevo */
-            max-width: 800px;        /* Aby text nebyl přes celou šířku monitoru */
-            margin: 0 auto;          /* Vycentrování celého bloku obsahu */
-            padding: 0 20px;         /* Odsazení od krajů na mobilu */
+            text-align: left;
+            width: 100%;
+            max-width: 900px;      /* Maximální šířka řádku pro dobrou čitelnost */
+            margin-left: 0;        /* Zarovnání bloku k levému okraji */
+            padding-left: 5%;      /* Malé responzivní odsazení od levého okraje (cca 20-30px) */
+            padding-right: 5%;     /* Odsazení od pravého okraje pro mobily */
+            box-sizing: border-box; /* Aby padding nezvětšoval šířku nad 100% */
         }
 
-        /* 3. OPRAVA NADPISŮ V MARKDOWNU */
-        /* Toto zajistí, že # Torrent klienti atd. budou vlevo */
+        /* 4. NADPISY V OBSAHU (vždy vlevo) */
         main h1, main h2, main h3 {
-            text-align: left !important; 
-            margin-top: 1.5em;
-            text-transform: none;    /* Ostatní nadpisy nebudou mít všechna písmena velká, pokud nechceš */
+            text-align: left !important;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        /* 5. TABULKY A OBRÁZKY (aby nepřetékaly) */
+        img, table {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 
