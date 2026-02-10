@@ -7,45 +7,48 @@
     <link rel="stylesheet" href="styl.css">
     
 <style>
-        /* 1. CELÉ TĚLO STRÁNKY */
+        /* 1. CELÉ TĚLO - odstraníme výchozí okraje prohlížeče */
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif; /* Nebo tvé oblíbené písmo */
+            width: 100%;
+            font-family: sans-serif;
+            overflow-x: hidden; /* Zabrání nechtěnému vodorovnému posunu */
         }
 
-        /* 2. HLAVNÍ NÁZEV (vždy nahoře uprostřed) */
+        /* 2. HLAVNÍ NÁZEV (stále na střed) */
         .page-header-title {
             text-align: center;
             text-transform: uppercase;
-            font-size: clamp(1.5em, 8vw, 3em); /* Responzivní velikost písma */
+            font-size: clamp(1.5em, 10vw, 3.5em);
             font-weight: 900;
             margin: 30px 0;
             width: 100%;
         }
 
-        /* 3. OBSAH (vždy vlevo, responzivní) */
+        /* 3. OBSAH PŘES CELOU ŠÍŘKU */
         main {
             text-align: left;
-            width: 100%;
-            max-width: 900px;      /* Maximální šířka řádku pro dobrou čitelnost */
-            margin-left: 0;        /* Zarovnání bloku k levému okraji */
-            padding-left: 2%;      /* Malé responzivní odsazení od levého okraje (cca 20-30px) */
-            padding-right: 2%;     /* Odsazení od pravého okraje pro mobily */
-            box-sizing: border-box; /* Aby padding nezvětšoval šířku nad 100% */
+            width: 100%;        /* Využije 100% dostupné šířky */
+            max-width: 100%;    /* Zrušíme jakékoli omezení šířky */
+            padding-left: 15px; /* Pevná malá mezera vlevo, aby text nebyl na hraně */
+            padding-right: 2%;  /* Požadované 2% odsazení vpravo */
+            box-sizing: border-box; /* Klíčové: padding se započítá do 100% šířky */
         }
 
-        /* 4. NADPISY V OBSAHU (vždy vlevo) */
-        main h1, main h2, main h3 {
+        /* 4. ZAJIŠTĚNÍ ZAROVNÁNÍ VLEVO PRO VŠE V MAIN */
+        main h1, main h2, main h3, main p, main pre, main ul {
             text-align: left !important;
-            margin-top: 1.2em;
-            margin-bottom: 0.5em;
+            margin-left: 0;
         }
 
-        /* 5. TABULKY A OBRÁZKY (aby nepřetékaly) */
-        img, table {
-            max-width: 100%;
-            height: auto;
+        /* 5. TABULKY A DLOUHÉ KÓDY */
+        pre, code {
+            white-space: pre-wrap;       /* Zalomí dlouhé winget příkazy, aby nepřetékaly */
+            word-wrap: break-word;
+            background: #f4f4f4;        /* Lehké zvýraznění kódu */
+            padding: 10px;
+            display: block;
         }
     </style>
 
