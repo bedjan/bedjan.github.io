@@ -6,6 +6,15 @@
     <title>{{ page.title | default: page.name | replace: ".md", "" | capitalize }}</title>
     <link rel="stylesheet" href="styl.css">
     
+    <style>
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+    </style>
+
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
     <script>
       if ('serviceWorker' in navigator) {
@@ -20,6 +29,14 @@
     </script>
 </head>
 <body>
-    {{ content }}
+
+    <header>
+        <h1 class="page-title">{{ page.title | default: page.name | replace: ".md", "" }}</h1>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
 </body>
 </html>
