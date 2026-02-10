@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cleamen
+title: TV
 ---
 
 
@@ -47,15 +47,15 @@ Pokud hledáte opensource řešení pro Windows 11, které kombinuje FTP server,
 
 I když má placené cloudové funkce, jeho jádro je pro lokální použití zdarma a je to v současnosti nejmodernější nástroj.
 
-    Jak to funguje: Program v sobě má zabudovaný vlastní server. Umí přijímat soubory i přímý stream z kamer.
+Jak to funguje: Program v sobě má zabudovaný vlastní server. Umí přijímat soubory i přímý stream z kamer.
 
-    Převod: Vše ukládá rovnou do standardního MP4 a umí generovat JPG snímky v pravidelných intervalech.
+Převod: Vše ukládá rovnou do standardního MP4 a umí generovat JPG snímky v pravidelných intervalech.
 
-    FTP: Umí fungovat jako cíl pro vaše kamery.
+FTP: Umí fungovat jako cíl pro vaše kamery.
 
-    Webové rozhraní: Má skvělé opensource rozhraní, které běží v prohlížeči (vypadá to jako profesionální dispečink).
+Webové rozhraní: Má skvělé opensource rozhraní, které běží v prohlížeči (vypadá to jako profesionální dispečink).
 
-    Odkaz: ispyconnect.com
+Odkaz: ispyconnect.com
 
 2. FileZilla Server + FFmpeg (Skládačka pro úplnou kontrolu)
 
@@ -98,24 +98,24 @@ Chcete, abych vám pomohl sepsat přesný postup, jak v Agent DVR nastavit, aby 
 V qBittorrentu se tato funkce jmenuje Fronta (Queuing). Nastavíte ji snadno v několika krocích, díky čemuž se budou stahovat vždy jen 3 soubory a ostatní budou čekat v pořadí.
 Postup nastavení:
 
-    Otevřete qBittorrent a jděte do Nástroje → Možnosti (nebo stiskněte klávesovou zkratku Alt + O).
+Otevřete qBittorrent a jděte do Nástroje → Možnosti (nebo stiskněte klávesovou zkratku Alt + O).
 
-    V levém sloupci vyberte kartu BitTorrent.
+V levém sloupci vyberte kartu BitTorrent.
 
-    Sjeďte úplně dolů k sekci Fronta torrentů.
+Sjeďte úplně dolů k sekci Fronta torrentů.
 
-    Zaškrtněte políčko Zapnout frontu torrentů.
+Zaškrtněte políčko Zapnout frontu torrentů.
 
-    U položky Maximální aktivní stahování nastavte hodnotu 3.
+U položky Maximální aktivní stahování nastavte hodnotu 3.
 
-    (Volitelné) U položky Maximální aktivní torrenty nastavte také číslo, které omezuje celkový počet stahování i odesílání (např. pokud chcete odesílat neomezeně, dejte tam vysoké číslo, ale pokud chcete celkově držet provoz na uzdě, nastavte odpovídající limit).
+(Volitelné) U položky Maximální aktivní torrenty nastavte také číslo, které omezuje celkový počet stahování i odesílání (např. pokud chcete odesílat neomezeně, dejte tam vysoké číslo, ale pokud chcete celkově držet provoz na uzdě, nastavte odpovídající limit).
 
-    Potvrďte tlačítkem OK.
+Potvrďte tlačítkem OK.
 
 Jak to funguje v praxi:
 
-    Jakmile přidáte více než 3 torrenty, ty další se automaticky přepnou do stavu Ve frontě (Queued).
+Jakmile přidáte více než 3 torrenty, ty další se automaticky přepnou do stavu Ve frontě (Queued).
 
-    Ve chvíli, kdy se jedno ze 3 aktivních stahování dokončí, qBittorrent automaticky spustí další torrent, který je první v pořadí.
+Ve chvíli, kdy se jedno ze 3 aktivních stahování dokončí, qBittorrent automaticky spustí další torrent, který je první v pořadí.
 
-    Pořadí stahování můžete sami měnit pomocí šipek (nahoru/dolů) v horní liště programu.
+Pořadí stahování můžete sami měnit pomocí šipek (nahoru/dolů) v horní liště programu.
