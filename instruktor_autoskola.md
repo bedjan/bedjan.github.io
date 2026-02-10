@@ -4,10 +4,8 @@ title: Instruktor autoškola
 ---
 
 
+[Portál dopravního značení](https://geoportal.rsd.cz/apps/pasport_dopravniho_znaceni/)
 
-<!-- /\* Font Definitions 
-
-\*/ @font-face {font-family:"Cambria Math"; panose-1:2 4 5 3 5 4 6 3 2 4;} @font-face {font-family:Aptos;} /\* Style Definitions \*/ p.MsoNormal, li.MsoNormal, div.MsoNormal {margin-top:0cm; margin-right:0cm; margin-bottom:8.0pt; margin-left:0cm; line-height:107%; font-size:11.0pt; font-family:"Aptos",sans-serif;} a:link, span.MsoHyperlink {color:#467886; text-decoration:underline;} .MsoChpDefault {font-size:11.0pt;} .MsoPapDefault {margin-bottom:8.0pt; line-height:107%;} @page WordSection1 {size:595.3pt 841.9pt; margin:70.85pt 70.85pt 70.85pt 70.85pt;} div.WordSection1 {page:WordSection1;} /\* List Definitions \*/ ol {margin-bottom:0cm;} ul {margin-bottom:0cm;} -->
 
 1)        Vyzkoušejte si řešení nejběžnějších situací na křižovatkách, které se vyučují v autoškolách, ale i typických dopravních situací dnešní doby. Vše z pohledu řidiče a ve 3D prostředí.
 
