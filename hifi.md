@@ -8,8 +8,8 @@ title: Hifi
 
 [Návod](https://www.partstown.com/modelManual/DNON-DRA375RD_sm.pdf?v=1670948440524)
 
-# Repro - MB Quart 980 S
-[Popis](https://hifi-wiki.com/index.php/MB_Quart_980_S)
+# Repro - MB Quart 800
+[Popis](https://hifi-wiki.com/index.php/MB_Quart_800)
 
 
 
