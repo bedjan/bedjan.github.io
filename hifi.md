@@ -4,7 +4,7 @@ title: Hifi
 ---
 
 
-# Receiver - Denon RX -V483
+# Receiver - Denon DRA-375RD
 
 [Návod](https://www.partstown.com/modelManual/DNON-DRA375RD_sm.pdf?v=1670948440524)
 
