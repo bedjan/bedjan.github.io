@@ -112,3 +112,63 @@ Proč tato skladba funguje nejlépe?
     Žádný kondenzát v domě: Veškerá vlhkost se sráží uvnitř hliníku, a protože je trubka ve spádu, vyteče ven.
 
     Snadný servis: Celé vnitřní „střevo“ (ventilátor i hliník v Mirelonu) vytáhnete jedním pohybem do místnosti a osprchujete ve vaně.
+
+    -----------------------------------------
+
+
+    Přímo v Duchcově v prodejně Stavebniny Černý (U Nákladiště 655/1) mají většinu věcí pro vaši rekuperaci běžně skladem. Prodejnu máte kousek (cca 1,1 km), takže pro to můžete zajet klidně hned.
+
+Tady je seznam položek, které u nich v e-shopu i na prodejně najdete:
+1. Plastová trubka (Chránička do zdi)
+
+    Položka: PVC trubka HTM 110
+
+    Dostupnost v Duchcově: Skladem (běžně cca 10–12 kusů různých délek).
+
+    Tip: Kupte délku 1000 mm (kód 697) a v Duchcově vám ji na přání uříznou přesně na těch 60 cm, nebo si vezměte 500 mm (kód 118) a k tomu 150 mm (kód 6872) a spojte je, ale čistší je jeden řez z metrovky.
+
+2. Izolace (Mirelon)
+
+    Položka: Izolace potrubí MIRELON
+
+    Dostupnost: Skladem v sekci "Topení / Izolace".
+
+    Rozměr: Ptejte se na 22/6 (vnitřní průměr 22 mm, tloušťka 6 mm). Pokud nebudou mít přesně 22, vezměte 18/6 – hliníková trubka v ní bude držet těsněji.
+
+3. Ventilátor (Do kuchyně)
+
+    Položka: Ventilátor kanálový DN 100 DEN BRAVEN (kód 223573)
+
+    Dostupnost: Skladem na e-shopu i pobočkách.
+
+    Cena: Cca 467 Kč.
+
+    Proč tento: Je to „kanálový“ typ, takže je navržen tak, aby se celý schoval dovnitř trubky, což je přesně to, co chcete.
+
+4. Hliníkové trubky (Rekuperační jádro)
+
+    Důležité upozornění: Stavebniny Černý se zaměřují na hrubou stavbu. Pevné hliníkové trubky 20x2 mm mívají v e-shopu v sekci „Hliníkové profily“, ale na prodejně v Duchcově je nemusí mít vždy nařezané.
+
+    Alternativa přímo v Duchcově: Pokud by hliník neměli, můžete u nich vzít měděnou trubku 18 mm (sekce Topení). Je dražší, ale mají ji tam skoro vždy a rekuperuje teplo ještě lépe než hliník.
+
+Souhrnná skladba pro nákup v Duchcově:
+
+    Vnější obal: HT trubka DN 110 (uříznout na 600 mm).
+
+    Výplň: 7x hliníková (nebo měděná) trubka 20 mm (délka 500 mm).
+
+    Izolace: 7x Mirelon 22/6 (nařezat na 500–600 mm).
+
+    Pohon: Ventilátor kanálový DN 100 (vložit z vnitřní strany).
+
+    Zakončení: 2x mřížka kruhová 100 mm (mají je v sekci „Odvětrávání“).
+
+Otevírací doba v Duchcově:
+
+    Po–Pá: 7:00 – 17:00
+
+    So: 7:00 – 14:00
+
+Pokud tam pojedete, doporučuji nejdřív zavolat na +420 777 232 193, aby vám ty hliníkové trubky (pokud je mají v centrálním skladu) stáhli přímo na prodejnu v Duchcově, pokud by tam náhodou chyběly.
+
+Chcete, abych vám vypsal i přesné kódy těch mřížek, které u Černého do té 110mm trubky pasují nejlépe?
