@@ -73,6 +73,8 @@ Pátý zákon říká: **„Hloupý člověk je nejnebezpečnější typ člově
 ### O AUTOROVI
 Carlo M. Cipolla (1922–2000) byl profesorem hospodářských dějin na Berkeley. Tento text napsal původně jako soukromý vtip pro přátele, ale jeho hluboká pravda z něj udělala jeden z nejdůležitějších textů o lidské povaze 20. století.
 
+---
+---
 
 ### Názor AI
 
