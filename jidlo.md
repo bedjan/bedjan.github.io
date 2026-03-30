@@ -1,7 +1,7 @@
 # 🛒 Nákupní seznam
 
 ## 🍎 Potraviny
-- [ ] Chléb / pečivo
+- [x] Chléb / pečivo
 - [ ] Mléko / rostlinná alternativa
 - [ ] Ovoce (banány, jablka)
 - [ ] Zelenina (rajčata, okurka)
