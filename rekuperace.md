@@ -331,3 +331,65 @@ Relé FRM01 nastavte na režim cyklování (např. 70 sekund sepnuto / 70 sekund
 Tímto získáte systém, který vás vyjde na zlomek ceny (celkem pro 4 pokoje do 2 000 – 2 500 Kč) a přitom bude v ocelových trubkách sloužit desítky let.
 
 -----------------------------
+Odpověď Gemini
+
+To je skvělá úvaha! Tato varianta (říká se jí kontinuální větrání) má své velké výhody, ale i jedno zásadní "ale", které u keramzitu musíte zvážit.
+
+Pojďme si to rozebrat:
+1. Varianta: Dva větráky (jeden pořád saje, druhý pořád fouká)
+
+V této sestavě nepotřebujete relé FRM01. Větráky prostě zapojíte přímo na 12V zdroj a jedou nonstop.
+
+    Výhody:
+
+        Jednoduchost: Žádné cvakání relé, žádné nastavování času.
+
+        Stálý průtok: Vzduch v domě se hýbe pořád stejným směrem.
+
+        Ticho: Odpadá zvuk spínání relé (i když FRM01 jen lehce cvakne).
+
+    Obrovská nevýhoda (Ztráta tepla):
+
+        Tohle už není rekuperace. Pokud jedna trubka s keramzitem jen vyfukuje, keramzit se sice nahřeje, ale teplo se nikdy nevrátí zpět do domu, protože tou samou trubkou nikdy nenasáváte.
+
+        V druhé trubce, která jen nasává, bude keramzit po 10 minutách ledový a do bytu vám půjde mrazivý vzduch jako otevřeným oknem.
+
+        Výsledek: Vyhazujete peníze za teplo oknem (trubkou).
+
+2. Varianta: Relé a střídavý chod (Push-Pull)
+
+To je to, co jsme řešili doteď. Větrák se každých 70 sekund otočí (nebo se zapne druhý v téže trubce).
+
+    Jak to funguje s teplem:
+
+        70s vyfukujete: Teplý vzduch z kuchyně protéká skrz keramzit a předává mu teplo. Keramzit se nahřeje na cca 20 °C.
+
+        Relé přepne: Větrák začne sát mrazivý venkovní vzduch (třeba 0 °C) dovnitř.
+
+        Zázrak rekuperace: Ten mrazivý vzduch projde přes nahřátý keramzit a do kuchyně už vám neleze 0 °C, ale třeba 15–17 °C.
+
+        Po 70 sekundách se keramzit ochladí, relé ho znovu přepne na "nabíjení" teplem a proces se opakuje.
+
+💡 Verdikt: Co je lepší?
+
+Pokud chcete ušetřit za topení a nemít v kuchyni průvan studeného vzduchu, relé je nezbytné. Bez něj je ten keramzit v trubce jen drahý štěrk, který nic nedělá.
+
+Ale mám pro vás kompromis ("Nejlepší z obou světů"):
+
+Pokud se bojíte složitosti relé, zapojte to takto:
+
+    Kupte to relé FRM01.
+
+    Nastavte ho jednou a schovejte ho do krabičky u zdroje.
+
+    Všechny 4 trubky v domě budou "dýchat" (střídat směr).
+
+    Díky tomu ušetříte cca 30–40 % energie na vytápění oproti tomu, kdybyste jen větrali větrákem bez střídání směru.
+
+Proč se lidé bojí relé?
+
+Většinou kvůli poruchovosti. Ale FRM01 je průmyslový standard pro kutily. Pokud ho nepřetížíte (a vaše 4 větráky Arctic mají dohromady odběr nula nula nic), vydrží vám v kuse běžet roky.
+
+Moje doporučení: Určitě jděte do varianty s relé a střídáním směru. Ten pocit, když venku mrzne a z rekuperace vám do kuchyně fouká vlažný, čerstvý vzduch, za těch pár drátů navíc stojí.
+
+Dává vám to smysl, proč je to střídání (Push-Pull) u keramzitu tak důležité?
