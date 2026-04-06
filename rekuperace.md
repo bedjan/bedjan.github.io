@@ -172,3 +172,69 @@ Otevírací doba v Duchcově:
 Pokud tam pojedete, doporučuji nejdřív zavolat na +420 777 232 193, aby vám ty hliníkové trubky (pokud je mají v centrálním skladu) stáhli přímo na prodejnu v Duchcově, pokud by tam náhodou chyběly.
 
 Chcete, abych vám vypsal i přesné kódy těch mřížek, které u Černého do té 110mm trubky pasují nejlépe?
+
+
+-------------------------------------
+6.4.2026
+-------------------------------------
+
+Rozumím, lézt ven na fasádu (třeba do patra) pokaždé, když se filtr zanese prachem, je nesmysl. Pokud chcete systém, na který sáhnete maximálně jednou za rok a vše vyřešíte zevnitř místnosti, musíme konstrukci otočit.
+
+Tady je řešení pro "líný" servis zevnitř:
+🔄 1. Konstrukce "Vše v jednom" (Vytahovací náboj)
+
+Celý vnitřek trubky (včetně venkovního filtru) musí být spojen do jednoho válce, který prostě chytnete za madlo v pokoji a celý ho vytáhnete ven.
+
+Složení náboje (od interiéru k exteriéru):
+
+    Vnitřní kryt s filtrem (zachytí prach z bytu – k tomu máte přístup denně).
+
+    Ventilátor.
+
+    Keramzit v pletivu (tepelný výměník).
+
+    Venkovní filtr G3/G4 – Tady je ten trik: filtr není na mřížce na fasádě, ale je upevněn na konci vaší keramzitové patrony.
+
+Když náboj vytáhnete, filtr z venkovní strany vyjede s ním. Venku na zdi zůstane jen prázdná krycí mřížka ("stříška"), kterou čistit nemusíte.
+🌪️ 2. Jak to udělat, aby se filtr neucpal za měsíc?
+
+Aby filtr vydržel rok, nesmí to být jen tenké kolečko. Musíte zvětšit jeho plochu:
+
+    Filtrační "ponožka": Místo plochého kolečka na konci trubky vyrobte z filtrační tkaniny "pytel" nebo "ponožku", která se nasune přes konec keramzitové patrony.
+
+    Proč: Plocha ponožky je 5× větší než plocha kolečka. Prach se rozprostře na větší ploše, vzduch lépe proudí a filtr se neucpe tak rychle.
+
+🧱 3. Keramzit jako samočistící filtr?
+
+Pokud použijete hladký keramzit (frakce 8–16 mm, propláchnutý), část prachu se usadí přímo na kuličkách.
+
+    Roční údržba: Jednou za rok vytáhnete celou patronu, sundáte prachovou "ponožku", keramzit v pletivu prolijete v koupelně silným proudem vody (sprchou) a necháte uschnout. Voda odplaví jemný prach z pórů keramzitu.
+
+🛠️ Schéma montáže pro 60cm trubku
+
+Aby to bylo tiché a "netáhlo" tam (jak jste chtěl dříve), využijte délku trubky takto:
+
+    0–5 cm (Venku): Jen pevná mřížka.
+
+    5–10 cm: Volný prostor (aby měl vzduch kam proudit z "ponožky").
+
+    10–35 cm: Patrona s keramzitem v pletivu, na jejímž vnějším konci je navlečená filtrační ponožka.
+
+    35–45 cm: Akustická vata/molitan (vytlumí hluk zvenku i ventilátor).
+
+    45–55 cm: Ventilátor (pružně uložený v molitanu).
+
+    55–60 cm: Vnitřní filtr a mřížka (v interiéru).
+
+💡 "Minimum elektro" tip pro roční provoz
+
+Aby ventilátor vydržel rok bez údržby v prašném prostředí, nekupujte nejlevnější čínský větrák za 50 Kč. Kupte průmyslový axiální ventilátor s kuličkovými ložisky (Ball Bearing). Ty jsou stavěné na tisíce hodin v prachu.
+Proč je tohle řešení nejlepší?
+
+    Servis: Jednou za rok (třeba na jaře) vytáhnete "špunt", vyperete/vyměníte ponožku, osprchujete keramzit a za 10 minut máte hotovo.
+
+    Ticho: Ventilátor je uprostřed 60cm trubky, obklopen molitanem a keramikou. Zvenku ani zevnitř ho skoro neuslyšíte.
+
+    Cena: Pořád se držíte kolem 1 000 Kč.
+
+Dává vám smysl ten nápad s "vytahovacím nábojem", abyste nemusel lézt na žebřík k venkovní mřížce?
