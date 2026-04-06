@@ -238,3 +238,96 @@ Proč je tohle řešení nejlepší?
     Cena: Pořád se držíte kolem 1 000 Kč.
 
 Dává vám smysl ten nápad s "vytahovacím nábojem", abyste nemusel lézt na žebřík k venkovní mřížce?
+
+-----------------------
+
+6.4. final
+
+Tady je kompletní nákupní seznam a technický souhrn pro vaši soustavu 4 jednotek v ocelových trubkách (150 mm), zaměřený na maximální účinnost, ticho a minimální údržbu.
+🛒 Nákupní seznam (Co přesně koupit)
+
+Většinu věcí seženete na Allegru (elektro) a ve stavebninách (izolace/materiál).
+1. Pohon (Ventilátory) - 4 ks
+
+Hledejte ventilátory s vysokým statickým tlakem, aby protlačily vzduch přes keramzit.
+
+    Typ: Arctic P14 PWM PST (140 mm) nebo Arctic P12 (120 mm), pokud vnitřek trubky hodně vyvložkujete izolací.
+
+    Kde: Allegro (hledat: "Arctic P14 PWM").
+
+    Cena: cca 200–250 Kč/ks.
+
+2. Mozek (Elektronika) - 1 sada pro celý dům
+
+    Časové relé: FRM01 (Multifunkční relé 12V DC).
+
+    Zdroj: Spínaný zdroj 12V 2A (nebo víc, stačí adaptér do zásuvky nebo zdroj na DIN lištu).
+
+    Kabeláž: Dvoulinka (reproduktorový kabel 0,75 mm² nebo 1 mm²). Délka podle rozvodů v domě.
+
+    Kde: Allegro (hledat: "FRM01 relé" a "napájecí zdroj 12V").
+
+3. Srdce rekuperace (Výměník a filtry)
+
+    Keramzit: Frakce 8–16 mm (kulatý, pálený jíl).
+
+        Kde: Stavebniny nebo zahradnictví (pytel 20-50 l stojí cca 150 Kč).
+
+    Síťovina na patrony: Nerezové pletivo proti hmyzu nebo jemné králičí pletivo.
+
+        Kde: Železářství / Stavebniny.
+
+    Filtrační rouno: Metráž třídy G3 nebo G4 (bílá vata).
+
+        Kde: Allegro (hledat: "Filtrační rouno G4").
+
+    Tukový filtr (pro kuchyň): Univerzální kovový filtr do digestoří.
+
+        Kde: Allegro (hledat: "Tukový filtr hliníkový").
+
+4. Izolace a těsnění
+
+    Kaučuková izolace: Samolepicí pás (např. K-Flex nebo Armaflex), tloušťka 6–10 mm. Tím vylepíte vnitřek ocelové trubky, aby nevedla zvuk a vibrace.
+
+        Kde: Allegro nebo stavebniny (izolace pro vzduchotechniku).
+
+🛠️ Technický popis montáže (Krok za krokem)
+1. Příprava ocelové trubky (60 cm)
+
+Vnitřek oceli vylepte kaučukovou izolací. Pokud máte trubku 150 mm a dáte 10 mm izolaci, zbude vám čistý průměr 130 mm, což je ideální pro 120 mm ventilátor nebo těsný 140 mm.
+2. Výroba keramzitové patrony
+
+Ušijte z pletiva válec dlouhý 30 cm. Naplňte ho keramzitem a konce "sešijte" drátem. Na vnější konec (ten k fasádě) navlékněte "ponožku" z filtračního rouna G4 a zajistěte gumičkou.
+3. Sestavení "vláčku" (Vše v jednom)
+
+Všechny komponenty musí být v trubce těsně za sebou:
+
+    Pokojová strana: Mřížka -> Tukový filtr (v kuchyni) -> Ventilátor -> Keramzitová patrona s filtrem na konci -> Venkovní mřížka.
+
+    Vše spojte tak, abyste po odšroubování vnitřní mřížky mohli celý vnitřek vytáhnout za ventilátor nebo provázek ven.
+
+4. Zapojení "Křížového dýchání"
+
+Relé FRM01 nastavte na režim cyklování (např. 70 sekund sepnuto / 70 sekund vypnuto).
+
+    Přízemí: Zapojte ventilátory na výstup relé standardně (+ na +, − na −).
+
+    Patro: Zapojte ventilátory obráceně (přehoďte dráty).
+
+    Výsledek: Relé sepne -> přízemí fouká ven, patro saje dovnitř. Relé rozepne -> přízemí saje dovnitř, patro fouká ven.
+
+🏁 Souhrn údržby (Líný režim)
+
+    Jednou za 3 měsíce: Vyjměte a propláchněte v kuchyni hliníkový tukový filtr (pod kohoutkem s jarem).
+
+    Jednou za rok: Vytáhněte z trubek celé náboje.
+
+        Keramzit: Osprchujte silným proudem vody přímo v nerezovém pletivu.
+
+        Filtr: Ponožku z rouna vyhoďte a dejte novou (náklady cca 5 Kč na kus).
+
+        Ventilátor: Otřete vlhkým hadříkem od jemného prachu.
+
+Tímto získáte systém, který vás vyjde na zlomek ceny (celkem pro 4 pokoje do 2 000 – 2 500 Kč) a přitom bude v ocelových trubkách sloužit desítky let.
+
+-----------------------------
