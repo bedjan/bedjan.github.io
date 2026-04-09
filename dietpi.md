@@ -106,3 +106,9 @@ Tři příkazy, které se ti v SSH budou hodit nejvíc:
     dietpi-launcher – Rozcestník ke všemu (nastavení, software, aktualizace).
     dietpi-config – Nastavení hardwaru, sítě, zvuku a disků.
     htop – Ukáže ti přehledně, jak moc je zatížený procesor a kolik RAM žere Kodi (vypneš ho klávesou F10 nebo q).
+
+----------------------
+Instalace software
+----------------------
+
+    dietpi-software install 31 123 113 91
