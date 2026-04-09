@@ -62,3 +62,47 @@ Pokud se Kodi „sekne“ nebo se nemůžete dostat k menu:
 
     Stiskněte na připojené klávesnici Ctrl + Alt + F2.
     To vás přepne do druhého terminálu (černá obrazovka), kde se můžete přihlásit a systém ovládat, i když Kodi na pozadí dál běží.
+
+   -----------------
+
+
+   -----------------
+
+   Instalace v DietPi přes SSH je extrémně jednoduchá, protože systém má pro všechno své vlastní „zkratky“, které ti ušetří psaní dlouhých příkazů.
+Máš dvě možnosti, jak to udělat:
+1. Pohodlná cesta přes menu (Doporučuji)
+Když jsi přihlášený přes SSH, napiš tento příkaz:
+bash
+
+dietpi-software
+
+Při použití kódu buďte obezřetní.
+Otevře se ti to samé modré menu, které jsi viděl při první instalaci.
+
+    Vyber Browse Software.
+    Najdi program, který chceš (třeba ten Transmission pro torrenty nebo další servery).
+    Označ ho mezerníkem, dej OK a zvol Install.
+    DietPi se postará o veškeré závislosti a nastavení za tebe.
+
+2. Rychlá cesta (Přímo z příkazové řádky)
+Pokud přesně víš, co chceš, a nechceš se proklikávat menu, DietPi má na to rychlý příkaz:
+bash
+
+dietpi-software install [ID-programu]
+
+Při použití kódu buďte obezřetní.
+(Například pro FTP server ProFTPD je to dietpi-software install 123).
+3. Klasická linuxová cesta
+Protože DietPi vychází z Debianu, funguje i klasický způsob, na který jsi zvyklý z jiných Linuxů:
+bash
+
+apt update
+apt install [název-balíčku]
+
+Při použití kódu buďte obezřetní.
+Pozor: Tento způsob používej jen pro menší utility (třeba htop, nano, git). Velké věci jako Kodi nebo servery instaluj raději přes to DietPi menu, protože tam jsou už přednastavené pro výkon Raspberry Pi.
+Tři příkazy, které se ti v SSH budou hodit nejvíc:
+
+    dietpi-launcher – Rozcestník ke všemu (nastavení, software, aktualizace).
+    dietpi-config – Nastavení hardwaru, sítě, zvuku a disků.
+    htop – Ukáže ti přehledně, jak moc je zatížený procesor a kolik RAM žere Kodi (vypneš ho klávesou F10 nebo q).
