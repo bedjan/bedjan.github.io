@@ -25,6 +25,10 @@ Až instalace skončí, vrať se do hlavního menu (nebo napiš dietpi-config) a
     Zvol Kodi.
     Ulož a zvol Reboot (restart).
 
+4. Pevná IP adresa
+
+přes dietpi-config
+
 Co se stane pak?
 Malina se restartuje a místo textu na tebe na televizi rovnou vyskočí barevné grafické menu Kodi. Od té chvíle už nepotřebuješ klávesnici (pokud máš TV s ovladačem, co podporuje CEC).
 Jak tam dostaneš soubory přes FTP?
