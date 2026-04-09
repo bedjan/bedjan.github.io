@@ -112,3 +112,9 @@ Instalace software
 ----------------------
 
     dietpi-software install 31 123 113 91
+
+---------------------
+V kodi
+--------------------
+
+YTMDesktop / YouTube doplňky: Pokud chceš pouštět hudbu z YouTube, doporučuji v Kodi (které ti poběží na pozadí) nainstalovat doplněk YouTube Music. Ten je dělaný přímo na písničky.
