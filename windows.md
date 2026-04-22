@@ -27,8 +27,8 @@
 
 # 6. Test kvality připojení (Ztráta paketů)
 # Pošle 20 dotazů na internet a ukáže, kolik se jich cestou k modemu ztratilo.
-> Write-Host "--- SPUSTENO: Sledujte radek Ztraceno / Lost ---" -ForegroundColor Cyan
-> ping -n 20 8.8.8.8
+> Write-Host "`n--- SPUSTENO: Testuji stabilitu (cekaj 20 sekund) ---" -ForegroundColor Cyan; ping -n 20 8.8.8.8
+
 
 
 -----------------
