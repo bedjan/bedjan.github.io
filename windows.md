@@ -4,7 +4,7 @@
 
 # 1. Vymazání mezipaměti DNS
 # Odstraní staré nebo chybné záznamy o adresách webových stránek.
-ipconfig /flushdns
+> ipconfig /flushdns
 
 # 2. Reset rozhraní Winsock
 # Obnoví základní strukturu síťové komunikace pro aplikace (prohlížeče).
