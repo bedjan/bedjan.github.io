@@ -135,3 +135,48 @@ C) Obor zabývající se tělesně postiženými
 A) Pouze ke kontrole úhlednosti písma
 B) K odhalení projevů SPU, grafomotoriky a psychického stavu [SPRÁVNĚ]
 C) Nepovažuje se za diagnostickou metodu
+
+-----
+
+# Přehled poradenských institucí v ČR
+
+V České republice existuje provázaný systém poradenských center, která se dělí podle svého zaměření na školská, sociální, psychologická a profesní.
+
+## Hlavní typy poradenských institucí
+
+* **Školská poradenská zařízení (ŠPZ):**
+    * **Pedagogicko-psychologické poradny (PPP):** Zaměřují se na diagnostiku poruch učení, chování a zralost pro školu.
+    * **Speciálně pedagogická centra (SPC):** Pomáhají dětem se specifickým postižením (zrakové, sluchové, mentální, vady řeči).
+* **Sociální a rodinné poradny:** Pomoc v krizových životních situacích, manželské a rodinné konflikty.
+* **Pedagogicko-psychologická poradna ve škole:** Školní psycholog a výchovný poradce přímo v budově školy.
+* **Úřady práce:** Poradenství v oblasti volby povolání a rekvalifikace.
+
+---
+
+# Zpracovaná otázka číslo 18.: Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( Bednář, Banýr )
+
+## Detailní pohled: Pedagogicko-psychologická poradna (PPP)
+
+Vybral jsem **Pedagogicko-psychologickou poradnu**, protože tvoří základní pilíř podpory pro většinu dětí, rodičů i učitelů v běžném vzdělávacím proudu.
+
+### 1. Poslání (Mise)
+Posláním PPP je poskytovat odbornou psychologickou a speciálně pedagogickou pomoc dětem, žákům a studentům (zpravidla od 3 let do ukončení střední školy). Instituce funguje jako mediátor mezi školou a rodinou, přičemž jejím hlavním zájmem je **optimální vývoj dítěte**.
+
+### 2. Cíl
+Hlavním cílem je:
+* Včasná identifikace překážek ve vzdělávání.
+* Navržení konkrétních **podpůrných opatření**, která pomohou žákovi zvládnout nároky školy i s jeho specifickým znevýhodněním (např. dysgrafie, ADHD).
+* Podpora zdravého psychického vývoje a prevence rizikového chování.
+
+### 3. Služby
+PPP nabízí širokou škálu bezplatných služeb (pokud jsou zřízeny krajem):
+
+* **Diagnostika:** Vyšetření školní zralosti, diagnostika specifických poruch učení (dyslexie, dysortografie atd.) nebo zjišťování úrovně intelektu.
+* **Individuální a skupinová náprava:** Reedukační lekce pro děti s poruchami učení.
+* **Kariérové poradenství:** Pomoc s výběrem střední nebo vysoké školy na základě talentových zkoušek a testů zájmů.
+* **Metodická pomoc učitelům:** Konzultace ohledně úpravy výuky pro žáky se speciálními potřebami (individuální vzdělávací plány - IVP).
+* **Krizová intervence:** Krátkodobá pomoc žákům v akutní psychické tísni (např. šikana, úmrtí v rodině).
+
+---
+
+> **Tip pro praxi:** Pro návštěvu PPP není potřeba doporučení lékaře, rodič se může objednat sám. Závěry poradny jsou pro školu závazné až v momentě, kdy k nim rodič udělí písemný souhlas.
