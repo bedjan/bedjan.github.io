@@ -4,19 +4,19 @@
 
 # 18. Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( Bednář, Banýr )
 
-# **Činnost speciálně pedagogického centra a pedagogicko**‑**psychologické poradny, jejich výstupy a rozdíly**
+## **Činnost speciálně pedagogického centra a pedagogicko**‑**psychologické poradny, jejich výstupy a rozdíly**
 
-## **Úvod**
+### **Úvod**
 
 V systému českého školství hrají poradenská zařízení klíčovou roli při podpoře dětí, žáků a studentů se speciálními vzdělávacími potřebami. Mezi nejvýznamnější školská poradenská zařízení patří **Pedagogicko**‑**psychologická poradna (PPP)** a **Speciálně pedagogické centrum (SPC)**. Obě instituce spolupracují se školami, zákonnými zástupci i dalšími odborníky, jejich činnost se však v mnoha ohledech liší. Cílem této práce je charakterizovat činnost obou zařízení, popsat jejich výstupy a vymezit hlavní rozdíly mezi nimi.
 
-## **Pedagogicko**‑**psychologická poradna (PPP)**
+### **Pedagogicko**‑**psychologická poradna (PPP)**
 
-### **Charakteristika a poslání**
+#### **Charakteristika a poslání**
 
 Pedagogicko‑psychologická poradna poskytuje **psychologické a speciálně pedagogické služby** především dětem, žákům a studentům, kteří mají obtíže ve vzdělávání, v adaptaci na školní prostředí nebo v chování. Činnost PPP je zaměřena především na **prevenci, diagnostiku a poradenskou podporu**.
 
-### **Hlavní činnosti PPP**
+#### **Hlavní činnosti PPP**
 
 - diagnostika školní zralosti a připravenosti na školní docházku
 - diagnostika specifických poruch učení a chování
@@ -25,20 +25,20 @@ Pedagogicko‑psychologická poradna poskytuje **psychologické a speciálně pe
 - metodická podpora škol a pedagogů
 - poradenská práce se zákonnými zástupci
 
-### **Výstupy PPP**
+#### **Výstupy PPP**
 
 - **doporučení ke vzdělávání žáka**
 - návrh **podpůrných opatření** (např. úpravy hodnocení, metod práce)
 - vyjádření ke školní zralosti nebo k odkladu školní docházky
 - zprávy z vyšetření pro školy a rodiče
 
-## **Speciálně pedagogické centrum (SPC)**
+### **Speciálně pedagogické centrum (SPC)**
 
-### **Charakteristika a poslání**
+#### **Charakteristika a poslání**
 
 Speciálně pedagogické centrum je zařízení zaměřené na **děti, žáky a studenty s konkrétním druhem zdravotního postižení nebo znevýhodnění**. Jeho činnost je výrazně **specializovaná** a dlouhodobá.
 
-### **Hlavní činnosti SPC**
+#### **Hlavní činnosti SPC**
 
 - speciálně pedagogická diagnostika podle typu postižení
 - individuální speciálně pedagogická péče
@@ -55,7 +55,7 @@ SPC se obvykle zaměřují např. na:
 - vady řeči
 - kombinované postižení
 
-### **Výstupy SPC**
+#### **Výstupy SPC**
 
 - doporučení vzdělávací cesty žáka
 - návrh individuálního vzdělávacího plánu
@@ -63,11 +63,11 @@ SPC se obvykle zaměřují např. na:
 - odborné zprávy pro školy a zákonné zástupce
 - návrh asistenta pedagoga
 
-## **Spolupráce PPP a SPC**
+### **Spolupráce PPP a SPC**
 
 Obě zařízení často **úzce spolupracují**, zejména v případech, kdy má žák komplexní obtíže ve vzdělávání. PPP se může zaměřit na psychologickou stránku obtíží, zatímco SPC řeší speciálně pedagogickou podporu vyplývající z konkrétního zdravotního postižení.
 
-## **Hlavní rozdíly mezi PPP a SPC**
+### **Hlavní rozdíly mezi PPP a SPC**
 
 | **Kritérium**  | **PPP**                      | **SPC**                         |
 | -------------- | ---------------------------- | ------------------------------- |
@@ -81,13 +81,13 @@ Obě zařízení často **úzce spolupracují**, zejména v případech, kdy má
 -----
 
 
-# Exekutivní přehled poradenského systému ve speciální pedagogice
+## Exekutivní přehled poradenského systému ve speciální pedagogice
 
 Poradenství v ČR není pouze "služba", ale zákonem definovaný nárok žáka na podporu. Celý systém je postaven na principu **stupňovité podpory** (1. až 5. stupeň), kde vyšší stupně (3.–5.) jsou v kompetenci specializovaných školských poradenských zařízení (ŠPZ).
 
 ---
 
-## 1. Architektura poradenských institucí
+### 1. Architektura poradenských institucí
 
 | Instituce | Cílová skupina | Hlavní kompetence |
 | :--- | :--- | :--- |
@@ -98,19 +98,19 @@ Poradenství v ČR není pouze "služba", ale zákonem definovaný nárok žáka
 
 ---
 
-## 2. Hloubková analýza: Speciálně pedagogické centrum (SPC)
+### 2. Hloubková analýza: Speciálně pedagogické centrum (SPC)
 
 SPC funguje jako "most" mezi medicínským stavem dítěte a pedagogickou praxí.
 
-### Poslání a legislativní rámec
+#### Poslání a legislativní rámec
 SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jejich posláním je transformovat odborný nález (např. od neurologa či oftalmologa) do konkrétního **Doporučení pro vzdělávání**, které je pro školu závazné.
 
-### Cíle v rámci speciální pedagogiky
+#### Cíle v rámci speciální pedagogiky
 1.  **Eliminace bariér:** Navržení úprav fyzického prostředí (bezbariérovost) i didaktického prostředí (úprava učebnic).
 2.  **Inkluzivní podpora:** Zajištění, aby žák s postižením mohl být vzděláván v přirozené komunitě vrstevníků.
 3.  **Dovednostní trénink:** Rozvoj specifických dovedností, které běžná škola nedokáže zajistit (např. prostorová orientace s bílou holí).
 
-### Klíčové služby (rozšířené)
+#### Klíčové služby (rozšířené)
 * **Rediagnostika:** Pravidelné sledování vývoje dítěte (zpravidla po 1–2 letech), aby se ověřilo, zda nastavená podpora stále odpovídá jeho potřebám.
 * **Asistence:** Stanovení normované finanční náročnosti pro pozici **asistenta pedagoga** (určení úvazku a náplně práce).
 * **Využití IVP (Individuální vzdělávací plán):** SPC určuje, ve kterých předmětech má dojít k modifikaci obsahu (např. snížení nároků na grafický projev u žáka s dětskou mozkovou obrnou).
@@ -119,7 +119,7 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 
 ---
 
-## 3. Komplexní test znalostí (Scénářová otázka)
+### 3. Komplexní test znalostí (Scénářová otázka)
 
 **Situace:** Do 3. třídy základní školy dochází žák s diagnózou poruchy autistického spektra (PAS). Žák má potíže se změnami v rozvrhu, které vedou k afektům, a potřebuje vizualizaci denního režimu. Který z následujících postupů je metodicky správný z pohledu speciální pedagogiky?
 
