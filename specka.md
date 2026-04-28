@@ -2,181 +2,140 @@
 
 ---
 
-## ČÁST 1: CO ŘÍKAT U ZKOUŠKY (OTÁZKY 1–27)
+# 18. Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( Bednář, Banýr )
 
-### 1. Vymezení oboru
-"Speciální pedagogika je vědní obor, který se zabývá edukací a rozvojem osob se specifickými potřebami. Není to jen o škole, ale o celoživotním rozvoji člověka, který má nějakou bariéru (zdravotní, sociální či jinou)."
+# **Činnost speciálně pedagogického centra a pedagogicko**‑**psychologické poradny, jejich výstupy a rozdíly**
 
-### 2. Předmět a cíl
-"Předmětem je člověk se znevýhodněním. Cílem není jen naučit ho látku, ale socializovat ho – tedy připravit ho na to, aby mohl žít co nejvíce samostatný život v běžné společnosti."
+## **Úvod**
 
-### 3. Současné trendy
-"Dnes je hlavním trendem inkluze (společné vzdělávání), individualizace (každý má jiný plán) a důraz na včasnou intervenci – čím dříve pomoc začne, tím lépe."
+V systému českého školství hrají poradenská zařízení klíčovou roli při podpoře dětí, žáků a studentů se speciálními vzdělávacími potřebami. Mezi nejvýznamnější školská poradenská zařízení patří **Pedagogicko**‑**psychologická poradna (PPP)** a **Speciálně pedagogické centrum (SPC)**. Obě instituce spolupracují se školami, zákonnými zástupci i dalšími odborníky, jejich činnost se však v mnoha ohledech liší. Cílem této práce je charakterizovat činnost obou zařízení, popsat jejich výstupy a vymezit hlavní rozdíly mezi nimi.
 
-### 4. Postoje společnosti
-"Společnost se vyvíjela od naprostého odmítání (represe), přes soucit (charita) a oddělování do ústavů (segregace), až po dnešní partnerství a začleňování (inkluze)."
+## **Pedagogicko**‑**psychologická poradna (PPP)**
 
-### 5. & 6. Vnitřní členění a disciplíny
-"Speciální pedagogika se dělí podle typu vady. Máme Somatopedii (tělesné postižení), Psychopedii (mentální), Logopedii (řeč), Surdopedii (sluch), Tyflopedii (zrak) a Etopedii (chování)."
+### **Charakteristika a poslání**
 
-### 7. Klasifikace podle doby vzniku
-"Dělíme je na vrozené (před porodem nebo geneticky) a získané (v průběhu života, např. úrazem, nemocí nebo špatným prostředím)."
+Pedagogicko‑psychologická poradna poskytuje **psychologické a speciálně pedagogické služby** především dětem, žákům a studentům, kteří mají obtíže ve vzdělávání, v adaptaci na školní prostředí nebo v chování. Činnost PPP je zaměřena především na **prevenci, diagnostiku a poradenskou podporu**.
 
-### 8. Prenatální faktory
-"Jde o vlivy v těhotenství. Škodí alkohol, drogy, infekce matky (zarděnky), silný stres nebo rentgenové záření."
+### **Hlavní činnosti PPP**
 
-### 9. Peri- a postnatální faktory
-"Perinatální vlivy jsou u porodu – hlavně nedostatek kyslíku (asfyxie) nebo mechanické poškození. Postnatální jsou po porodu – zápaly mozkových blan, těžké úrazy hlavy nebo zanedbání péče."
+- diagnostika školní zralosti a připravenosti na školní docházku
+- diagnostika specifických poruch učení a chování
+- posuzování vzdělávacích obtíží a problémů v adaptaci
+- kariérové poradenství (volba školy a povolání)
+- metodická podpora škol a pedagogů
+- poradenská práce se zákonnými zástupci
 
-### 10. Význam diagnostiky
-"Diagnostika není 'nálepkování', ale hledání silných a slabých stránek žáka, abychom věděli, jak mu přesně pomoci a jaké mu dát pomůcky."
+### **Výstupy PPP**
 
-### 11. Metody diagnostiky
-"Nejpoužívanější je anamnéza (zjišťování historie), pozorování dítěte při hře nebo práci, rozhovor a různé standardizované testy."
+- **doporučení ke vzdělávání žáka**
+- návrh **podpůrných opatření** (např. úpravy hodnocení, metod práce)
+- vyjádření ke školní zralosti nebo k odkladu školní docházky
+- zprávy z vyšetření pro školy a rodiče
 
-### 12. Analýza písemného projevu
-"Ano, patří sem. Z písma poznáme jemnou motoriku, úroveň grafomotoriky, ale i specifické chyby, které značí poruchu učení (např. vynechávání písmen)."
+## **Speciálně pedagogické centrum (SPC)**
 
-### 13. Reedukace vs. Kompenzace
-"Reedukace je cvičení k nápravě (např. logopedie). Kompenzace je náhrada – když funkce nejde opravit, nahradíme ji (např. vozík místo nohou, Braillovo písmo místo očí)."
+### **Charakteristika a poslání**
 
-### 14. Ucelená rehabilitace
-"Je to propojení čtyř oblastí: Léčebná (doktoři), Pedagogická (škola), Sociální (bydlení, vztahy) a Pracovní (uplatnění v zaměstnání)."
+Speciálně pedagogické centrum je zařízení zaměřené na **děti, žáky a studenty s konkrétním druhem zdravotního postižení nebo znevýhodnění**. Jeho činnost je výrazně **specializovaná** a dlouhodobá.
 
-### 15. Materiální otázky integrace
-"Zahrnuje to odstraňování bariér (rampy, výtahy), speciální nábytek (nastavitelné lavice) a kompenzační pomůcky (IT technologie, čtečky textu)."
+### **Hlavní činnosti SPC**
 
-### 16. Psychosociální otázky integrace
-"Jde o to, jak žáka přijme třída a učitel. Důležité je předcházet šikaně, pracovat s klimatem třídy a podporovat sebevědomí integrovaného dítěte."
+- speciálně pedagogická diagnostika podle typu postižení
+- individuální speciálně pedagogická péče
+- reedukace a kompenzace oslabených funkcí
+- metodická podpora pedagogů ve školách
+- poradenství rodinám
+- spolupráce s asistenty pedagoga a školami
 
-### 17. Výchovné a vzdělávací instituce
-"Existují běžné školy s inkluzí, školy speciální (pro děti s těžším postižením) a odborná učiliště zaměřená na praktické dovednosti."
+SPC se obvykle zaměřují např. na:
 
-### 18. Poradenské instituce
-"Hlavní jsou PPP (Pedagogicko-psychologická poradna) pro běžné problémy s učením a SPC (Speciálně pedagogické centrum), které se specializuje na konkrétní postižení."
+- mentální postižení
+- poruchy autistického spektra
+- zrakové, sluchové či tělesné postižení
+- vady řeči
+- kombinované postižení
 
-### 19. Vznik a formy DMO
-"Dětská mozková obrna vzniká poškozením mozku v raném vývoji. Má formy spastické (křeče, ztuhlost) a nespastické (bezděčné pohyby, poruchy rovnováhy)."
+### **Výstupy SPC**
 
-### 20. Možnosti práce s DMO
-"Základem je fyzioterapie (Vojtova metoda), logopedie a úprava prostředí. Důležité je nepracovat jen s tělem, ale i s rozvojem rozumu a emocí."
+- doporučení vzdělávací cesty žáka
+- návrh individuálního vzdělávacího plánu
+- doporučení kompenzačních pomůcek
+- odborné zprávy pro školy a zákonné zástupce
+- návrh asistenta pedagoga
 
-### 21. Příčiny a projevy epilepsie
-"Je to porucha elektrické aktivity v mozku. Projevuje se záchvaty – od malých výpadků vědomí (zahledění) až po velké křečové záchvaty s bezvědomím."
+## **Spolupráce PPP a SPC**
 
-### 22. Zásady práce s epilepsií
-"Při záchvatu: nebránit křečím, nedávat nic do úst, chránit hlavu před úderem a po záchvatu nechat člověka v klidu dospat."
+Obě zařízení často **úzce spolupracují**, zejména v případech, kdy má žák komplexní obtíže ve vzdělávání. PPP se může zaměřit na psychologickou stránku obtíží, zatímco SPC řeší speciálně pedagogickou podporu vyplývající z konkrétního zdravotního postižení.
 
-### 23. Poruchy školních dovedností (SPU)
-"Jsou to specifické potíže, které nesouvisejí s inteligencí. Patří sem dyslexie, dysgrafie, dysortografie a dyskalkulie."
+## **Hlavní rozdíly mezi PPP a SPC**
 
-### 24. Lehká mozková dysfunkce (LMD)
-"Je to starší název pro biologický podklad ADHD. Projevuje se neklidem, impulzivitou, poruchami pozornosti a výkyvy nálad."
-
-### 25. Nejčastější druhy SPU
-"Dyslexie (čtení), Dysgrafie (psaní – grafika), Dysortografie (pravopis – chyby v gramatice/délkách) a Dyskalkulie (počty)."
-
-### 26. Charakteristika SPU a péče
-"Např. u Dyslexie žák zaměňuje písmena. Péče: více času na testy, možnost odpovídat ústně, používání barevných fólií pro lepší čtení."
-
-### 27. Sociokulturní handicap
-"Jde o děti z nepodnětného prostředí (chudoba, ubytovny, jazyková bariéra). Škola musí využívat asistenty pedagoga a doučování k vyrovnání šancí."
-
----
-
-## ČÁST 2: TESTOVÉ OTÁZKY (MULTIPLE CHOICE)
-
-1. Který obor se zabývá sluchovým postižením?
-A) Tyflopedie
-B) Surdopedie [SPRÁVNĚ]
-C) Psychopedie
-
-2. Co znamená pojem "reedukace"?
-A) Úplné nahrazení poškozené funkce jinou funkcí
-B) Soubor pedagogických postupů zaměřených na zlepšení narušené funkce [SPRÁVNĚ]
-C) Finanční podpora rodin s postiženým dítětem
-
-3. Který faktor patří mezi perinatální příčiny postižení?
-A) Infekce matky během těhotenství
-B) Nedostatek kyslíku během porodu [SPRÁVNĚ]
-C) Těžký úraz hlavy v dospělosti
-
-4. Jak se projevuje "dysgrafie"?
-A) Problémem s porozuměním čteného textu
-B) Specifickou poruchou psaní, která ovlivňuje čitelnost a úpravu písma [SPRÁVNĚ]
-C) Neschopností provádět matematické operace
-
-5. Mezi spastické formy dětské mozkové obrny (DMO) patří:
-A) Forma diparetická [SPRÁVNĚ]
-B) Forma hyperkinetická
-C) Forma mozečková
-
-6. Co je nejdůležitější při první pomoci u velkého epileptického záchvatu?
-A) Vložit postiženému mezi zuby kapesník nebo roubík
-B) Chránit hlavu před nárazy a odstranit nebezpečné předměty z dosahu [SPRÁVNĚ]
-C) Snažit se násilím zastavit křeče končetin
-
-7. Jak se projevuje sociokulturní handicap u dětí ve škole?
-A) Sníženým IQ v důsledku genetické vady
-B) Nedostatkem zkušeností, menší slovní zásobou a chybějící podporou v rodině [SPRÁVNĚ]
-C) Pouze tělesným postižením
-
-8. Která instituce řeší primárně specifické poruchy učení (SPU) a školní zralost?
-A) Pedagogicko-psychologická poradna (PPP) [SPRÁVNĚ]
-B) Speciálně pedagogické centrum (SPC)
-C) Diagnostický ústav
-
-9. Co je to "tyflopedie"?
-A) Obor zabývající se vadami řeči
-B) Obor zabývající se lidmi se zrakovým postižením [SPRÁVNĚ]
-C) Obor zabývající se tělesně postiženými
-
-10. Analýza písemného projevu v diagnostice slouží k:
-A) Pouze ke kontrole úhlednosti písma
-B) K odhalení projevů SPU, grafomotoriky a psychického stavu [SPRÁVNĚ]
-C) Nepovažuje se za diagnostickou metodu
+| **Kritérium**  | **PPP**                      | **SPC**                         |
+| -------------- | ---------------------------- | ------------------------------- |
+| Zaměření       | obecné vzdělávací obtíže     | konkrétní zdravotní postižení   |
+| Odborný profil | psycholog, speciální pedagog | speciální pedagog - specialista |
+| Cílová skupina | široká, běžná populace žáků  | žáci se zdravotním postižením   |
+| Typ péče       | spíše krátkodobá             | často dlouhodobá                |
+| Specializace   | nižší                        | vysoká                          |
 
 -----
+-----
 
-# Přehled poradenských institucí v ČR
 
-V České republice existuje provázaný systém poradenských center, která se dělí podle svého zaměření na školská, sociální, psychologická a profesní.
+# Exekutivní přehled poradenského systému ve speciální pedagogice
 
-## Hlavní typy poradenských institucí
-
-* **Školská poradenská zařízení (ŠPZ):**
-    * **Pedagogicko-psychologické poradny (PPP):** Zaměřují se na diagnostiku poruch učení, chování a zralost pro školu.
-    * **Speciálně pedagogická centra (SPC):** Pomáhají dětem se specifickým postižením (zrakové, sluchové, mentální, vady řeči).
-* **Sociální a rodinné poradny:** Pomoc v krizových životních situacích, manželské a rodinné konflikty.
-* **Pedagogicko-psychologická poradna ve škole:** Školní psycholog a výchovný poradce přímo v budově školy.
-* **Úřady práce:** Poradenství v oblasti volby povolání a rekvalifikace.
+Poradenství v ČR není pouze "služba", ale zákonem definovaný nárok žáka na podporu. Celý systém je postaven na principu **stupňovité podpory** (1. až 5. stupeň), kde vyšší stupně (3.–5.) jsou v kompetenci specializovaných školských poradenských zařízení (ŠPZ).
 
 ---
 
-# Zpracovaná otázka číslo 18.: Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( Bednář, Banýr )
+## 1. Architektura poradenských institucí
 
-## Detailní pohled: Pedagogicko-psychologická poradna (PPP)
-
-Vybral jsem **Pedagogicko-psychologickou poradnu**, protože tvoří základní pilíř podpory pro většinu dětí, rodičů i učitelů v běžném vzdělávacím proudu.
-
-### 1. Poslání (Mise)
-Posláním PPP je poskytovat odbornou psychologickou a speciálně pedagogickou pomoc dětem, žákům a studentům (zpravidla od 3 let do ukončení střední školy). Instituce funguje jako mediátor mezi školou a rodinou, přičemž jejím hlavním zájmem je **optimální vývoj dítěte**.
-
-### 2. Cíl
-Hlavním cílem je:
-* Včasná identifikace překážek ve vzdělávání.
-* Navržení konkrétních **podpůrných opatření**, která pomohou žákovi zvládnout nároky školy i s jeho specifickým znevýhodněním (např. dysgrafie, ADHD).
-* Podpora zdravého psychického vývoje a prevence rizikového chování.
-
-### 3. Služby
-PPP nabízí širokou škálu bezplatných služeb (pokud jsou zřízeny krajem):
-
-* **Diagnostika:** Vyšetření školní zralosti, diagnostika specifických poruch učení (dyslexie, dysortografie atd.) nebo zjišťování úrovně intelektu.
-* **Individuální a skupinová náprava:** Reedukační lekce pro děti s poruchami učení.
-* **Kariérové poradenství:** Pomoc s výběrem střední nebo vysoké školy na základě talentových zkoušek a testů zájmů.
-* **Metodická pomoc učitelům:** Konzultace ohledně úpravy výuky pro žáky se speciálními potřebami (individuální vzdělávací plány - IVP).
-* **Krizová intervence:** Krátkodobá pomoc žákům v akutní psychické tísni (např. šikana, úmrtí v rodině).
+| Instituce | Cílová skupina | Hlavní kompetence |
+| :--- | :--- | :--- |
+| **ŠPP** (Školní poradenské pracoviště) | Všichni žáci dané školy. | Prevence, krizová intervence, monitoring třídního klimatu. |
+| **PPP** (Pedagogicko-psych. poradna) | Žáci s SPU (dyslexie...), ADHD, nadaní žáci. | Diagnostika školní zralosti, intelektové testy, doporučení pro uzpůsobení maturit. |
+| **SPC** (Speciálně pedagogické centrum) | Žáci s postižením (mentální, tělesné, zrakové, sluchové, vady řeči, PAS). | Metodika speciálních pomůcek, nácvik alternativní komunikace, raná péče. |
+| **SVP** (Středisko výchovné péče) | Žáci s poruchami chování, riziková mládež. | Terapeutické pobyty, náprava vztahových problémů, práce s rodinným systémem. |
 
 ---
 
-> **Tip pro praxi:** Pro návštěvu PPP není potřeba doporučení lékaře, rodič se může objednat sám. Závěry poradny jsou pro školu závazné až v momentě, kdy k nim rodič udělí písemný souhlas.
+## 2. Hloubková analýza: Speciálně pedagogické centrum (SPC)
+
+SPC funguje jako "most" mezi medicínským stavem dítěte a pedagogickou praxí.
+
+### Poslání a legislativní rámec
+SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jejich posláním je transformovat odborný nález (např. od neurologa či oftalmologa) do konkrétního **Doporučení pro vzdělávání**, které je pro školu závazné.
+
+### Cíle v rámci speciální pedagogiky
+1.  **Eliminace bariér:** Navržení úprav fyzického prostředí (bezbariérovost) i didaktického prostředí (úprava učebnic).
+2.  **Inkluzivní podpora:** Zajištění, aby žák s postižením mohl být vzděláván v přirozené komunitě vrstevníků.
+3.  **Dovednostní trénink:** Rozvoj specifických dovedností, které běžná škola nedokáže zajistit (např. prostorová orientace s bílou holí).
+
+### Klíčové služby (rozšířené)
+* **Rediagnostika:** Pravidelné sledování vývoje dítěte (zpravidla po 1–2 letech), aby se ověřilo, zda nastavená podpora stále odpovídá jeho potřebám.
+* **Asistence:** Stanovení normované finanční náročnosti pro pozici **asistenta pedagoga** (určení úvazku a náplně práce).
+* **Využití IVP (Individuální vzdělávací plán):** SPC určuje, ve kterých předmětech má dojít k modifikaci obsahu (např. snížení nároků na grafický projev u žáka s dětskou mozkovou obrnou).
+* **Podpora alternativní a augmentativní komunikace (AAK):** Implementace komunikačních tabulek, technologií sledování oční duhovky (Eye-tracking) či znakového jazyka.
+* **Raná péče:** Práce s rodinami dětí od narození do 3 let, kdy se teprve formuje přijetí postižení a první stimulační návyky.
+
+---
+
+## 3. Komplexní test znalostí (Scénářová otázka)
+
+**Situace:** Do 3. třídy základní školy dochází žák s diagnózou poruchy autistického spektra (PAS). Žák má potíže se změnami v rozvrhu, které vedou k afektům, a potřebuje vizualizaci denního režimu. Který z následujících postupů je metodicky správný z pohledu speciální pedagogiky?
+
+* A) Škola si sama zakoupí piktogramy a zavede režim bez odborného vyjádření, protože jde o metodickou drobnost.
+* B) Učitel pošle žáka do Pedagogicko-psychologické poradny (PPP), aby diagnostikovali jeho intelektovou úroveň a vyloučili dyslexii.
+* C) Škola kontaktuje příslušné Speciálně pedagogické centrum (SPC), které vyšle odborného pracovníka k náhledu do hodiny, vypracuje doporučení pro vizualizaci režimu a navrhne přidělení asistenta pedagoga.
+* D) Rodiče jsou odesláni do Střediska výchovné péče (SVP), aby zde žák absolvoval pobytový program zaměřený na odstranění afektivního chování.
+
+<details>
+  <summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
+  
+  **Správná odpověď: C**
+  
+  **Zdůvodnění:**
+  * **Proč C:** PAS spadá pod kompetenci SPC. Odborník z SPC musí nastavit specifické metody práce (strukturalizace, vizualizace) a doporučit asistenta, na kterého pak škola dostane peníze ze státního rozpočtu.
+  * **Proč ne A:** Bez oficiálního Doporučení z ŠPZ nemá škola nárok na finance pro podporu a postupuje neodborně.
+  * **Proč ne B:** PPP se primárně nezabývá autismem, ale poruchami učení.
+  * **Proč ne D:** Afektivní chování u autismu není "výchovný problém" v klasickém smyslu, ale důsledek komunikační bariéry a úzkosti ze změn, což SVP (zaměřené na poruchy chování) nevyřeší.
+</details>
