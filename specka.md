@@ -2,7 +2,7 @@
 
 ---
 
-# 18. Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( Bednář, Banýr )
+# 18. Které poradenské instituce existují? Vyberte jednu a popište její poslání, cíl a služby. ( zpracovali Bednář, Banýr )
 
 ## **Činnost speciálně pedagogického centra a pedagogicko**‑**psychologické poradny, jejich výstupy a rozdíly**
 
