@@ -126,7 +126,7 @@ Eliška
 ---
 
 
-## Page 3
+## Strana 3
 
 *   ČJ, Z, D, Př - redukce na základy učiva
 *   AJ, Fy - obsah učiva bude odpovídat **minimálním očekávaným výstupům** dle RVP ZV. V případě zvládání učiva může dívka postupovat nad tuto úroveň. Minimální očekávané výstupy jsou závazné pro hodnocení žákyně, obsah učiva však může být po zvládnutí rozšířen nad minimální úroveň.
@@ -276,9 +276,9 @@ Doporučení ŠPZ &lt;page_number&gt;str. 3 / 7&lt;/page_number&gt; Eliška Hoto
 ---
 
 
-## Page 4
+## Strana 4
 
-&lt;page_number&gt;3&lt;/page_number&gt;
+
 
 **Personální podpora ve škole**
 
@@ -347,7 +347,7 @@ Eliška Hotová
 ---
 
 
-## Page 5
+## Strana 5
 
 * Ma - hodnotit dle minimálních výstupů nastavených v ŠVP
     - hodnotit také obsahovou stránku - postup řešení, nejen výsledek
@@ -410,7 +410,7 @@ Eliška Hotová
 ---
 
 
-## Page 6
+## Strana 6
 
 Dne 16.
 
@@ -473,7 +473,7 @@ Eliška Hotová
 ---
 
 
-## Page 7
+## Strana 7
 
 Vysvětlivky pojmů:
 NFN = normovaná finanční náročnost
@@ -484,7 +484,7 @@ Termín nového posouzení SVP – Dle odst. 4 § 16 vyhl. 27/2016 Sb. ŠPZ ve s
 Kód podmíněné NFN – Kód normované finanční náročnosti v souladu s resortním číselníkem podpůrných opatření (RAPP). Škola vykaže toto opatření, pouze pokud nelze žákovi poskytovat podpůrné opatření v rámci stavající skupiny.
 
 Doporučení ŠPZ
-&lt;page_number&gt;str. 7 / 7&lt;/page_number&gt;
+
 
 Dokument je podepsán elektronickým podpisem
 Podepisující: Mgr. .....
