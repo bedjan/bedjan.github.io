@@ -139,3 +139,8 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
   * **Proč ne B:** PPP se primárně nezabývá autismem, ale poruchami učení.
   * **Proč ne D:** Afektivní chování u autismu není "výchovný problém" v klasickém smyslu, ale důsledek komunikační bariéry a úzkosti ze změn, což SVP (zaměřené na poruchy chování) nevyřeší.
 </details>
+
+
+# Doporučení SPC 
+
+[ Doporučení SPC ](doporuceni_spc.md)
