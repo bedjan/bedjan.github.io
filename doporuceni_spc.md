@@ -1,9 +1,9 @@
-## Page 1
+## Strana 1
 
-&lt;img&gt;Logo of Logopedická základní škola Měcholupy 1&lt;/img&gt;
+Logo -  Logopedická základní škola 
 
 **SPECIÁLNĚ PEDAGOGICKÉ CENTRUM**
-Logopedická základní škola, Měcholupy 1,
+Logopedická základní škola, 
 příspěvková organizace
 
 tel. 
@@ -75,7 +75,7 @@ Eliška Hotová
 ---
 
 
-## Page 2
+## Strana 2
 
 zácvik do úkolů. Při práci vyžaduje neustálé vedení. častou dopomoc a dovysvětlení zadání. Pokyny je při zácviku nutné zjednodušovat, jinak formulovat, poskytnout návodné otázky, často přímo předvést řešení a poskytnout více zácvičných příkladů.
 Tiky v obličeji, grimasování. Sociálně nezralá, infantilní. Má tendence velmi lehce vzdávat řešení, nenechá se přimět k pokračování v práci. Aktivní spolupráce pouze krátkodobá, poté pasivnější, tipuje. Obtíže v plánování, v zrakově prostorové představivosti (zraková analýza, syntéza; schopnost složit z částí celek a naopak), což může vést k potížím při orientaci na ploše, v prostoru (tj. orientace na mapách, slepých mapách, v geometrii, představě prostorových obrazců, převodů fyzikálních jednotek, výpočtů obvod/obsahu aj., chápání dějinných souvislostí). Oslabená sluchová paměť (pamatuje si 3 prvky). Velmi nízká úroveň sociálního porozumění.
