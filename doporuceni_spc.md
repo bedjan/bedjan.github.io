@@ -68,8 +68,7 @@ Výrazné deficity v úkolu zaměřeném na početní dovednosti.
 Koncentrace pozornosti je krátkodobá, snadno odklonitelná. Odbíhá myšlenkami, je nutné opakovaně přitahovat a vracet pozornost zpět k práci, poutat pozornost oslovením. Pracovní tempo pomalé.
 ADHD diagnostikováno pedopsychiatrem, medikována. Rychle unavitelná, nízká odolnost vůči zátěži. Dlouhý, obtížný
 
-Doporučení ŠPZ
-&lt;page_number&gt;str. 1 / 7&lt;/page_number&gt;
+Doporučení ŠPZ str. 1 / 7
 Eliška 
 
 ---
@@ -119,8 +118,7 @@ metody názorně-demonstrační - pozorování, předvádění, instruktáž, pr
 Obsah vzdělávání bude v hlavních i naukových předmětech modifikován podle schopností a možností žákyně.
 Žákyně bude vzdělávána dle IVP:
 
-Doporučení ŠPZ
-&lt;page_number&gt;str. 2 / 7&lt;/page_number&gt;
+Doporučení ŠPZ str. 2 / 7
 Eliška 
 
 ---
@@ -271,7 +269,8 @@ Eliška
   </tbody>
 </table>
 
-Doporučení ŠPZ &lt;page_number&gt;str. 3 / 7&lt;/page_number&gt; Eliška 
+Doporučení ŠPZ str. 3 / 7
+ Eliška 
 
 ---
 
@@ -340,8 +339,7 @@ AP se podílí přímo na pedagogické činnosti při vzdělávání podle postu
     - při hodnocení diktátu se zaměřit na hodnocení zkoušeného jevu, přistupovat s tolerancí k chybám v diakritice - hodnotit jako jednu chybu
     - slohové práce - hodnotit obsahovou stránku, dodržení zadaného tématu a formy (nehodnotit stylistiku)
 
-Doporučení ŠPZ
-&lt;page_number&gt;str. 4 / 7&lt;/page_number&gt;
+Doporučení ŠPZ str. 4 / 7
 Eliška 
 
 ---
@@ -403,8 +401,7 @@ Konzultace SPC Měcholupy se zákonným zástupcem a školou dle potřeby.
 Kontaktní osoba: Mgr. E, speciální pedagog SPC
 tel.: , e-mail: 
 
-Doporučení ŠPZ
-&lt;page_number&gt;str. 5 / 7&lt;/page_number&gt;
+Doporučení ŠPZ str. 5 / 7
 Eliška 
 
 ---
@@ -466,8 +463,7 @@ ANO ☐ NE ☐ S VÝHRADAMI ☐
   </tr>
 </table>
 
-Doporučení ŠPZ
-&lt;page_number&gt;str. 6 / 7&lt;/page_number&gt;
+Doporučení ŠPZ str. 6 / 7
 Eliška 
 
 ---
@@ -493,4 +489,5 @@ Sériové č. cert.: 22456724
 Vydavatel cert.: PostSignum Qualified CA 4
 Datum a čas: 31.08.2022 15:24:01
 
+Doporučení ŠPZ str. 7 / 7
 Eliška 
