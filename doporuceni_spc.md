@@ -412,14 +412,14 @@ Eliška
 Dne 16.
 
 Zpracoval(a):
-Mgr. Eva L.....
+Mgr. Eva .....
 Speciální pedagog
 
 Mgr. Lenka ....
 Ředitel SPC
 
-Speciálně pedagogické centrum Měcholupy
-Měcholupy 1, 439 31 Měcholupy
+Speciálně pedagogické centrum 
+
 školské poradenské zařízení
 razítko pracoviště
 
