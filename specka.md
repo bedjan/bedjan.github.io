@@ -129,15 +129,19 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 * D) Rodiče jsou odesláni do Střediska výchovné péče (SVP), aby zde žák absolvoval pobytový program zaměřený na odstranění afektivního chování.
 
 <details>
-  <summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
+<summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
 
-  **Správná odpověď: C**
+**Správná odpověď: C**
 
-  **Zdůvodnění:**
-  * **Proč C:** PAS spadá pod kompetenci SPC. Odborník z SPC musí nastavit specifické metody práce (strukturalizace, vizualizace) a doporučit asistenta, na kterého pak škola dostane peníze ze státního rozpočtu.
-  * **Proč ne A:** Bez oficiálního Doporučení z ŠPZ nemá škola nárok na finance pro podporu a postupuje neodborně.
-  * **Proč ne B:** PPP se primárně nezabývá autismem, ale poruchami učení.
-  * **Proč ne D:** Afektivní chování u autismu není "výchovný problém" v klasickém smyslu, ale důsledek komunikační bariéry a úzkosti ze změn, což SVP (zaměřené na poruchy chování) nevyřeší.
+**Zdůvodnění:**
+
+* **Proč C:** PAS spadá pod kompetenci SPC. Odborník z SPC musí nastavit specifické metody práce (strukturalizace, vizualizace) a doporučit asistenta, na kterého pak škola dostane peníze ze státního rozpočtu.
+
+* **Proč ne A:** Bez oficiálního Doporučení z ŠPZ nemá škola nárok na finance pro podporu a postupuje neodborně.
+
+* **Proč ne B:** PPP se primárně nezabývá autismem, ale poruchami učení.
+
+* **Proč ne D:** Afektivní chování u autismu není "výchovný problém" v klasickém smyslu, ale důsledek komunikační bariéry a úzkosti ze změn, což SVP (zaměřené na poruchy chování) nevyřeší.
 
 </details>
 
