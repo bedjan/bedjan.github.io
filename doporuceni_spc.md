@@ -70,7 +70,7 @@ ADHD diagnostikováno pedopsychiatrem, medikována. Rychle unavitelná, nízká 
 
 Doporučení ŠPZ
 &lt;page_number&gt;str. 1 / 7&lt;/page_number&gt;
-Eliška Hotová
+Eliška 
 
 ---
 
@@ -271,7 +271,7 @@ Eliška
   </tbody>
 </table>
 
-Doporučení ŠPZ &lt;page_number&gt;str. 3 / 7&lt;/page_number&gt; Eliška Hotová
+Doporučení ŠPZ &lt;page_number&gt;str. 3 / 7&lt;/page_number&gt; Eliška 
 
 ---
 
@@ -342,7 +342,7 @@ AP se podílí přímo na pedagogické činnosti při vzdělávání podle postu
 
 Doporučení ŠPZ
 &lt;page_number&gt;str. 4 / 7&lt;/page_number&gt;
-Eliška Hotová
+Eliška 
 
 ---
 
@@ -405,7 +405,7 @@ tel.: , e-mail:
 
 Doporučení ŠPZ
 &lt;page_number&gt;str. 5 / 7&lt;/page_number&gt;
-Eliška Hotová
+Eliška 
 
 ---
 
@@ -468,7 +468,7 @@ ANO ☐ NE ☐ S VÝHRADAMI ☐
 
 Doporučení ŠPZ
 &lt;page_number&gt;str. 6 / 7&lt;/page_number&gt;
-Eliška Hotová
+Eliška 
 
 ---
 
