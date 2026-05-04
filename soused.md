@@ -18,7 +18,7 @@
 "Vypadá to na masivní únik chemikálií při výrobě drog nebo hrozící výbuch. Ten zvuk toho hořáku je děsivý. Bojím se, že to vyletí do povětří i s lidmi v okolí. Je to v husté zástavbě!"
 
 #### 4. TAKTICKÝ POKYN
-"Prosím, přijeďte **bez sirén (tichý příjezd)**, aby ti lidé uvnitř v panice nezpůsobili výbuch nebo se nepokusili utéct s chemikáliemi. Potřebujeme, aby tam vtrhli hasiči v maskách a zastavili ten hořák. Já jdu raději dál od toho domu, protože se mi z toho smradu dělá zle."
+"Prosím, přijeďte **bez sirén (tichý příjezd)**, aby ti lidé uvnitř v panice nezpůsobili výbuch nebo se nepokusili utéct s chemikáliemi. Potřebujeme, aby tam vtrhli hasiči v maskách a zastavili ten hořák. Já jdu raději dál od toho domu, protože se nám a psovi dlouhodobě z toho smradu dělá zle."
 
 ---
 
