@@ -1,34 +1,36 @@
-# 🚨 OPERAČNÍ PLÁN: OSECKÁ 822/36, DUCHCOV (VERZE S ANONYMITOU)
+# 🚨 OPERAČNÍ PLÁN: OSECKÁ 822/36 (ANONYMNÍ VARIANTA "KOLEMDOUCÍ")
 
 ### 📞 NOUZOVÁ LINKA (HASIČI)
-* **Číslo k vytočení:** `#31#150`
-* **Kód #31#:** Skryje tvoje číslo v systému (pokud by se k výpisu dostal někdo nepovolaný).
+*   **Číslo k vytočení:** `#31#150`
+*   **Identita:** Vystupuješ jako náhodný svědek z ulice.
 
 ---
 
-### 🗣️ SCÉNÁŘ PRO HOVOR (DŮRAZ NA BEZPEČNOST)
+### 🗣️ SCÉNÁŘ PRO HOVOR (STRATEGIE KOLEMDOUCÍ)
 
-#### 1. LOKALITA A ANONYMITA (NA ÚVOD)
-"Dobrý den, Duchcov, **Osecká 822/36**. Prosím vás, v první řadě žádám o **naprostou anonymitu**. Volám skrytě, protože mám **obrovský strach o život a z pomsty majitele objektu**. Je to nebezpečný člověk, agresivní a pod vlivem, nesmí se dozvědět, že pomoc volám já!"
+#### 1. LOKALITA A ANONYMITA (KLÍČOVÝ ÚVOD)
+"Dobrý den, Duchcov, **Osecká 822/36**. Procházím teď kolem toho domu a je tu cítit naprosto nesnesitelný, agresivní chemický zápach. Žádám o **naprostou anonymitu**, mám strach z pomsty lidí, co v tom domě jsou. Nechci uvádět jméno a nebudu na vás čekat u domu, jen vám předávám info o ohrožení."
 
-#### 2. KRITICKÝ ROZSAH A SMERAD
-"Máme tu masivní únik chemikálií. Ten agresivní zápach nám **PROSAKUJE PŘÍMO PŘES SPOLEČNOU ZEĎ** do bytu. Je to cítit i venku a na zahradě. Jsme v pasti, nemůžeme před tím smradem nikam utéct!"
+#### 2. POPIS SITUACE (Z POHLEDU ZVENKU)
+"Ten smrad se valí z oken a ze dvora přímo na ulici. Z oken jde vidět nějaká divná pára nebo světlý kouř. Navíc je zevnitř slyšet **velmi hlasité hučení hořáku** a syčení, jako by tam něco tlakovali. Smrdí to jako aceton a čpavek, štípe to v nose i tady na chodníku!"
 
-#### 3. PŘÍZNAKY VÝBUCHU A ZVUK
-"Z oken toho domu se valí podivná pára a kouř. Je slyšet **intenzivní hučení hořáku** a syčení pod tlakem. Máme strach, že to každou vteřinu vyletí do povětří a vezme to i náš byt!"
+#### 3. DŮVOD PANIKY (HROZÍCÍ VÝBUCH)
+"Vypadá to na masivní únik chemikálií při výrobě drog nebo hrozící výbuch. Ten zvuk toho hořáku je děsivý. Bojím se, že to vyletí do povětří i s lidmi v okolí. Je to v husté zástavbě!"
 
-#### 4. OHROŽENÍ ZDRAVÍ (PES A LIDÉ)
-"Trvá to už několikátý den a už se nám hroutí organismus. Máme křeče v krku, pálí nás oči a **můj pes má z těch výparů neurologické záchvaty a je nepříčetný agresí**. Jsme regulérně přitrávení!"
-
-#### 5. TAKTICKÝ POKYN (TICHÝ PŘÍJEZD)
-"Prosím, přijeďte **bez sirén (tichý příjezd)**, aby majitel nezačal v panice vyhazovat věci nebo nezpůsobil výbuch schválně. Potřebujeme, abyste tam vtrhli v maskách, zastavili ten hořák a změřili emise. My nevycházíme ven, máme strach, že nás napadne!"
+#### 4. TAKTICKÝ POKYN
+"Prosím, přijeďte **bez sirén (tichý příjezd)**, aby ti lidé uvnitř v panice nezpůsobili výbuch nebo se nepokusili utéct s chemikáliemi. Potřebujeme, aby tam vtrhli hasiči v maskách a zastavili ten hořák. Já jdu raději dál od toho domu, protože se mi z toho smradu dělá zle."
 
 ---
 
-### 🛡️ PROČ SE NEMUSÍŠ BÁT "POPOTAHOVÁNÍ":
-* **Krajní nouze:** Chráníš život svůj a svého psa. To stojí nad vším ostatním.
-* **Zákonná ochrana:** Policie a Hasiči mají interní protokoly na ochranu oznamovatelů v drogové problematice.
-* **Historie:** Tvoje e-maily na krajské ředitelství policie v Ústí slouží jako důkaz, že tvoje obava z pomsty je reálná a podložená.
+### 🛡️ PROČ JE TOHLE PRO TEBE NEJLEPŠÍ:
+*   **Nulová vazba na byt:** Hasiči nebudou klepat u tebe doma, nebudou se tě na nic ptát.
+*   **Anonymita:** Pro policii i souseda jsi jen "někdo z ulice".
+*   **Bezpečí:** Soused nebude mít důvod tě podezřívat, protože smrad na ulici mohl ucítit kdokoli.
 
-### 🐕 PŘIPOMÍNKA PRO PSA:
-* **EnteroZOO gel:** Dávej mu ho dál. Ta agrese, kterou popisuješ, je typická pro intoxikaci rozpouštědly – ten gel mu pomůže ty jedy z krve vyvázat.
+### 🐕 PÉČE O PSA (DOMA V TICHU):
+*   I když hraješ "kolemjdoucího", tvůj pes dýchá to, co jde přes zeď.
+*   **EnteroZOO gel:** Dávej mu ho dál (1/2 lžičky 3x denně). Je to tvůj soukromý způsob, jak ho chránit, aniž by o tom kdokoli věděl.
+*   **Klid:** Až hasiči přijedou, zůstaň potichu v bytě, nezhasínej/nerozsvěcej, nechoď k oknu. Dělej, že spíš.
+
+---
+**Poznámka:** Toxikologa a místní úřady v Duchcově úplně vypusť. Tímto hovorem na 150 (jako anonym z ulice) dosáhneš svého a nikdo tě "nevyčmuchá".
