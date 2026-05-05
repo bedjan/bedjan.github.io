@@ -155,7 +155,8 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 # Další doporučení SPC 
 
 [IDENTIFIKÁTOR ZNEVÝHODNENÍ.pdf](https://github.com/bedjan/bedjan.github.io/blob/main/IDENTIFIKA%CC%81TOR%20ZNEVY%CC%81HODNENI%CC%81.pdf)
-[Speciálne pedagogické centrum Mnichovo Hradistē, Svermova 380](https://github.com/bedjan/bedjan.github.io/blob/main/Specia%CC%81lne%20pedagogicke%CC%81%20centrum%20Mnichovo%20Hradiste%CC%84%2C%20Svermova%20380-z.pdf))
+
+[Speciálne pedagogické centrum Mnichovo Hradistē, Svermova 380](https://github.com/bedjan/bedjan.github.io/blob/main/Specia%CC%81lne%20pedagogicke%CC%81%20centrum%20Mnichovo%20Hradiste%CC%84%2C%20Svermova%20380-z.pdf)
 
 -------------------------
 # KONEC - DĚKUJEME ZA POZORNOST
