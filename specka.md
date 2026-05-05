@@ -136,7 +136,9 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 * b) Speciálně pedagogické centrum 
 * c) Středisko pedagogické kontroly
 
+```html
 
+<div>
 
 
 <details>
@@ -148,6 +150,9 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 
 </details>
 
+</div>
+
+```html
 
 -------------------------
 
