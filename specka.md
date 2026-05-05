@@ -149,7 +149,7 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 
 ------------
 
-# **Otázka do testu:**               
+# <b>Otázka do testu:  </b>             
 ## ** Co znamená zkratka SPC?**
 * a) Školní poradenské centrum
 * b) Speciálně pedagogické centrum 
