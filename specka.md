@@ -128,24 +128,40 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 * C) Škola kontaktuje příslušné Speciálně pedagogické centrum (SPC), které vyšle odborného pracovníka k náhledu do hodiny, vypracuje doporučení pro vizualizaci režimu a navrhne přidělení asistenta pedagoga.
 * D) Rodiče jsou odesláni do Střediska výchovné péče (SVP), aby zde žák absolvoval pobytový program zaměřený na odstranění afektivního chování.
 
+------------
+
+# **Otázka do testu:**               
+## ** Co znamená zkratka SPC?**
+* a) Školní poradenské centrum
+* b) Speciálně pedagogické centrum 
+* c) Středisko pedagogické kontroly
+
+
+
+
 <details>
 <summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
 
-**Správná odpověď: C**
+<b>Správná odpověď: B<b/>
 
-**Zdůvodnění:**
 
-* **Proč C:** PAS spadá pod kompetenci SPC. Odborník z SPC musí nastavit specifické metody práce (strukturalizace, vizualizace) a doporučit asistenta, na kterého pak škola dostane peníze ze státního rozpočtu.
-
-* **Proč ne A:** Bez oficiálního Doporučení z ŠPZ nemá škola nárok na finance pro podporu a postupuje neodborně.
-
-* **Proč ne B:** PPP se primárně nezabývá autismem, ale poruchami učení.
-
-* **Proč ne D:** Afektivní chování u autismu není "výchovný problém" v klasickém smyslu, ale důsledek komunikační bariéry a úzkosti ze změn, což SVP (zaměřené na poruchy chování) nevyřeší.
 
 </details>
 
 
-# Doporučení SPC 
+-------------------------
+
+
+# Další doporučení SPC 
+
+[IDENTIFIKÁTOR ZNEVÝHODNENÍ.pdf](https://github.com/bedjan/bedjan.github.io/blob/main/IDENTIFIKA%CC%81TOR%20ZNEVY%CC%81HODNENI%CC%81.pdf)
+[Speciálne pedagogické centrum Mnichovo Hradistē, Svermova 380](https://github.com/bedjan/bedjan.github.io/blob/main/Specia%CC%81lne%20pedagogicke%CC%81%20centrum%20Mnichovo%20Hradiste%CC%84%2C%20Svermova%20380-z.pdf))
+
+-------------------------
+# KONEC - DĚKUJEME ZA POZORNOST
+
+-----------------
+
+# Další doporučení SPC 
 
 [ Doporučení SPC ](doporuceni_spc.md)
