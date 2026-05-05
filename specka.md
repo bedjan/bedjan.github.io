@@ -128,32 +128,6 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 * C) Škola kontaktuje příslušné Speciálně pedagogické centrum (SPC), které vyšle odborného pracovníka k náhledu do hodiny, vypracuje doporučení pro vizualizaci režimu a navrhne přidělení asistenta pedagoga.
 * D) Rodiče jsou odesláni do Střediska výchovné péče (SVP), aby zde žák absolvoval pobytový program zaměřený na odstranění afektivního chování.
 
-------------
-
-# **Otázka do testu:**               
-## ** Co znamená zkratka SPC?**
-* a) Školní poradenské centrum
-* b) Speciálně pedagogické centrum 
-* c) Středisko pedagogické kontroly
-
-```html
-
-<div>
-
-
-<details>
-<summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
-
-<b>Správná odpověď: B<b/>
-
-
-
-</details>
-
-</div>
-
-```html
-
 -------------------------
 
 
@@ -171,3 +145,31 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 # Další doporučení SPC 
 
 [ Doporučení SPC ](doporuceni_spc.md)
+
+
+------------
+
+# **Otázka do testu:**               
+## ** Co znamená zkratka SPC?**
+* a) Školní poradenské centrum
+* b) Speciálně pedagogické centrum 
+* c) Středisko pedagogické kontroly
+
+
+
+<div>
+
+
+<details>
+<summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
+
+<b>Správná odpověď: B<b/>
+
+
+
+</details>
+
+</div>
+
+
+
