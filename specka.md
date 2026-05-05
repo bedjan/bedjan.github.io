@@ -163,7 +163,7 @@ SPC pracují v souladu se **Zákonem č. 561/2004 Sb. (Školský zákon)**. Jeji
 <details>
 <summary>🔓 Klikněte pro zobrazení správné odpovědi</summary>
 
-<b>Správná odpověď: B<b/>
+<b>Správná odpověď: B</b>
 
 
 
