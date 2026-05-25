@@ -1,6 +1,9 @@
 -----------------
-# PCP
+# piCorePlayer (pCP)
 -----------------
+
+
+[piCorePlayer  pCP](https://lyrion.org/players-and-controllers/picoreplayer/)
 
 # cmdline.txt
 
