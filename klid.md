@@ -1,35 +1,42 @@
-# SYSTÉM OBRANY: "Marek_Professional_Shield"
+# SYSTÉM: MAREK_DEFENSE_V2.0
+# STATUS: NEPRŮSTŘELNÝ
+# CÍL: NULOVÁ EMOČNÍ INVESTICE
 
-## [1] STAVOVÉ KONSTANTY (Tvoje vnitřní nastavení)
-- STATUS: "Nedobytný"
-- REŽIM: "Ledový klid"
-- PRAVIDLO: "Žádné emoce, žádné vysvětlování."
+---
 
-## [2] KNIHOVNA REAKCÍ (Definované funkce)
+## 1. LOGIKA OBRANY (Základní příkazy)
+- VŽDY klidný hlas.
+- NIKDY nevysvětluj.
+- IHNED po hlášce zpět k práci.
 
-### FUNKCE: `zastavit_utok()`
-// Použij, když překročí hranici slušnosti
-- "Jsi v pořádku? Protože to, co říkáš, zní, jako bys nebyl."
-- "Takhle se spolu bavit nebudeme. Pokud chceš mluvit slušně, rád na to navážu."
+---
 
-### FUNKCE: `odrazit_bahno()`
-// Použij, když na tebe hází intriky nebo vlastní selhání
-- "To je tvoje bahno, ne moje."
-- "To je tvůj pohled, já to mám nastavené jinak."
+## 2. KNIHOVNA EXEKUCÍ (Výběr podle situace)
 
-### FUNKCE: `zchladit_detske_divadlo()`
-// Použij, když se chovají jako děti
+### SITUACE A: "Chtějí tě urazit / jsou drzí"
+- "Jsi v pořádku? Tohle zní, jako bys nebyl."
+- "Takhle se mnou mluvit nebudeš. Najdi si jiný tón."
+- "Máš nějaký problém? Vyřeš si ho jinde."
+
+### SITUACE B: "Hází na tebe svoje sra*ky"
+- "To je tvůj boj, ne můj."
+- "To je tvoje bahno. Nech si ho."
+- "Mám to nastavené jinak. Tečka."
+
+### SITUACE C: "Hrají dětské divadlo"
 - "Ty zase dneska zlobíš, viď?"
-- "Ty jsi dneska nějak špatně vyspinkaná/ý, co?"
+- "Ty jsi dneska špatně vyspinkaná? To mě mrzí."
+- "Jé, zase tvoje chvilka? Tak se vybreč a dej vědět."
 
-### FUNKCE: `blokovat_urad()`
-// Použij, když vytáhnou vytýkací dopis nebo papírování
+### SITUACE D: "Papírová šikana / dopisy"
 - "Beru na vědomí. Vyjádřím se k tomu písemně."
-- "Prosím o konkrétní důkazy. Vše, co není písemně, pro mě neexistuje."
+- "Dodej konkrétní důkazy, jinak se o tom nebavím."
+- "Co není písemně, pro mě neexistuje."
 
-## [3] ALGORITMUS PŘEŽITÍ (Postup v reálném čase)
-1. **PŘÍJEM:** Detekce konfliktu (agrese / manipulace / intriky).
-2. **PAUZA:** Nadechni se. Neodpovídej okamžitě.
-3. **VYBĚR:** Vyber funkci z knihovny výše.
-4. **PROVEDENÍ:** Řekni větu klidným hlasem a bez emocí.
-5. **KONEC:** Otoč se a okamžitě se vrať ke své práci (ignoruj jejich další reakci).
+---
+
+## 3. ALGORITMUS BLESKOVÉ REAKCE
+1. **PŘÍJEM:** Detekce konfliktu.
+2. **PAUZA:** 2 vteřiny ticha (nejúčinnější zbraň).
+3. **EXEKUCE:** Jedna hláška z knihovny (bez přidávání slov!).
+4. **EXIT:** Okamžitý návrat k vlastní práci (úplná ignorace jejich odpovědi).
