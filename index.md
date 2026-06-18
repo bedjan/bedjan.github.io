@@ -15,7 +15,9 @@ title: Osobní stránky
                <a href="https://portal.ujep.cz/portal/studium/uchazec/eprihlaska.html" target="_blank">Epřihláška ke studiu</a>
                 <a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a>
                 <a href="https://github.com/bedjan/ucitel" target="_blank">Ucitel</a>
-                <a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>                
+                <a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>    
+                <a href="https://my.pcloud.com/" target="_blank">Pcloud</a>  
+                <a href="https://www.terabox.com/main?category=all" target="_blank">Terabox</a>  
             </div>
         </details>
 
