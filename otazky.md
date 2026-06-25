@@ -1,5 +1,9 @@
+---
+---
+
 # Komplexní studijní příručka: Speciální pedagogika (Teorie + Praxe)
 
+---
 ---
 
 ### 1. Jak lze vymezit speciální pedagogiku jako vědní obor?
@@ -201,6 +205,7 @@
 Tento dokument slouží jako komplexní přehled pro pracovníky ve školství, sociální sféře nebo pro každého, kdo se setkává s dětmi vyrůstajícími mimo vlastní rodinu.
 
 ---
+---
 
 ## I. Cesta dítěte systémem: Od narození k dospělosti
 
@@ -265,6 +270,9 @@ Při práci s dětmi z ústavní či pěstounské péče je nutné zapomenout na
 
 # Emoční vývoj a přístup k dítěti s traumatem
 
+---
+---
+
 Při práci s dětmi z ústavní či pěstounské péče zapomeňte na chronologický věk. Pracujte s **emočním věkem**, do kterého se dítě v zátěži vrací.
 
 ## 1. Emoční věk 0–3 roky: „Jsem v bezpečí?“
@@ -299,6 +307,7 @@ Při práci s dětmi z ústavní či pěstounské péče zapomeňte na chronolog
 
 Práce ve speciální škole není jen o učení, je to o hledání nových cest k dětem, které mají jiný „operační systém“ než zbytek světa.
 
+---
 ---
 
 ## 1. Děti s „dvojí výjimečností“
