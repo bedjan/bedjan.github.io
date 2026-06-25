@@ -192,3 +192,104 @@
 *   **Ergoterapie:** Terapie zaměřená na nácvik každodenních činností a úchopů.
 *   **Interdisciplinární:** Spolupráce více oborů (pedagogika + medicína + psychologie).
 *   **Biopsychosociální model:** Chápání postižení jako výsledku vlivů biologie, psychiky a sociálního prostředí.
+
+---
+---
+
+# Cesta dítěte systémem náhradní péče a jeho emoční vývoj
+
+Tento dokument slouží jako komplexní přehled pro pracovníky ve školství, sociální sféře nebo pro každého, kdo se setkává s dětmi vyrůstajícími mimo vlastní rodinu.
+
+---
+
+## I. Cesta dítěte systémem: Od narození k dospělosti
+
+Systém náhradní péče v České republice je navržen tak, aby chránil zájmy dítěte.
+
+### 1. Fáze: Krizová intervence
+* **Situace:** Rodina selhává, dítě je v bezprostředním ohrožení (nebo je opuštěno).
+* **Klíčoví aktéři:** OSPOD (Orgán sociálně-právní ochrany dětí), Policie ČR, soud.
+* **Postup:** OSPOD podává k soudu návrh na **předběžné opatření**. Soudce rozhoduje (často do 24 hodin) o okamžitém umístění dítěte do bezpečí – ať už jde o přechodné pěstouny, krizové centrum nebo kojenecký ústav.
+
+### 2. Fáze: Náhradní péče
+* **Pěstounská péče:** Prioritní cesta. Dítě žije v náhradní rodině, která je finančně podporována státem.
+* **Ústavní výchova:** Dětské domovy (pokud není pěstounů dostatek).
+* **Dozor:** Soud rozhoduje o formě péče, OSPOD pravidelně kontroluje, zda jsou naplňovány potřeby dítěte.
+
+### 3. Fáze: Příprava na dospělost (15–18 let)
+* **Cíl:** Naučit se hospodařit s financemi, vařit, komunikovat s úřady, hledat práci.
+* **Podpora:** Děti v systému mají mentory nebo vychovatele, kteří jim pomáhají s plánováním budoucnosti.
+
+### 4. Fáze: Odchod do samostatnosti
+* **Startovné:** Při odchodu z domova mají nárok na jednorázový finanční příspěvek (odchodné).
+* **Záchranná síť:** Domy na půl cesty, sociální bydlení.
+* **Rizika:** Pokud mladý člověk nemá v této fázi podporu, je extrémně zranitelný (exekuce, bezdomovectví).
+
+---
+
+## II. Emoční vývoj a přístup k dítěti
+
+Při práci s dětmi z ústavní či pěstounské péče je nutné zapomenout na chronologický věk a pracovat s **emočním věkem**. Děti s traumatem se v zátěži často vracejí do vývojových fází, které ještě „nedokončily“.
+
+### 1. Emoční věk 0–3 roky: „Jsem v bezpečí?“
+* **Projevy:** Agrese, pláč, neschopnost se uklidnit, lpění na vás.
+* **Potřeba:** Pocit bezpečí a předvídatelnost.
+* **Přístup:**
+    * **Ko-regulace:** Dítě se neumí uklidnit samo. Potřebuje vás jako „vnější mozek“. Buďte klidní, mluvte tiše.
+    * **Předvídatelnost:** Každá změna plánu je hrozba. Informujte o všem předem.
+
+### 2. Emoční věk 4–8 let: „Jsem dost dobrý?“
+* **Projevy:** Snaha o dokonalost, strach z chyby, lhaní (obrana), boj o pozornost.
+* **Potřeba:** Oceňování úsilí, nikoliv výsledku.
+* **Přístup:**
+    * **Chyba je učení:** Chybu prezentujte jako přirozený proces, ne jako selhání osobnosti.
+    * **Jasné hranice:** Oddělte dítě od jeho činu („Jsi v pořádku, ale toto chování je nepřijatelné“).
+
+### 3. Emoční věk 9–14 let: „Kdo jsem a kam patřím?“
+* **Projevy:** Rebélie, testování hranic, nedůvěra k autoritám.
+* **Potřeba:** Respekt a autonomie.
+* **Přístup:**
+    * **Partnerství:** Nabízejte volbu („Chceš to udělat teď, nebo za 15 minut?“).
+    * **Férovost:** Přiznejte vlastní chybu. Tím budujete respekt a učíte je zodpovědnosti.
+
+---
+
+## Klíčové principy úspěšné práce s těmito dětmi
+
+1. **Vztah je nadřazen výkonu:** Mozek v „módu přežití“ se nemůže učit. Nejdříve musíte zajistit pocit bezpečí, teprve pak může dojít k učení.
+2. **Autorita není automatická:** Tyto děti mají často špatnou zkušenost s autoritami (policie, úřady). Důvěra se buduje dlouhodobě skrze předvídatelné a spravedlivé chování.
+3. **Buďte kotvou:** I když dítě vzdoruje nebo testuje hranice, potřebuje vědět, že tu pro něj bezpodmínečně jste. Vaše vytrvalost a klid jsou pro ně důležitější než samotné školní osnovy.
+
+---
+---
+
+ # Emoční vývoj a přístup k dítěti s traumatem
+
+Při práci s dětmi z ústavní či pěstounské péče zapomeňte na chronologický věk. Pracujte s **emočním věkem**, do kterého se dítě v zátěži vrací.
+
+## 1. Emoční věk 0–3 roky: „Jsem v bezpečí?“
+* **Projevy:** Agrese, pláč, neschopnost se uklidnit, lpění na dospělém nebo pasivita.
+* **Přístup:**
+    * **Ko-regulace:** Dítě se neumí uklidnit samo. Potřebuje vás jako „vnější mozek“. Buďte klidní, mluvte tiše.
+    * **Předvídatelnost:** Každá změna plánu je hrozba. Informujte o všem předem.
+    * **Bezpečí:** V krizi neřešte výchovu, jen zajistěte, aby si dítě neublížilo.
+
+## 2. Emoční věk 4–8 let: „Jsem dost dobrý?“
+* **Projevy:** Snaha o dokonalost, strach z chyby, lhaní (obrana), boj o pozornost.
+* **Přístup:**
+    * **Chyba je učení:** Chybu prezentujte jako přirozený proces, ne jako selhání osobnosti.
+    * **Jasné hranice:** Oddělte dítě od jeho činu („Jsi v pořádku, ale toto chování je nepřijatelné“).
+
+## 3. Emoční věk 9–14 let: „Kdo jsem a kam patřím?“
+* **Projevy:** Rebélie, testování hranic, nedůvěra k autoritám.
+* **Přístup:**
+    * **Partnerství:** Nabízejte volbu („Chceš to udělat teď, nebo za 15 minut?“).
+    * **Férovost:** Přiznejte vlastní chybu. Tím budujete respekt a učíte je zodpovědnosti.
+
+## Klíčové principy úspěchu
+1. **Vztah nad výkonem:** Mozek v „módu přežití“ se nemůže učit. Nejdříve zajistěte bezpečí.
+2. **Autorita není automatická:** Důvěra se buduje dlouhodobě skrze předvídatelné a spravedlivé chování.
+3. **Buďte kotvou:** I když dítě vzdoruje, potřebuje vědět, že tu pro něj bezpodmínečně jste.
+
+
+---
