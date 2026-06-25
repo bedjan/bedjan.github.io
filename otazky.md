@@ -293,3 +293,45 @@ Při práci s dětmi z ústavní či pěstounské péče zapomeňte na chronolog
 
 
 ---
+---
+
+# Zajímavosti a specifika práce ve speciálním školství
+
+Práce ve speciální škole není jen o učení, je to o hledání nových cest k dětem, které mají jiný „operační systém“ než zbytek světa.
+
+---
+
+## 1. Děti s „dvojí výjimečností“
+* **O co jde:** Dítě má kombinaci znevýhodnění (např. ADHD, porucha autistického spektra) a zároveň mimořádného intelektu či talentu.
+* **Proč je to zajímavé:** Systém je často vidí jen skrze jejich poruchu. Pokud ale začneš rozvíjet jejich nadání (např. programování, detailní znalost historie), jejich problematické chování se často výrazně zlepší.
+
+## 2. Sekundární trauma (Profesní hygiena)
+* **O co jde:** Pedagogové podvědomě přebírají emoce a traumata svých žáků.
+* **Výzva:** Pokud si „příběhy dětí“ nosíš domů, hrozí rychlé vyhoření. 
+* **Řešení:** Nutnost nastavit si jasné profesní hranice a využívat techniky mentální hygieny (po práci vědomě „vypnout“).
+
+## 3. AAK – Alternativní a augmentativní komunikace
+* **O co jde:** Metody komunikace pro děti, které nemluví nebo mají s mluvenou řečí potíže.
+* **Nástroje:** Obrázkové systémy (PECS), znakování, digitální tablety s aplikacemi.
+* **Důsledek:** Agrese u těchto dětí je často jen „zoufalý pokus o komunikaci“. Když jim dáš nástroj, jak říct „mám hlad“ nebo „jsem naštvaný“, agrese často dramaticky klesá.
+
+## 4. Past „asistence pedagoga“
+* **Riziko:** Asistent se může stát pro dítě „berličkou“. Pokud asistent dělá za dítě veškerou práci, brzdí jeho přirozenou touhu po samostatnosti.
+* **Dobrá praxe:** Asistent by se měl postupně stávat „neviditelným“ a vést dítě k tomu, aby úkoly zvládlo vlastními silami.
+
+## 5. Smyslová integrace (Snoezelen)
+* **O co jde:** Multisenzorické místnosti pracující se světlem, barvami, vůněmi a vibracemi.
+* **Efekt:** Dítě, které je ve třídě v „módu přežití“ (agrese, rozbouřenost), se v této místnosti dokáže za 15 minut zklidnit, protože jeho mozek dostane přesně to, co potřebuje k harmonizaci.
+
+## 6. Testování „falešnosti“ dospělých
+* **Problém:** Děti z ústavů mají poškozený vzorec autority. Budou tě „drsně testovat“.
+* **Klíč k úspěchu:** **Konzistentnost.** Pokud slíbíš trest, musí přijít. Pokud slíbíš odměnu, musí přijít. Pokud jsi předvídatelný, dítě si tě po čase zvolí jako svou bezpečnou autoritu.
+
+---
+
+### Klíčové tipy pro každodenní praxi
+* **Pozoruj drobné pokroky:** Ve speciálce se úspěch neměří známkami, ale tím, že dítě dnes poprvé samo otevřelo sešit nebo se nezabilo záchvatem vzteku.
+* **Vytvoř „bezpečný přístav“:** Tvoje třída musí být místem, kde dítě ví, že ho nikdo nebude trestat za to, jaké je, ale bude ho vést k tomu, aby bylo v možnostech svých schopností nejlepší.
+* **Buď kotvou:** Děti s traumatem zažily mnoho ztrát. Tvá vytrvalost a stálost jsou pro ně víc než jakákoliv učební metoda.
+
+---
