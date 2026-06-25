@@ -263,7 +263,7 @@ Při práci s dětmi z ústavní či pěstounské péče je nutné zapomenout na
 ---
 ---
 
- # Emoční vývoj a přístup k dítěti s traumatem
+# Emoční vývoj a přístup k dítěti s traumatem
 
 Při práci s dětmi z ústavní či pěstounské péče zapomeňte na chronologický věk. Pracujte s **emočním věkem**, do kterého se dítě v zátěži vrací.
 
