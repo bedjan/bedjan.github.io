@@ -90,6 +90,22 @@ Odvádíš svou poctivou práci kvůli sobě a své hrdosti, ne kvůli nim. Vzal
 ---
 *Závěr: Biologický věk sice narostl, ale vnitřní výbava, charakter a reakce na svět zůstaly na úrovni dospívajícího fracka, který se bojí postavit čelem realitě.*
 
+-------
+-------
+# Jak se adaptovat v prostředí plném toxických lidí
+
+*Strategie pro situaci, kdy tě okolí hází do škatulky „dítěte“ nebo se chová podpásově, aniž by ses musel snížit na jejich úroveň.*
+
+---
+
+### Klíčové principy přežití a nadhledu
+1. **Přestat s nimi bojovat jejich vlastními zbraněmi:** Když se s nimi začneš hádat, hrat jejich hry nebo se obhajovat, sesypeš se na jejich úroveň. To je přesně to, co chtějí – vtáhnout tě do bahna, kde se cítí jako doma, protože v tom umějí chodit. 
+2. **Přijmout jejich pohled jako irelevantní šum:** Jestliže tě berou „jako dítě“ nebo se snaží snižovat tvoji pozici, uvědom si **proč** to dělají. Dospělý a vyrovnaný člověk nemá potřebu nikoho shazovat. Dělají to jen proto, že z tebe mají strach a tvoje rovné chování je pro jejich křehké ego hrozba. Jejich názor nemá žádnou váhu – je to jen projekce jejich vlastní malosti.
+3. **Nastavit neprodyšné hranice (Asertivní chlad):** Komunikuj s nimi výhradně věcně, krátce a bez jakékoliv emoce. Žádné sdílení soukromí, žádné úsměvy navíc. Ukážes jim tím, že jejich toxické divadlo na tebe nemá absolutně žádný dosah. Pro takové lidi je největší potrestání, když zjistí, že jsi pro ně neviditelný a neprůstřelný.
+4. **Investovat energii tam, kde to má smysl:** Nenechávej se vysávat lidmi, kteří nestojí za nic. Tvoji energii, čas a klid si zaslouží jen lidé, kteří mají rovnou páteř, fungují normálně a je s nimi řeč na úrovni. Zbytek ignoruj jako špatné počasí – taky kvůli dešti nepláčeš, jen vytáhneš deštník nebo jdeš pod střechu.
+
+---
+*Závěr: Nejde o to se jim přizpůsobit ve smyslu změnit se a hrát jejich hru. Jde o to se od nich vnitřně úplně odpojit, nechat je v jejich žumpě a žít si po svém.*
 
 
 -------
