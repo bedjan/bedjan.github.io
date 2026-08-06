@@ -36,6 +36,24 @@ Odvádíš svou poctivou práci kvůli sobě a své hrdosti, ne kvůli nim. Vzal
 
 ------
 ------
+
+# Zásady chlapské komunikace
+
+*Přehled přímého, férového a věcného jednání bez zbytečného balastu.*
+
+---
+
+### Klíčové principy
+1. **Rovnou k věci:** Žádné chození kolem horkého kaše, zbytečné okecávání ani citové vydírání. Řekne se, co je potřeba a jaká je situace.
+2. **Slovo platí:** Co se domluví, to platí. Žádné kličkování, plané sliby nebo uhýbání pohledem.
+3. **Řešení problému, ne emocí:** Když nastane problém, neřeší se kydání špíny ani drby, ale fakta a náprava.
+4. **Kritika z očí do očí:** Věci se vyříkají napřímo a mezi čtyřma očima, nikoliv za rohem nebo přes dav.
+5. **Respekt a čistý stůl:** Debata snese jiný názor bez osobních válek. Po rozhovoru je jasné, na čem člověk je.
+
+---
+*Uloženo pro okamžité použití.*
+
+-------
 -------
 
 # Souhrn: Psychologický průřez společností, boj s frustrací a pohled Bhagavadgíty
