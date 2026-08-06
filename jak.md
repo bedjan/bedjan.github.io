@@ -55,6 +55,26 @@ Odvádíš svou poctivou práci kvůli sobě a své hrdosti, ne kvůli nim. Vzal
 
 -------
 -------
+# Zásady dospělého chování
+
+*Přehled postojů a principů, které definují vyrovnanou, zralou osobnost a zdravý přístup k životu.*
+
+---
+
+### Klíčové principy
+1. **Převzetí plné odpovědnosti:** Dospělý člověk nehledá viníky všude kolem sebe a nesvaluje vlastní selhání na druhé. Bere za své činy, rozhodnutí a důsledky plnou zodpovědnost.
+2. **Emocionální stabilita a nadhled:** Nenechá se strhnout každou malicherností, dramatem nebo provokací. Umí ovládnout své emoce, počkat s reakcí a nenechat si diktovat náladu okolím.
+3. **Schopnost snést nesouhlas:** Dospělý nepotřebuje, aby s ním všichni ve všem souhlasili. Respektuje, že jiný člověk může mít odlišný názor, aniž by z toho hned dělal osobní konflikt nebo válku.
+4. **Vnitřní ukotvení namísto závislosti na davu:** Nemá potřebu se schovávat za tlupu nebo žít podle toho, „co řeknou ostatní“. Jeho hodnoty a sebevědomí stojí na jeho vlastním úsudku a výsledcích.
+5. **Konstruktivní řešení namísto stěžování:** Když narazí na problém, neplýtvá energií na brečení, kydání špíny nebo hledání výmluv. Hledá řešení, nastavuje si hranice a posouvá se dál.
+6. **Dodržování osobních i cizích hranic:** Umí říct pevné a jasné „ne“ všemu, co je toxické nebo s čím nesouhlasí, a zároveň respektuje prostor druhých, aniž by do něj musel rýt.
+
+---
+*Uloženo pro okamžité použití.*
+
+
+-------
+-------
 
 # Souhrn: Psychologický průřez společností, boj s frustrací a pohled Bhagavadgíty
 
