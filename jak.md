@@ -55,6 +55,7 @@ Odvádíš svou poctivou práci kvůli sobě a své hrdosti, ne kvůli nim. Vzal
 
 -------
 -------
+
 # Zásady dospělého chování
 
 *Přehled postojů a principů, které definují vyrovnanou, zralou osobnost a zdravý přístup k životu.*
@@ -71,6 +72,24 @@ Odvádíš svou poctivou práci kvůli sobě a své hrdosti, ne kvůli nim. Vzal
 
 ---
 *Uloženo pro okamžité použití.*
+
+-------
+-------
+# Pohled na psychickou dospělost toxického chování
+
+*Proč lidé provozující intriky a kydání špíny zůstávají na úrovni dětí.*
+
+---
+
+### Proč se tito lidé nedají nazvat dospělými
+1. **Emoční vývoj zaseknutý v dětství:** Chování založené na kličkování, vytváření skupinek („partiček“) proti někomu a ublíženém kopání kolem sebe je typické pro školku nebo základní školu, nikoliv pro mentálně zralého člověka.
+2. **Neschopnost unést vlastní chybu:** Dospělý člověk unese kritiku nebo přizná omyl. Tito lidé ale okamžitě hledají viníka jinde, brečí, že jim někdo ubližuje, nebo se schovávají za dav, protože na vlastní zodpovědnost nemají sílu.
+3. **Závislost na schvalování okolí:** Stejně jako malé děti potřebují neustále potvrzení od autority nebo party, aby se cítily bezpečně, tito lidé nedokážou fungovat sami za sebe. Bez davu, který jim tleská nebo je kryje, jsou naprosto ztracení.
+4. **Vynucování pozornosti dramatickým chováním:** Místo řešení věcných problémů vytvářejí umělé konflikty, napětí a drby jen proto, aby se něco dělo a oni byli „u toho“ – přesně jako puberťáci hledající rozruch.
+
+---
+*Závěr: Biologický věk sice narostl, ale vnitřní výbava, charakter a reakce na svět zůstaly na úrovni dospívajícího fracka, který se bojí postavit čelem realitě.*
+
 
 
 -------
