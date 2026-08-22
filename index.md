@@ -26,6 +26,7 @@ title: Osobní stránky
 <details>
             <summary>Oblíbené</summary>
             <div class="links-grid">
+<a href="https://praceveskole.cz/volna-mista?location=duchcov%3A25" target="_blank">Škola hledání práce</a>
                 <a href="https://www.dropbox.com/scl/fo/w3x5naidjcghoyhwep3wn/AGoYubQUkgXLRpw30je_hcY?rlkey=pmpgz4soem6w0a59bmspkx8x4&st=8zztvg1l&dl=0" target="_blank">Torrenty</a>
                 <a href="katalog_disku_E.html" target="_blank">Katalog</a>
                         <a href="investice.html" target="_blank">Investice</a>
