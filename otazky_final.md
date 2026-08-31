@@ -1,9 +1,9 @@
 ---
 ---
 
-# Komplexní studijní příručka: Speciální pedagogika (Teorie + Praxe)
+# Výpisky -> Komplexní studijní příručka: Speciální pedagogika (Teorie + Praxe)
 
-Výpisky
+
 
 ---
 ---
