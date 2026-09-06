@@ -139,7 +139,8 @@ echo "=== 7. Instalace LXDE, Openbox, Numlockx a smazání XFCE ==="
 apt-get update
 
 # Instalace nového odlehčeného prostředí a užitečných utilit
-apt-get install -y lxde openbox numlockx
+apt-get install -y lxde openbox numlockx gnome-screenshot
+
 
 # Odstranění starého prostředí XFCE a jeho komponent
 apt-get purge -y xfce4 xfce4-* thunar tumbler light-desktop-settings
