@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# sudo bash optimalizace.sh
+# sudo bash mx.md
 
 # ==============================================================================
 # AUTOMATICKÝ OPTIMALIZAČNÍ SKRIPT PRO DEBIAN / MX LINUX
