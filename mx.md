@@ -200,10 +200,11 @@ echo "-> Mažu stažené instalační balíčky pro uvolnění místa..."
 sudo apt-get clean
 
 # 5. Otevření odkazů na zásadní rozšíření pro Firefox
-echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube..."
+echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube a Auto Tab Discard Lite ..."
 # Spustí se pod běžným uživatelem (ne jako root), aby se odkazy otevřely ve vašem profilu
 su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" &
 su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/cs/firefox/addon/enhanced-h264ify/" &
+su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/cs/firefox/addon/autotabdiscardlite/" &
 
 # 5. Automatické nastavení hardwarové akcelerace videa pro Firefox (user.js)
 echo "-> Konfiguruji Firefox pro hardwarové dekódování videa (Intel UHD 600)..."
