@@ -195,8 +195,8 @@ sudo apt-get clean
 # 5. Otevření odkazů na zásadní rozšíření pro Firefox
 echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube..."
 # Spustí se pod běžným uživatelem (ne jako root), aby se odkazy otevřely ve vašem profilu
-su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
-su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
+su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" &
+su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/cs/firefox/addon/enhanced-h264ify/" &
 
 echo "=== Optimalizace dokončena! Změny se projeví po restartu. ==="
 
