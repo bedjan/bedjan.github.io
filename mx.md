@@ -148,6 +148,10 @@ apt-get purge -y xfce4 xfce4-* thunar tumbler light-desktop-settings
 apt-get autoremove -y
 apt-get clean
 
+# Aby numlockx v novém prostředí fungoval
+echo "@numlockx on" | sudo tee -a /etc/xdg/lxsession/LXDE/autostart
+
+
 echo "=============================================================================="
 echo " HOTOVO! Vše bylo úspěšně nastaveno přesně podle předchozí domluvy."
 echo " Prostředí bylo změněno na LXDE/Openbox. XFCE bylo bezpečně smazáno."
