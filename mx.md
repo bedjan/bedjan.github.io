@@ -158,3 +158,34 @@ echo " Prostředí bylo změněno na LXDE/Openbox. XFCE bylo bezpečně smazáno
 echo " Doporučuje se restartovat počítač pro kompletní čisté zavedení."
 echo " POZOR: Na přihlašovací obrazovce zvolte sezení LXDE/Openbox!"
 echo "=============================================================================="
+
+
+# Bezpečná optimalizace MX Linuxu pro procesory Intel Gemini Lake a eMMC disky
+
+echo "=== Spouštím optimalizaci systému ==="
+
+# 1. Vypnutí nepotřebných systémových služeb na pozadí
+echo "-> Vypínám a zakazuji zbytečné služby..."
+sudo systemctl stop bluetooth cups cups-browsed pcscd avahi-daemon 2>/dev/null
+sudo systemctl disable bluetooth cups cups-browsed pcscd avahi-daemon 2>/dev/null
+
+# 2. Optimalizace zápisu na eMMC disk (Snížení swappiness na hodnotu 10)
+echo "-> Optimalizuji nastavení swapování pro šetření eMMC disku..."
+if ! grep -q "vm.swappiness" /etc/sysctl.conf; then
+    echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.conf
+else
+    sudo sed -i 's/vm.swappiness=.*/vm.swappiness=10/' /etc/sysctl.conf
+fi
+sudo sysctl -p 2>/dev/null
+
+# 3. Zakázání Conky (grafického widgetu na ploše) po startu
+echo "-> Vypínám widget Conky po startu..."
+if [ -f /etc/skel/.config/autostart/conky.desktop ]; then
+    mkdir -p ~/.config/autostart
+    cp /etc/skel/.config/autostart/conky.desktop ~/.config/autostart/ 2>/dev/null
+    echo "X-MATE-Autostart-enabled=false" >> ~/.config/autostart/conky.desktop
+    echo "Hidden=true" >> ~/.config/autostart/conky.desktop
+fi
+killall conky 2>/dev/null
+
+echo 
