@@ -1,12 +1,11 @@
-
-
 #!/bin/bash
 
-# sudo bash mx.md
+# sudo bash optimalizace.sh
 
 # ==============================================================================
 # AUTOMATICKÝ OPTIMALIZAČNÍ SKRIPT PRO DEBIAN / MX LINUX
 # Cíl: Maximální omezení zápisů na disk pro ochranu SD karet a eMMC úložišť.
+# Nyní nově s instalací LXDE/Openbox a kompletním smazáním XFCE.
 # ==============================================================================
 #
 # POPIS FUNKCÍ A PŘÍPADNÝCH KOMPLIKACÍ (VŠE ZAKOMENTOVÁNO):
@@ -46,6 +45,17 @@
 #      a) Vypne diskovou cache a zapne RAM cache (max 150 MB).
 #      b) Prodlouží ukládání relace (tabů) z 15 sekund na 30 minut.
 #      c) Vypne vestavěnou telemetrii (Glean a Mozilla hlášení), která generuje zápisy.
+#      d) Přesune operace SQLite databází (historie, cookies) do RAM (pragma.synchronous=0).
+#      e) Kompletně zakáže diskové úložiště moderních webů (dom.indexedDB.enabled=false).
+#
+# 7. ZMĚNA PROSTŘEDÍ: INSTALACE LXDE, OPENBOX, NUMLOCKX a SMAZÁNÍ XFCE
+#    - Aktualizuje repozitáře a nainstaluje odlehčené prostředí LXDE se správcem Openbox.
+#    - Instaluje balíček 'numlockx', který zajistí automatické zapnutí numerické klávesnice.
+#    - Kompletně odinstaluje staré grafické prostředí XFCE (včetně xfce4-session, thunaru atd.),
+#      čímž uvolní stovky megabajtů na disku.
+#    - Vyčistí již nepotřebné osiřelé balíčky přes 'autoremove'.
+#    - POZOR: Na přihlašovací obrazovce (LightDM/SLiM) si nezapomeňte před zadáním hesla 
+#      přepnout sezení (Session) z XFCE na LXDE nebo Openbox!
 #
 # ==============================================================================
 
@@ -96,14 +106,12 @@ mount -o remount / 2>/dev/null
 mount -o remount,size=512M /tmp 2>/dev/null
 
 echo "=== 6. Automatická konfigurace Firefoxu přes user.js ==="
-# Vyhledání domovského adresáře reálného uživatele (ne roota)
 REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
 if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
   USER_HOME=$(eval echo ~$REAL_USER)
   FF_DIR="$USER_HOME/.mozilla/firefox"
   
   if [ -d "$FF_DIR" ]; then
-    # Projde všechny profily Firefoxu a zapíše optimalizaci cache a telemetrie
     for profile in "$FF_DIR"/*.default*/ "$FF_DIR"/*default-release*/; do
       if [ -d "$profile" ]; then
         USER_JS="$profile/user.js"
@@ -116,6 +124,8 @@ user_pref("browser.sessionstore.interval", 1800000);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("dom.indexedDB.enabled", false);
+user_pref("pragma.synchronous", 0);
 EOF
         chown "$REAL_USER":"$REAL_USER" "$USER_JS"
         echo "Firefox profil upraven: $profile"
@@ -124,7 +134,23 @@ EOF
   fi
 fi
 
+echo "=== 7. Instalace LXDE, Openbox, Numlockx a smazání XFCE ==="
+# Aktualizace seznamu balíčků
+apt-get update
+
+# Instalace nového odlehčeného prostředí a užitečných utilit
+apt-get install -y lxde openbox numlockx
+
+# Odstranění starého prostředí XFCE a jeho komponent
+apt-get purge -y xfce4 xfce4-* thunar tumbler light-desktop-settings
+
+# Kompletní vyčištění zbylých a osiřelých balíčků
+apt-get autoremove -y
+apt-get clean
+
 echo "=============================================================================="
 echo " HOTOVO! Vše bylo úspěšně nastaveno přesně podle předchozí domluvy."
-echo " Doporučuje se restartovat počítač pro kompletní čisté zavedení /tmp v RAM."
+echo " Prostředí bylo změněno na LXDE/Openbox. XFCE bylo bezpečně smazáno."
+echo " Doporučuje se restartovat počítač pro kompletní čisté zavedení."
+echo " POZOR: Na přihlašovací obrazovce zvolte sezení LXDE/Openbox!"
 echo "=============================================================================="
