@@ -188,4 +188,15 @@ if [ -f /etc/skel/.config/autostart/conky.desktop ]; then
 fi
 killall conky 2>/dev/null
 
-echo 
+# 4. Vyčištění vyrovnávací paměti APT (uvolnění místa na eMMC)
+echo "-> Mažu stažené instalační balíčky pro uvolnění místa..."
+sudo apt-get clean
+
+# 5. Otevření odkazů na zásadní rozšíření pro Firefox
+echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube..."
+# Spustí se pod běžným uživatelem (ne jako root), aby se odkazy otevřely ve vašem profilu
+su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
+su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
+
+echo "=== Optimalizace dokončena! Změny se projeví po restartu. ==="
+
