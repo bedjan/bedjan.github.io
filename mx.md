@@ -198,5 +198,40 @@ echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube
 su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" &
 su - "$SUDO_USER" -c "xdg-open https://addons.mozilla.org/cs/firefox/addon/enhanced-h264ify/" &
 
+# 5. Automatické nastavení hardwarové akcelerace videa pro Firefox (user.js)
+echo "-> Konfiguruji Firefox pro hardwarové dekódování videa (Intel UHD 600)..."
+FIREFOX_DIR="/home/$SUDO_USER/.mozilla/firefox"
+
+if [ -d "$FIREFOX_DIR" ]; then
+    # Najde všechny uživatelské profily Firefoxu a zapíše do nich optimální hodnoty
+    for profile in "$FIREFOX_DIR"/*.default* "$FIREFOX_DIR"/*-esr; do
+        if [ -d "$profile" ]; then
+            USER_JS="$profile/user.js"
+            touch "$USER_JS"
+            
+            # Odstraní případné staré zápisy, aby nevznikaly duplicity
+            sed -i '/media.hardware-video-decoding.force-enabled/d' "$USER_JS"
+            sed -i '/gfx.webrender.all/d' "$USER_JS"
+            sed -i '/media.ffvpx.enabled/d' "$USER_JS"
+            
+            # Vloží nové parametry pro hardwarovou akceleraci
+            echo 'user_pref("media.hardware-video-decoding.force-enabled", true);' >> "$USER_JS"
+            echo 'user_pref("gfx.webrender.all", true);' >> "$USER_JS"
+            echo 'user_pref("media.ffvpx.enabled", false);' >> "$USER_JS"
+            
+            # Opraví oprávnění souboru, aby k němu měl uživatel dux přístup
+            chown "$SUDO_USER":"$SUDO_USER" "$USER_JS"
+            echo "   Profil upraven: $(basename "$profile")"
+        fi
+    done
+fi
+
+# 6. Otevření odkazů na zásadní rozšíření pro Firefox
+echo "-> Otevírám Firefox s doplňky pro blokování reklam a plynulé YouTube..."
+su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
+su - "$SUDO_USER" -c "xdg-open https://mozilla.org" &
+
+echo "=== Optimalizace dokončena! Změny se projeví po restartu. ==="
+
 echo "=== Optimalizace dokončena! Změny se projeví po restartu. ==="
 
