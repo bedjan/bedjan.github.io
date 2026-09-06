@@ -151,6 +151,11 @@ sudo systemctl stop rpcbind speech-dispatcher 2>/dev/null
 sudo systemctl disable rpcbind speech-dispatcher 2>/dev/null
 sudo apt-get purge -y speech-dispatcher espeak-ng-data libespeak-ng1 2>/dev/null
 
+# Ovladače exfat
+
+sudo apt update && sudo apt install exfat-fuse exfatprogs -y
+
+
 # Kompletní vyčištění zbylých a osiřelých balíčků
 apt-get autoremove -y
 apt-get clean
