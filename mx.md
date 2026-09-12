@@ -105,6 +105,15 @@ echo "tmpfs   /tmp   tmpfs   defaults,noatime,mode=1777,size=512M   0   0" >> /e
 mount -o remount / 2>/dev/null
 mount -o remount,size=512M /tmp 2>/dev/null
 
+
+
+# 1. Instalace a spuštění SSH serveru
+echo ">>> Instaluji a spouštím SSH server..."
+sudo apt update && sudo apt install -y openssh-server
+sudo systemctl enable --now ssh
+
+
+
 echo "=== 6. Automatická konfigurace Firefoxu přes user.js ==="
 REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
 if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
