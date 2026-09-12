@@ -306,3 +306,21 @@ else
   echo "========================================================"
   exit 1
 fi
+
+
+
+# 1. Ověření a oprava vlastnictví adresáře pro aktuálního uživatele
+REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
+if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
+  chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB
+  echo "Vlastnictví /mnt/1TB bylo nastaveno na uživatele: $REAL_USER"
+else
+  chown -R root:root /mnt/1TB
+fi
+
+# 2. Nastavení správných práv pro zápis (všem povolen zápis do adresáře)
+chmod 777 /mnt/1TB
+
+# 3. Kontrola, zda je disk připojen v režimu pro čtení i zápis (RW)
+mount -o remount,rw /mnt/1TB
+
