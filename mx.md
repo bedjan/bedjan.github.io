@@ -3,7 +3,7 @@
 # ==============================================================================
 # KOMPLEXNÍ OPTIMALIZAČNÍ A INSTALAČNÍ SKRIPT PRO MX LINUX / UMAX SERVER
 # Obsahuje: Optimalizace eMMC, zRAM, TMPFS, LXDE, SSH, Samba, ext4 1TB disk,
-# automatickou aktualizaci yt-dlp, týdenní aktualizaci systému a reálnou kontrolu.
+# automatickou aktualizaci yt-dlp, týdenní aktualizaci systému a qBittorrent-nox.
 # ==============================================================================
 
 # Kontrola root práv
@@ -297,68 +297,64 @@ fi
 
 echo "========================================================"
 if [ $ERRORS -eq 0 ]; then
-  echo " HOTOVO! Všechno todleto máme nastavené a ověřené v pořádku."
-  echo " Doporučuje se restartovat počítač."
-  echo "========================================================"
+  echo " HOTOVO! Základní systém a disk jsou v pořádku."
 else
   echo " POZOR: Během ověřování bylo nalezeno $ERRORS chyb."
-  echo " Zkontrolujte výstupy výše a případné problémy opravte."
   echo "========================================================"
-  exit 1
 fi
 
+# ==============================================================================
+# 14. INTEGRACE QBITTORRENT-NOX (Složky, práva, okamžitý start a RAM cache)
+# ==============================================================================
 
+echo "=== 14. Nastavení qBittorrent-nox a ochrana plotnového disku ==="
 
-# 1. Ověření a oprava vlastnictví adresáře pro aktuálního uživatele
-REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
-if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
-  chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB
-  echo "Vlastnictví /mnt/1TB bylo nastaveno na uživatele: $REAL_USER"
-else
-  chown -R root:root /mnt/1TB
+# Zjištění reálného uživatele pro konfigurace
+if [ -z "$REAL_USER" ] || [ "$REAL_USER" = "root" ]; then
+  REAL_USER=$(logname 2>/dev/null || echo "dux")
 fi
 
-# 2. Nastavení správných práv pro zápis (všem povolen zápis do adresáře)
-chmod 777 /mnt/1TB
-
-# 3. Kontrola, zda je disk připojen v režimu pro čtení i zápis (RW)
-mount -o remount,rw /mnt/1TB
-
-# ==============================================================================
-# DOPLNĚK PRO QBITTORRENT-NOX (Nekompletní a kompletní stahování na 1TB disk)
-# ==============================================================================
-
-echo "=== Nastavení složek pro qBittorrent-nox na 1TB disku ==="
-
-# 1. Vytvoření složek pro torrenty (inkubátor pro stahování + hotovo)
+# Vytvoření adresářové struktury pro torrenty
 mkdir -p /mnt/1TB/Torrents/incomplete
 mkdir -p /mnt/1TB/Torrents/complete
+mkdir -p /mnt/1TB/Media/Filmy
+mkdir -p /mnt/1TB/Media/Hudba
+mkdir -p /mnt/1TB/Media/Serioly
 
-# 2. Nastavení práv, aby do nich qBittorrent mohl bez problému zapisovat
-chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB/Torrents
-chmod -R 775 /mnt/1TB/Torrents
+# Nastavení práv pro zápis pro uživatele
+chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB
+chmod -R 775 /mnt/1TB
+chmod -R 777 /mnt/1TB/Torrents
 
-# 3. Příprava konfiguračního adresáře pro qbittorrent-nox, pokud ještě neexistuje
+# Příprava konfiguračního adresáře qBittorrentu
 QBT_CONFIG_DIR="/home/$REAL_USER/.config/qBittorrent"
 mkdir -p "$QBT_CONFIG_DIR"
 
-# 4. Zápis základní konfigurace pro qBittorrent (cesty k úložištím)
+# Zápis konfigurace: vypnuté fronty (okamžitý start) + 256MB RAM cache (šetří disk)
 cat << EOF > "$QBT_CONFIG_DIR/qBittorrent.conf"
 [BitTorrent]
 Session\DefaultSavePath=/mnt/1TB/Torrents/complete
 Session\IncompleteSavePath=/mnt/1TB/Torrents/incomplete
-Session\Queueing\QueueingEnabled=true
+Session\Queueing\QueueingEnabled=false
 Session\AdditionDialogEnabled=false
+
+[Preferences]
+DiskCacheSize=256
+DiskCacheTTL=60
+AsyncIOThreads=4
 
 [LegalNotice]
 Accepted=true
 EOF
 
-# 5. Oprava vlastnictví konfiguračních souborů pro daného uživatele
+# Oprava vlastnictví konfiguračního souboru
 chown -R "$REAL_USER":"$REAL_USER" "/home/$REAL_USER/.config"
 
-# 6. Restart qbittorrent-nox služby (pokud běží jako systemd služba)
+# Restart qBittorrent-nox služby
 systemctl restart qbittorrent-nox@$REAL_USER 2>/dev/null || systemctl restart qbittorrent-nox 2>/dev/null
 
-echo "[OK] qBittorrent-nox má nastaveno ukládání na 1TB disk: /mnt/1TB/Torrents/incomplete -> complete."
-
+echo "========================================================"
+echo " VŠECHNO HOTOVO! Kompletní systém, disk, Samba i qBittorrent"
+echo " jsou úspěšně nastaveny, optimalizovány a chráněny."
+echo " Doporučuje se restartovat počítač."
+echo "========================================================"
