@@ -324,3 +324,41 @@ chmod 777 /mnt/1TB
 # 3. Kontrola, zda je disk připojen v režimu pro čtení i zápis (RW)
 mount -o remount,rw /mnt/1TB
 
+# ==============================================================================
+# DOPLNĚK PRO QBITTORRENT-NOX (Nekompletní a kompletní stahování na 1TB disk)
+# ==============================================================================
+
+echo "=== Nastavení složek pro qBittorrent-nox na 1TB disku ==="
+
+# 1. Vytvoření složek pro torrenty (inkubátor pro stahování + hotovo)
+mkdir -p /mnt/1TB/Torrents/incomplete
+mkdir -p /mnt/1TB/Torrents/complete
+
+# 2. Nastavení práv, aby do nich qBittorrent mohl bez problému zapisovat
+chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB/Torrents
+chmod -R 775 /mnt/1TB/Torrents
+
+# 3. Příprava konfiguračního adresáře pro qbittorrent-nox, pokud ještě neexistuje
+QBT_CONFIG_DIR="/home/$REAL_USER/.config/qBittorrent"
+mkdir -p "$QBT_CONFIG_DIR"
+
+# 4. Zápis základní konfigurace pro qBittorrent (cesty k úložištím)
+cat << EOF > "$QBT_CONFIG_DIR/qBittorrent.conf"
+[BitTorrent]
+Session\DefaultSavePath=/mnt/1TB/Torrents/complete
+Session\IncompleteSavePath=/mnt/1TB/Torrents/incomplete
+Session\Queueing\QueueingEnabled=true
+Session\AdditionDialogEnabled=false
+
+[LegalNotice]
+Accepted=true
+EOF
+
+# 5. Oprava vlastnictví konfiguračních souborů pro daného uživatele
+chown -R "$REAL_USER":"$REAL_USER" "/home/$REAL_USER/.config"
+
+# 6. Restart qbittorrent-nox služby (pokud běží jako systemd služba)
+systemctl restart qbittorrent-nox@$REAL_USER 2>/dev/null || systemctl restart qbittorrent-nox 2>/dev/null
+
+echo "[OK] qBittorrent-nox má nastaveno ukládání na 1TB disk: /mnt/1TB/Torrents/incomplete -> complete."
+
