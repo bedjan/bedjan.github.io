@@ -2,8 +2,8 @@
 
 # ==============================================================================
 # KOMPLEXNÍ OPTIMALIZAČNÍ A INSTALAČNÍ SKRIPT PRO MX LINUX / UMAX SERVER
-# Obsahuje: Optimalizace eMMC, zRAM, TMPFS, LXDE, SSH, Samba, ext4 1TB disk
-# a automatickou aktualizaci yt-dlp pro Lyrion Music Server s reálnou kontrolou.
+# Obsahuje: Optimalizace eMMC, zRAM, TMPFS, LXDE, SSH, Samba, ext4 1TB disk,
+# automatickou aktualizaci yt-dlp, týdenní aktualizaci systému a reálnou kontrolu.
 # ==============================================================================
 
 # Kontrola root práv
@@ -86,7 +86,37 @@ EOF
 systemctl daemon-reload
 systemctl enable --now ytdlp-update.timer
 
-echo "=== 8. Kompletní příprava, vyčištění a formát 1TB disku na ext4 ==="
+echo "=== 8. Nastavení pravidelné automatické aktualizace systému (APT) ==="
+cat << 'EOF' > /etc/systemd/system/system-update.service
+[Unit]
+Description=Automatická týdenní aktualizace systémových balíčků
+After=network.online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/apt-get update
+ExecStart=/usr/bin/apt-get upgrade -y
+ExecStart=/usr/bin/apt-get autoremove -y
+ExecStart=/usr/bin/apt-get clean
+EOF
+
+cat << 'EOF' > /etc/systemd/system/system-update.timer
+[Unit]
+Description=Spouští týdenní aktualizaci systému
+Wants=network-online.target
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+EOF
+
+systemctl daemon-reload
+systemctl enable --now system-update.timer
+
+echo "=== 9. Kompletní příprava, vyčištění a formát 1TB disku na ext4 ==="
 umount /dev/sdc1 2>/dev/null
 umount /mnt/1TB 2>/dev/null
 umount /mnt/extdisk 2>/dev/null
@@ -111,7 +141,7 @@ sed -i '\|\/media/|d' /etc/fstab
 echo "UUID=$UUID /mnt/1TB ext4 defaults,noatime 0 2" >> /etc/fstab
 mount -a
 
-echo "=== 9. Konfigurace Samby pro [1TB] ==="
+echo "=== 10. Konfigurace Samby pro [1TB] ==="
 if [ ! -f /etc/samba/smb.conf.bak ]; then
   cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 fi
@@ -136,10 +166,10 @@ EOF
 systemctl restart smbd
 systemctl restart nmbd
 
-echo "=== 10. Nastavení hdparm (zákaz uspávání disku) ==="
+echo "=== 11. Nastavení hdparm (zákaz uspávání disku) ==="
 hdparm -S 0 /dev/sdc
 
-echo "=== 11. Firefox optimalizace (user.js) ==="
+echo "=== 12. Firefox optimalizace (user.js) ==="
 REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
 if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
   USER_HOME=$(eval echo ~$REAL_USER)
@@ -169,7 +199,7 @@ EOF
   fi
 fi
 
-echo "=== 12. Změna prostředí: LXDE, Openbox, Numlockx a úklid XFCE ==="
+echo "=== 13. Změna prostředí: LXDE, Openbox, Numlockx a úklid XFCE ==="
 apt-get update
 apt-get install -y lxde openbox numlockx gnome-screenshot exfat-fuse exfatprogs
 apt-get purge -y xfce4 xfce4-* thunar tumbler light-desktop-settings 2>/dev/null
@@ -201,7 +231,7 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 2. Kontrola systemd časovače pro yt-dlp
+# 2. Kontrola časovače pro yt-dlp
 if systemctl is-active --quiet ytdlp-update.timer; then
   echo "[OK] Časovač aktualizace yt-dlp (ytdlp-update.timer) je aktivní."
 else
@@ -209,7 +239,15 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 3. Kontrola binárky yt-dlp
+# 3. Kontrola časovače pro systémové aktualizace
+if systemctl is-active --quiet system-update.timer; then
+  echo "[OK] Časovač týdenních aktualizací systému (system-update.timer) je aktivní."
+else
+  echo "[CHYBA] Časovač týdenních aktualizací systému není aktivní!"
+  ERRORS=$((ERRORS + 1))
+fi
+
+# 4. Kontrola binárky yt-dlp
 if [ -x /usr/local/bin/yt-dlp ]; then
   echo "[OK] Binární soubor yt-dlp je přítomen a spustitelný."
 else
@@ -217,7 +255,7 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 4. Kontrola připojení disku /mnt/1TB
+# 5. Kontrola připojení disku /mnt/1TB
 if mountpoint -q /mnt/1TB; then
   echo "[OK] Úložný disk je úspěšně připojen do /mnt/1TB."
 else
@@ -225,7 +263,7 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 5. Kontrola souborového systému /dev/sdc1
+# 6. Kontrola souborového systému /dev/sdc1
 FSTYPE=$(lsblk -no FSTYPE /dev/sdc1 2>/dev/null)
 if [ "$FSTYPE" = "ext4" ]; then
   echo "[OK] Souborový systém na /dev/sdc1 je správně formátován jako ext4."
@@ -234,14 +272,14 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 6. Kontrola zRAM
+# 7. Kontrola zRAM
 if swapon --show | grep -q zram; then
   echo "[OK] zRAM swap je aktivní v paměti."
 else
   echo "[VAROVÁNÍ] zRAM swap nebyl detekován v aktivních swap zařízeních."
 fi
 
-# 7. Kontrola tmpfs pro /tmp
+# 8. Kontrola tmpfs pro /tmp
 if mount | grep -q 'on /tmp type tmpfs'; then
   echo "[OK] Adresář /tmp je úspěšně namontován v RAM (tmpfs)."
 else
@@ -249,7 +287,7 @@ else
   ERRORS=$((ERRORS + 1))
 fi
 
-# 8. Kontrola Samby (smbd)
+# 9. Kontrola Samby (smbd)
 if systemctl is-active --quiet smbd; then
   echo "[OK] Služba Samba (smbd) běží a sdílí disky."
 else
