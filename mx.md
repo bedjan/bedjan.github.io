@@ -359,42 +359,90 @@ echo " jsou úspěšně nastaveny, optimalizovány a chráněny."
 echo " Doporučuje se restartovat počítač."
 echo "========================================================"
 
-#!/bin/bash
 
-# Nastavení adresy a přednastavených údajů k pyLoadu
-PYLOAD_URL="http://localhost:8000"
-UZIVATEL="pyload"
-HESLO="pyload"
 
-# Kontrola vstupu (zda byl zadán odkaz)
-if [ -z "$1" ]; then
-    echo "Chyba: Zapomněl jsi zadat odkaz ke stažení!"
-    echo "Použití: stahuj <odkaz>"
-    exit 1
-fi
+# Zastavení při chybě
+set -e
 
-URL="$1"
-COOKIE_FILE="/tmp/pyload_cookie.txt"
+echo "=== 1. Instalace Aria2 ==="
+sudo apt update
+sudo apt install -y aria2
 
-# 1. Přihlášení k pyLoad API
-curl -s -c "$COOKIE_FILE" -d "username=$UZIVATEL" -d "password=$HESLO" "$PYLOAD_URL/api/login" > /dev/null
+echo "=== 2. Příprava adresáře na 1TB disku ==="
+TARGET_DIR="/mnt/1TB/download"
+CONF_DIR="/etc/aria2"
 
-# 2. Odeslání odkazu přímo do stahovací fronty
-ODPOVED=$(curl -s -b "$COOKIE_FILE" \
-  -d "package_name=Odkaz z CLI" \
-  -d "links=[\"$URL\"]" \
-  "$PYLOAD_URL/api/addPackage")
+# Vytvoření adresáře, pokud neexistuje
+sudo mkdir -p "$TARGET_DIR"
 
-# 3. Úklid dočasných souborů
-rm -f "$COOKIE_FILE"
+# Nastavení vlastnictví na aktuálního uživatele (dux) a skupinu, práva na čtení/zápis (Samba-friendly)
+sudo chown -R dux:dux "$TARGET_DIR"
+sudo chmod -R 775 "$TARGET_DIR"
 
-# Vyhodnocení výsledku
-if [[ "$ODPOVED" == *"true"* ]] || [[ "$ODPOVED" == *[0-9]* ]]; then
-    echo "--------------------------------------------------"
-    echo "✅ Odkaz byl úspěšně odeslán do pyLoadu."
-    echo " pyLoad ho teď stahuje na tvůj externí disk."
-    echo "--------------------------------------------------"
-else
-    echo "❌ Chyba: Nepodařilo se připojit k pyLoadu."
-    echo "Zkontroluj, zda pyLoad běží na portu 8000 a zda platí heslo '$HESLO'."
-fi
+echo "Cílová složka nastavena na: $TARGET_DIR"
+
+echo "=== 3. Vytvoření konfigurace Aria2 ==="
+sudo mkdir -p "$CONF_DIR"
+
+sudo bash -c "cat > $CONF_DIR/aria2.conf" <<EOF
+# Základní nastavení
+dir=$TARGET_DIR
+enable-rpc=true
+rpc-listen-all=true
+rpc-allow-origin-all=true
+daemon=false
+
+# Výkon a stahování
+continue=true
+max-concurrent-downloads=5
+split=10
+min-split-size=10M
+
+# Logování
+log-level=notice
+EOF
+
+# Vlastnictví konfiguračního souboru
+sudo chown -R dux:dux "$CONF_DIR"
+
+echo "=== 4. Vytvoření systemd služby pro běh na pozadí ==="
+sudo bash -c "cat > /etc/systemd/system/aria2.service" <<EOF
+[Unit]
+Description=Aria2c Downloader Service
+After=network.target
+
+[Service]
+User=dux
+ExecStart=/usr/bin/aria2c --conf-path=/etc/aria2/aria2.conf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# Reload systemd a spuštění služby
+sudo systemctl daemon-reload
+sudo systemctl enable aria2
+sudo systemctl restart aria2
+
+echo "=== HOTOVO! Aria2 úspěšně běží na pozadí. ==="
+echo ""
+echo "Lokální IP adresa tvého stroje:"
+hostname -I | awk '{print $1}'
+echo ""
+echo "--------------------------------------------------------"
+echo " JAK OVLÁDAT ARIA2:"
+echo "--------------------------------------------------------"
+echo "1. Webové rozhraní (AriaNg):"
+echo "   Otevři v prohlížeči: https://ariang.js.org"
+echo "   V nastavení (Settings -> RPC) zadej:"
+echo "   - Host: IP adresa tohoto počítače"
+echo "   - Port: 6800"
+echo ""
+echo "2. Android aplikace:"
+echo "   Stáhni z Google Play aplikaci 'Aria2App' nebo 'AriaNg for Android'."
+echo "   Připoj se pomocí IP adresy tohoto počítače a portu 6800."
+echo ""
+echo "Stažené soubory najdeš v: $TARGET_DIR"
+echo "--------------------------------------------------------"
+
