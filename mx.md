@@ -358,3 +358,48 @@ echo " VŠECHNO HOTOVO! Kompletní systém, disk, Samba i qBittorrent"
 echo " jsou úspěšně nastaveny, optimalizovány a chráněny."
 echo " Doporučuje se restartovat počítač."
 echo "========================================================"
+
+
+# 1. NASTAVENÍ CESTY K EXTERNÍMU DISKU
+# Sem doplň reálnou cestu ke tvé složce na externím disku
+TARGET_DIR="/media/tvoje_jmeno/NAZEV_DISKU/Stahovani"
+
+# 2. KONTROLA VSTUPU
+if [ -z "$1" ]; then
+    echo "Chyba: Musíš zadat odkaz ke stažení!"
+    echo "Použití: stahuj <odkaz_z_hellspy>"
+    exit 1
+fi
+
+URL="$1"
+
+# 3. VYTVOŘENÍ SLOŽKY A NASTAVENÍ PRÁV
+# Příkaz mkdir -p vytvoří složku, pokud ještě neexistuje.
+mkdir -p "$TARGET_DIR"
+
+# Nastavíme plná práva (čtení, zápis, spuštění) pro tvůj uživatelský účet na tuto složku
+chmod 755 "$TARGET_DIR"
+
+# Přepneme se na externí disk
+cd "$TARGET_DIR" || exit 1
+
+echo "Příprava stahování do: $TARGET_DIR"
+echo "Práva ke složce ověřena."
+echo "--------------------------------------------------"
+
+# 4. SAMOTNÉ STAŽENÍ
+# Uložíme si název budoucího souboru, abychom na něj mohli aplikovat práva
+# curl -L -J -O stáhne soubor se správným názvem z Hellspy.to
+curl -L -J -O "$URL"
+
+# Zjistíme název naposledy přidaného souboru v této složce
+POLEDNI_SOUBOR=$(ls -t | head -n1)
+
+# 5. AUTOMATICKÉ NASTAVENÍ PRÁV PRO STAŽENÝ SOUBOR
+if [ -n "$POLEDNI_SOUBOR" ]; then
+    # Nastaví práva 644 (vlastník může číst i upravovat, ostatní jen číst/zobrazit)
+    chmod 644 "$POLEDNI_SOUBOR"
+    echo "--------------------------------------------------"
+    echo "Úspěšně staženo: $POLEDNI_SOUBOR"
+    echo "Práva souboru nastavena na: Zobrazení a úpravy povoleny."
+fi
