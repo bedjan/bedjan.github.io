@@ -359,47 +359,42 @@ echo " jsou úspěšně nastaveny, optimalizovány a chráněny."
 echo " Doporučuje se restartovat počítač."
 echo "========================================================"
 
+#!/bin/bash
 
-# 1. NASTAVENÍ CESTY K EXTERNÍMU DISKU
-# Sem doplň reálnou cestu ke tvé složce na externím disku
-TARGET_DIR="/media/tvoje_jmeno/NAZEV_DISKU/Stahovani"
+# Nastavení adresy a přednastavených údajů k pyLoadu
+PYLOAD_URL="http://localhost:8000"
+UZIVATEL="pyload"
+HESLO="pyload"
 
-# 2. KONTROLA VSTUPU
+# Kontrola vstupu (zda byl zadán odkaz)
 if [ -z "$1" ]; then
-    echo "Chyba: Musíš zadat odkaz ke stažení!"
-    echo "Použití: stahuj <odkaz_z_hellspy>"
+    echo "Chyba: Zapomněl jsi zadat odkaz ke stažení!"
+    echo "Použití: stahuj <odkaz>"
     exit 1
 fi
 
 URL="$1"
+COOKIE_FILE="/tmp/pyload_cookie.txt"
 
-# 3. VYTVOŘENÍ SLOŽKY A NASTAVENÍ PRÁV
-# Příkaz mkdir -p vytvoří složku, pokud ještě neexistuje.
-mkdir -p "$TARGET_DIR"
+# 1. Přihlášení k pyLoad API
+curl -s -c "$COOKIE_FILE" -d "username=$UZIVATEL" -d "password=$HESLO" "$PYLOAD_URL/api/login" > /dev/null
 
-# Nastavíme plná práva (čtení, zápis, spuštění) pro tvůj uživatelský účet na tuto složku
-chmod 755 "$TARGET_DIR"
+# 2. Odeslání odkazu přímo do stahovací fronty
+ODPOVED=$(curl -s -b "$COOKIE_FILE" \
+  -d "package_name=Odkaz z CLI" \
+  -d "links=[\"$URL\"]" \
+  "$PYLOAD_URL/api/addPackage")
 
-# Přepneme se na externí disk
-cd "$TARGET_DIR" || exit 1
+# 3. Úklid dočasných souborů
+rm -f "$COOKIE_FILE"
 
-echo "Příprava stahování do: $TARGET_DIR"
-echo "Práva ke složce ověřena."
-echo "--------------------------------------------------"
-
-# 4. SAMOTNÉ STAŽENÍ
-# Uložíme si název budoucího souboru, abychom na něj mohli aplikovat práva
-# curl -L -J -O stáhne soubor se správným názvem z Hellspy.to
-curl -L -J -O "$URL"
-
-# Zjistíme název naposledy přidaného souboru v této složce
-POLEDNI_SOUBOR=$(ls -t | head -n1)
-
-# 5. AUTOMATICKÉ NASTAVENÍ PRÁV PRO STAŽENÝ SOUBOR
-if [ -n "$POLEDNI_SOUBOR" ]; then
-    # Nastaví práva 644 (vlastník může číst i upravovat, ostatní jen číst/zobrazit)
-    chmod 644 "$POLEDNI_SOUBOR"
+# Vyhodnocení výsledku
+if [[ "$ODPOVED" == *"true"* ]] || [[ "$ODPOVED" == *[0-9]* ]]; then
     echo "--------------------------------------------------"
-    echo "Úspěšně staženo: $POLEDNI_SOUBOR"
-    echo "Práva souboru nastavena na: Zobrazení a úpravy povoleny."
+    echo "✅ Odkaz byl úspěšně odeslán do pyLoadu."
+    echo " pyLoad ho teď stahuje na tvůj externí disk."
+    echo "--------------------------------------------------"
+else
+    echo "❌ Chyba: Nepodařilo se připojit k pyLoadu."
+    echo "Zkontroluj, zda pyLoad běží na portu 8000 a zda platí heslo '$HESLO'."
 fi
