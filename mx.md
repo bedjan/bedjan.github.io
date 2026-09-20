@@ -446,3 +446,88 @@ echo ""
 echo "Stažené soubory najdeš v: $TARGET_DIR"
 echo "--------------------------------------------------------"
 
+
+
+# ==============================================================================
+# KOMPLETNÍ SKRIPT PRO INSTALACI A NASTAVENÍ TAILSCALE NA MX LINUXU
+# Popis pro blbečky: Skript tě provede instalací, zapnutím, ověřením a 
+# vypsáním IP adresy, kterou pak zadáš do mobilu.
+# ==============================================================================
+
+# Web
+# https://console.tailscale.com/admin/machines
+
+# Barvičky pro přehlednost v terminálu
+ZELENA='\033[0;32m'
+CYAN='\033[0;36m'
+CERVENY='\033[0;31m'
+NC='\033[0m' # Bez barvy
+
+echo -e "${CYAN}======================================================${NC}"
+echo -e "${CYAN} KROK 1: Instalace Tailscale do MX Linuxu${NC}"
+echo -e "${CYAN}======================================================${NC}"
+echo "Teď to stáhne a nainstaluje Tailscale ze stránek výrobce."
+echo "Pokud to bude chtít heslo k účtu (sudo), normálně ho zadej (při psaní nebude nic vidět, to je v pořádku)."
+echo ""
+
+# Spuštění oficiálního instalačního skriptu
+curl -fsSL https://tailscale.com/install.sh | sh
+
+if [ $? -eq 0 ]; then
+    echo -e "${ZELENA}[OK] Instalace proběhla úspěšně!${NC}"
+else
+    echo -e "${CERVENY}[CHYBA] Instalace selhala. Zkontroluj připojení k internetu.${NC}"
+    exit 1
+fi
+
+echo ""
+echo -e "${CYAN}======================================================${NC}"
+echo -e "${CYAN} KROK 2: Spuštění a propojení s tvým účtem${NC}"
+echo -e "${CYAN}======================================================${NC}"
+echo "Teď spustíme službu a vygenerujeme přihlašovací odkaz."
+echo "Až se objeví odkaz začínající na 'https://...', zkopíruj si ho,"
+echo "oteviři ho v prohlížeči (třeba v mobilu) a klikni na 'Connect'."
+echo ""
+read -p "Stiskni [Enter] pro spuštění přihlášení..."
+
+# Spuštění tailscale up
+sudo tailscale up
+
+echo ""
+echo -e "${ZELENA}[OK] Pokračujeme dál...${NC}"
+echo ""
+
+echo -e "${CYAN}======================================================${NC}"
+echo -e "${CYAN} KROK 3: Ověření, že to žije a běží${NC}"
+echo -e "${CYAN}======================================================${NC}"
+echo "Tento příkaz vypíše tabulku všech zařízení v síti (tvůj PC i mobil)."
+echo ""
+
+# Ověření stavu
+tailscale status
+
+echo ""
+echo -e "${CYAN}======================================================${NC}"
+echo -e "${CYAN} KROK 4: Zjištění tvojí klíčové IP adresy${NC}"
+echo -e "${CYAN}======================================================${NC}"
+echo "Tohle je adresa, kterou si musíš opsat do mobilu!"
+echo ""
+
+# Zobrazení samotné IPv4 adresy v Tailscale
+echo -e "Tvoje Tailscale IP adresa tohoto počítače je:"
+tailscale ip -4
+
+echo ""
+echo -e "${CYAN}======================================================${NC}"
+echo -e "${CYAN} JAK TO DOKONČIT NA ANDROIDU (PRO BLBEČKY):${NC}"
+echo -e "${CYAN}======================================================${NC}"
+echo "1. Stáhni si v Google Play aplikaci 'Tailscale', zapni ji a přihlas se."
+echo "2. Stáhni si v mobilu správce souborů (např. Solid Explorer)."
+echo "3. V aplikaci dej vytvořit nové vzdálené připojení a vyber protokol: SFTP"
+echo "4. Vyplň údaje podle tohohle šablony:"
+echo "   - Host / Server: Zadej tu IP adresu, co vyběhla o kousek výš (začíná na 100.)"
+echo "   - Port: 22"
+echo "   - Uživatel (Username): dux (nebo tvoje přihlašovací jméno do Linuxu)"
+echo "   - Heslo (Password): tvoje heslo do MX Linuxu"
+echo ""
+echo -e "${ZELENA}HOTOVO! Teď se připojíš odkudkoliv přes mobilní data bez blokování operátorem.${NC}"
