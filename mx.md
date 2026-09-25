@@ -531,3 +531,44 @@ echo "   - Uživatel (Username): dux (nebo tvoje přihlašovací jméno do Linux
 echo "   - Heslo (Password): tvoje heslo do MX Linuxu"
 echo ""
 echo -e "${ZELENA}HOTOVO! Teď se připojíš odkudkoliv přes mobilní data bez blokování operátorem.${NC}"
+
+
+echo "1. Instalace balíčku chrony..."
+apt update && apt install -y chrony
+
+echo "2. Konfigurace chrony (/etc/chrony/chrony.conf)..."
+# Záloha původního souboru
+cp /etc/chrony/chrony.conf /etc/chrony/chrony.conf.bak
+
+# Vytvoření čisté a funkční konfigurace pro lokální síť
+cat << 'EOF' > /etc/chrony/chrony.conf
+server 0.debian.pool.ntp.org iburst
+server 1.debian.pool.ntp.org iburst
+server 2.debian.pool.ntp.org iburst
+server 3.debian.pool.ntp.org iburst
+
+driftfile /var/lib/chrony/drift
+rtcsync
+
+# Povolení pro domácí síť (upravte podle potřeby)
+allow 10.0.0.0/24
+
+# Režim pro případ výpadku internetu (ostrovní provoz)
+local stratum 10
+
+logdir /var/log/chrony
+EOF
+
+echo "3. Nastavení firewallu (UFW)..."
+if command -v ufw &> /dev/null; then
+  ufw allow 123/udp
+  echo "Port 123/udp povolen ve firewallu."
+fi
+
+echo "4. Restart a povolení služby chrony..."
+systemctl restart chrony
+systemctl enable chrony
+
+echo "--- HOTOVO ---"
+echo "Aktuální stav služby:"
+systemctl status chrony --no-pager
