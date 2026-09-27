@@ -113,3 +113,5 @@ Jakmile přidáte více než 3 torrenty, ty další se automaticky přepnou do s
 Ve chvíli, kdy se jedno ze 3 aktivních stahování dokončí, qBittorrent automaticky spustí další torrent, který je první v pořadí.
 
 Pořadí stahování můžete sami měnit pomocí šipek (nahoru/dolů) v horní liště programu.
+
+atd
