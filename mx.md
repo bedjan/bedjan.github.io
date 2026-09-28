@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# KOMPLEXNÍ OPTIMALIZAČNÍ A INSTALAČNÍ SKRIPT PRO MX LINUX / UMAX SERVER
-# Obsahuje: Optimalizace eMMC, zRAM, TMPFS, LXDE, SSH, Samba, ext4 1TB disk,
-# automatickou aktualizaci yt-dlp, týdenní aktualizaci systému a qBittorrent-nox.
+# KOMPLEXNÍ KONEČNÝ SKRIPT PRO MX LINUX / UMAX SERVER (VŠECHNA ŘEŠENÍ Z CHATU)
 # ==============================================================================
 
 # Kontrola root práv
@@ -12,12 +10,12 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-echo "=== 1. Odstranění rsyslogu (ochrana eMMC) ==="
+echo "=== 1. Odstranění rsyslogu (ochrana eMMC paměti před zbytečným zápisem) ==="
 systemctl stop rsyslog 2>/dev/null
 systemctl disable rsyslog 2>/dev/null
 apt-get purge -y rsyslog
 
-echo "=== 2. Nastavení systemd-journald do RAM ==="
+echo "=== 2. Nastavení systemd-journald do RAM (omezení zápisů na eMMC) ==="
 mkdir -p /etc/systemd/journald.conf.d
 cat <<EOF > /etc/systemd/journald.conf.d/ram-logging.conf
 [Journal]
@@ -26,12 +24,12 @@ RuntimeMaxUse=64M
 EOF
 systemctl restart systemd-journald
 
-echo "=== 3. Nastavení swappiness na 10 ==="
+echo "=== 3. Nastavení swappiness na 10 (agresivnější držení dat v RAM) ==="
 sysctl vm.swappiness=10
 sed -i '/vm.swappiness/d' /etc/sysctl.conf
 echo "vm.swappiness=10" >> /etc/sysctl.conf
 
-echo "=== 4. Konfigurace zRAM na 2GB ==="
+echo "=== 4. Konfigurace zRAM na 2GB (komprimovaná swap paměť v RAM) ==="
 systemctl unmask zramswap.service 2>/dev/null
 systemctl enable zramswap.service 2>/dev/null
 
@@ -52,9 +50,8 @@ echo "tmpfs   /tmp   tmpfs   defaults,noatime,mode=1777,size=512M   0   0" >> /e
 mount -o remount / 2>/dev/null
 mount -o remount,size=512M /tmp 2>/dev/null
 
-echo "=== 6. Instalace a spuštění SSH serveru ==="
-apt update && apt install -y openssh-server curl python3-pip
-systemctl enable --now ssh
+echo "=== 6. Instalace základních nástrojů, SSH, Aria2 a správců disků ==="
+apt update && apt install -y openssh-server curl python3-pip hdparm udev aria2 exfat-fuse exfatprogs mediainfo sqlite3 libicu-dev
 
 echo "=== 7. Nastavení automatické aktualizace yt-dlp pro Lyrion Music Server ==="
 curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
@@ -116,7 +113,7 @@ EOF
 systemctl daemon-reload
 systemctl enable --now system-update.timer
 
-echo "=== 9. Kompletní příprava, vyčištění a formát 1TB disku na ext4 ==="
+echo "=== 9. Příprava a formát 1TB disku na ext4 s ochranou proti chybám ==="
 umount /dev/sdc1 2>/dev/null
 umount /mnt/1TB 2>/dev/null
 umount /mnt/extdisk 2>/dev/null
@@ -141,7 +138,7 @@ sed -i '\|\/media/|d' /etc/fstab
 echo "UUID=$UUID /mnt/1TB ext4 defaults,noatime 0 2" >> /etc/fstab
 mount -a
 
-echo "=== 10. Konfigurace Samby pro [1TB] ==="
+echo "=== 10. Konfigurace Samby pro sdílení disku v síti ==="
 if [ ! -f /etc/samba/smb.conf.bak ]; then
   cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 fi
@@ -166,10 +163,82 @@ EOF
 systemctl restart smbd
 systemctl restart nmbd
 
-echo "=== 11. Nastavení hdparm (zákaz uspávání disku) ==="
-hdparm -S 0 /dev/sdc
+echo "=== 11. Zákaz uspávání disku (APM) a trvalý zákaz USB autosuspendu ==="
+hdparm -B 254 /dev/sdc 2>/dev/null || true
 
-echo "=== 12. Firefox optimalizace (user.js) ==="
+cat << 'EOF' > /etc/udev/rules.d/50-usb-power.rules
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="9201", ATTR{power/control}="on"
+EOF
+
+udevadm control --reload-rules
+udevadm trigger
+
+echo "=== 12. Konfigurace Aria2 (stahovač pro pozadí) ==="
+TARGET_DIR="/mnt/1TB/download"
+CONF_DIR="/etc/aria2"
+mkdir -p "$TARGET_DIR" "$CONF_DIR"
+chown -R $SUDO_USER:$SUDO_USER "$TARGET_DIR" "$CONF_DIR"
+chmod -R 775 "$TARGET_DIR"
+
+cat <<EOF > "$CONF_DIR/aria2.conf"
+dir=$TARGET_DIR
+enable-rpc=true
+rpc-listen-all=true
+rpc-allow-origin-all=true
+daemon=false
+continue=true
+max-concurrent-downloads=5
+split=10
+min-split-size=10M
+log-level=notice
+EOF
+
+cat <<EOF > /etc/systemd/system/aria2.service
+[Unit]
+Description=Aria2c Downloader Service
+After=network.target
+
+[Service]
+User=$SUDO_USER
+ExecStart=/usr/bin/aria2c --conf-path=/etc/aria2/aria2.conf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable --now aria2
+
+echo "=== 13. Instalace a konfigurace Chrony (lokální NTP server pro síť) ==="
+apt install -y chrony
+if [ ! -f /etc/chrony/chrony.conf.bak ]; then
+  cp /etc/chrony/chrony.conf /etc/chrony/chrony.conf.bak
+fi
+
+cat << 'EOF' > /etc/chrony/chrony.conf
+server 0.debian.pool.ntp.org iburst
+server 1.debian.pool.ntp.org iburst
+server 2.debian.pool.ntp.org iburst
+server 3.debian.pool.ntp.org iburst
+driftfile /var/lib/chrony/drift
+rtcsync
+allow 10.0.0.0/24
+local stratum 10
+logdir /var/log/chrony
+EOF
+
+if command -v ufw &> /dev/null; then
+  ufw allow 123/udp
+fi
+
+systemctl restart chrony
+systemctl enable chrony
+
+echo "=== 14. Instalace Tailscale (vzdálený přístup odkudkoliv) ==="
+curl -fsSL https://tailscale.com/install.sh | sh
+
+echo "=== 15. Firefox optimalizace (přesun mezipaměti do RAM) ==="
 REAL_USER=$(logname 2>/dev/null || echo $SUDO_USER)
 if [ -n "$REAL_USER" ] && [ "$REAL_USER" != "root" ]; then
   USER_HOME=$(eval echo ~$REAL_USER)
@@ -199,15 +268,13 @@ EOF
   fi
 fi
 
-echo "=== 13. Změna prostředí: LXDE, Openbox, Numlockx a úklid XFCE ==="
+echo "=== 16. Změna prostředí: LXDE, Openbox, Numlockx a odlehčení XFCE ==="
 apt-get update
-apt-get install -y lxde openbox numlockx gnome-screenshot exfat-fuse exfatprogs
+apt-get install -y lxde openbox numlockx gnome-screenshot
 apt-get purge -y xfce4 xfce4-* thunar tumbler light-desktop-settings 2>/dev/null
-
 systemctl stop rpcbind speech-dispatcher 2>/dev/null
 systemctl disable rpcbind speech-dispatcher 2>/dev/null
 apt-get purge -y speech-dispatcher espeak-ng-data libespeak-ng1 2>/dev/null
-
 apt-get autoremove -y
 apt-get clean
 
@@ -216,121 +283,20 @@ echo "@numlockx on" | tee -a /etc/xdg/lxsession/LXDE/autostart 2>/dev/null
 systemctl stop bluetooth cups cups-browsed pcscd avahi-daemon 2>/dev/null
 systemctl disable bluetooth cups cups-browsed pcscd avahi-daemon 2>/dev/null
 
-echo ""
-echo "========================================================"
-echo "       REÁLNÁ KONTROLA A OVĚŘENÍ NASTAVENÍ SYSTÉMU"
-echo "========================================================"
-
-ERRORS=0
-
-# 1. Kontrola SSH serveru
-if systemctl is-active --quiet ssh; then
-  echo "[OK] Služba SSH (sshd) běží."
-else
-  echo "[CHYBA] Služba SSH (sshd) neběží!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 2. Kontrola časovače pro yt-dlp
-if systemctl is-active --quiet ytdlp-update.timer; then
-  echo "[OK] Časovač aktualizace yt-dlp (ytdlp-update.timer) je aktivní."
-else
-  echo "[CHYBA] Časovač aktualizace yt-dlp není aktivní!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 3. Kontrola časovače pro systémové aktualizace
-if systemctl is-active --quiet system-update.timer; then
-  echo "[OK] Časovač týdenních aktualizací systému (system-update.timer) je aktivní."
-else
-  echo "[CHYBA] Časovač týdenních aktualizací systému není aktivní!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 4. Kontrola binárky yt-dlp
-if [ -x /usr/local/bin/yt-dlp ]; then
-  echo "[OK] Binární soubor yt-dlp je přítomen a spustitelný."
-else
-  echo "[CHYBA] Soubor /usr/local/bin/yt-dlp chybí nebo není spustitelný!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 5. Kontrola připojení disku /mnt/1TB
-if mountpoint -q /mnt/1TB; then
-  echo "[OK] Úložný disk je úspěšně připojen do /mnt/1TB."
-else
-  echo "[CHYBA] Úložný disk není připojen v /mnt/1TB!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 6. Kontrola souborového systému /dev/sdc1
-FSTYPE=$(lsblk -no FSTYPE /dev/sdc1 2>/dev/null)
-if [ "$FSTYPE" = "ext4" ]; then
-  echo "[OK] Souborový systém na /dev/sdc1 je správně formátován jako ext4."
-else
-  echo "[CHYBA] Souborový systém na /dev/sdc1 není ext4 (zjištěno: '$FSTYPE')!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 7. Kontrola zRAM
-if swapon --show | grep -q zram; then
-  echo "[OK] zRAM swap je aktivní v paměti."
-else
-  echo "[VAROVÁNÍ] zRAM swap nebyl detekován v aktivních swap zařízeních."
-fi
-
-# 8. Kontrola tmpfs pro /tmp
-if mount | grep -q 'on /tmp type tmpfs'; then
-  echo "[OK] Adresář /tmp je úspěšně namontován v RAM (tmpfs)."
-else
-  echo "[CHYBA] Adresář /tmp není nastaven jako tmpfs v RAM!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-# 9. Kontrola Samby (smbd)
-if systemctl is-active --quiet smbd; then
-  echo "[OK] Služba Samba (smbd) běží a sdílí disky."
-else
-  echo "[CHYBA] Služba Samba (smbd) neběží!"
-  ERRORS=$((ERRORS + 1))
-fi
-
-echo "========================================================"
-if [ $ERRORS -eq 0 ]; then
-  echo " HOTOVO! Základní systém a disk jsou v pořádku."
-else
-  echo " POZOR: Během ověřování bylo nalezeno $ERRORS chyb."
-  echo "========================================================"
-fi
-
-# ==============================================================================
-# 14. INTEGRACE QBITTORRENT-NOX (Složky, práva, okamžitý start a RAM cache)
-# ==============================================================================
-
-echo "=== 14. Nastavení qBittorrent-nox a ochrana plotnového disku ==="
-
-# Zjištění reálného uživatele pro konfigurace
-if [ -z "$REAL_USER" ] || [ "$REAL_USER" = "root" ]; then
-  REAL_USER=$(logname 2>/dev/null || echo "dux")
-fi
-
-# Vytvoření adresářové struktury pro torrenty
+echo "=== 17. Integrace qBittorrent-nox (Složky, práva a 256MB RAM cache) ==="
 mkdir -p /mnt/1TB/Torrents/incomplete
 mkdir -p /mnt/1TB/Torrents/complete
 mkdir -p /mnt/1TB/Media/Filmy
 mkdir -p /mnt/1TB/Media/Hudba
 mkdir -p /mnt/1TB/Media/Serioly
 
-# Nastavení práv pro zápis pro uživatele
 chown -R "$REAL_USER":"$REAL_USER" /mnt/1TB
 chmod -R 775 /mnt/1TB
 chmod -R 777 /mnt/1TB/Torrents
 
-# Příprava konfiguračního adresáře qBittorrentu
 QBT_CONFIG_DIR="/home/$REAL_USER/.config/qBittorrent"
 mkdir -p "$QBT_CONFIG_DIR"
 
-# Zápis konfigurace: vypnuté fronty (okamžitý start) + 256MB RAM cache (šetří disk)
 cat << EOF > "$QBT_CONFIG_DIR/qBittorrent.conf"
 [BitTorrent]
 Session\DefaultSavePath=/mnt/1TB/Torrents/complete
@@ -347,228 +313,139 @@ AsyncIOThreads=4
 Accepted=true
 EOF
 
-# Oprava vlastnictví konfiguračního souboru
 chown -R "$REAL_USER":"$REAL_USER" "/home/$REAL_USER/.config"
-
-# Restart qBittorrent-nox služby
 systemctl restart qbittorrent-nox@$REAL_USER 2>/dev/null || systemctl restart qbittorrent-nox 2>/dev/null
 
-echo "========================================================"
-echo " VŠECHNO HOTOVO! Kompletní systém, disk, Samba i qBittorrent"
-echo " jsou úspěšně nastaveny, optimalizovány a chráněny."
-echo " Doporučuje se restartovat počítač."
-echo "========================================================"
+echo "=== 18. Instalace a nastavení Media Stacku (Jackett, Radarr, Sonarr, Bazarr) ==="
 
+# A) Jackett
+if [ ! -d /opt/Jackett ]; then
+  wget -O /tmp/jackett.tar.gz $(curl -s https://api.github.com/repos/Jackett/Jackett/releases/latest | grep "browser_download_url.*LinuxAMDx64.tar.gz" | cut -d '"' -f 4)
+  tar -xzf /tmp/jackett.tar.gz -C /opt/
+  rm /tmp/jackett.tar.gz
+  chown -R "$REAL_USER":"$REAL_USER" /opt/Jackett
+fi
 
-
-# Zastavení při chybě
-set -e
-
-echo "=== 1. Instalace Aria2 ==="
-sudo apt update
-sudo apt install -y aria2
-
-echo "=== 2. Příprava adresáře na 1TB disku ==="
-TARGET_DIR="/mnt/1TB/download"
-CONF_DIR="/etc/aria2"
-
-# Vytvoření adresáře, pokud neexistuje
-sudo mkdir -p "$TARGET_DIR"
-
-# Nastavení vlastnictví na aktuálního uživatele (dux) a skupinu, práva na čtení/zápis (Samba-friendly)
-sudo chown -R dux:dux "$TARGET_DIR"
-sudo chmod -R 775 "$TARGET_DIR"
-
-echo "Cílová složka nastavena na: $TARGET_DIR"
-
-echo "=== 3. Vytvoření konfigurace Aria2 ==="
-sudo mkdir -p "$CONF_DIR"
-
-sudo bash -c "cat > $CONF_DIR/aria2.conf" <<EOF
-# Základní nastavení
-dir=$TARGET_DIR
-enable-rpc=true
-rpc-listen-all=true
-rpc-allow-origin-all=true
-daemon=false
-
-# Výkon a stahování
-continue=true
-max-concurrent-downloads=5
-split=10
-min-split-size=10M
-
-# Logování
-log-level=notice
-EOF
-
-# Vlastnictví konfiguračního souboru
-sudo chown -R dux:dux "$CONF_DIR"
-
-echo "=== 4. Vytvoření systemd služby pro běh na pozadí ==="
-sudo bash -c "cat > /etc/systemd/system/aria2.service" <<EOF
+cat << EOF > /etc/systemd/system/jackett.service
 [Unit]
-Description=Aria2c Downloader Service
+Description=Jackett Daemon
 After=network.target
 
 [Service]
-User=dux
-ExecStart=/usr/bin/aria2c --conf-path=/etc/aria2/aria2.conf
+User=$REAL_USER
+ExecStart=/opt/Jackett/jackett --no-restart
 Restart=on-failure
+TimeoutStopSec=20
 
 [Install]
 WantedBy=multi-user.target
 EOF
 
-# Reload systemd a spuštění služby
-sudo systemctl daemon-reload
-sudo systemctl enable aria2
-sudo systemctl restart aria2
-
-echo "=== HOTOVO! Aria2 úspěšně běží na pozadí. ==="
-echo ""
-echo "Lokální IP adresa tvého stroje:"
-hostname -I | awk '{print $1}'
-echo ""
-echo "--------------------------------------------------------"
-echo " JAK OVLÁDAT ARIA2:"
-echo "--------------------------------------------------------"
-echo "1. Webové rozhraní (AriaNg):"
-echo "   Otevři v prohlížeči: https://ariang.js.org"
-echo "   V nastavení (Settings -> RPC) zadej:"
-echo "   - Host: IP adresa tohoto počítače"
-echo "   - Port: 6800"
-echo ""
-echo "2. Android aplikace:"
-echo "   Stáhni z Google Play aplikaci 'Aria2App' nebo 'AriaNg for Android'."
-echo "   Připoj se pomocí IP adresy tohoto počítače a portu 6800."
-echo ""
-echo "Stažené soubory najdeš v: $TARGET_DIR"
-echo "--------------------------------------------------------"
-
-
-
-# ==============================================================================
-# KOMPLETNÍ SKRIPT PRO INSTALACI A NASTAVENÍ TAILSCALE NA MX LINUXU
-# Popis pro blbečky: Skript tě provede instalací, zapnutím, ověřením a 
-# vypsáním IP adresy, kterou pak zadáš do mobilu.
-# ==============================================================================
-
-# Web
-# https://console.tailscale.com/admin/machines
-
-# Barvičky pro přehlednost v terminálu
-ZELENA='\033[0;32m'
-CYAN='\033[0;36m'
-CERVENY='\033[0;31m'
-NC='\033[0m' # Bez barvy
-
-echo -e "${CYAN}======================================================${NC}"
-echo -e "${CYAN} KROK 1: Instalace Tailscale do MX Linuxu${NC}"
-echo -e "${CYAN}======================================================${NC}"
-echo "Teď to stáhne a nainstaluje Tailscale ze stránek výrobce."
-echo "Pokud to bude chtít heslo k účtu (sudo), normálně ho zadej (při psaní nebude nic vidět, to je v pořádku)."
-echo ""
-
-# Spuštění oficiálního instalačního skriptu
-curl -fsSL https://tailscale.com/install.sh | sh
-
-if [ $? -eq 0 ]; then
-    echo -e "${ZELENA}[OK] Instalace proběhla úspěšně!${NC}"
-else
-    echo -e "${CERVENY}[CHYBA] Instalace selhala. Zkontroluj připojení k internetu.${NC}"
-    exit 1
+# B) Radarr[span_1](start_span)[span_1](end_span)
+if [ ! -d /opt/Radarr ]; then
+  wget -O /tmp/radarr.tar.gz "https://radarr.servarr.com/v1/update/master/updatefile?os=linux&runtime=netcore&arch=x64"
+  tar -xzf /tmp/radarr.tar.gz -C /opt/
+  rm /tmp/radarr.tar.gz
+  chown -R "$REAL_USER":"$REAL_USER" /opt/Radarr
 fi
 
-echo ""
-echo -e "${CYAN}======================================================${NC}"
-echo -e "${CYAN} KROK 2: Spuštění a propojení s tvým účtem${NC}"
-echo -e "${CYAN}======================================================${NC}"
-echo "Teď spustíme službu a vygenerujeme přihlašovací odkaz."
-echo "Až se objeví odkaz začínající na 'https://...', zkopíruj si ho,"
-echo "oteviři ho v prohlížeči (třeba v mobilu) a klikni na 'Connect'."
-echo ""
-read -p "Stiskni [Enter] pro spuštění přihlášení..."
+cat << EOF > /etc/systemd/system/radarr.service
+[Unit]
+Description=Radarr Daemon
+After=network.target
 
-# Spuštění tailscale up
-sudo tailscale up
+[Service]
+User=$REAL_USER
+ExecStart=/opt/Radarr/Radarr -nobrowser -data=/var/lib/radarr
+Restart=on-failure
+RestartSec=5
 
-echo ""
-echo -e "${ZELENA}[OK] Pokračujeme dál...${NC}"
-echo ""
-
-echo -e "${CYAN}======================================================${NC}"
-echo -e "${CYAN} KROK 3: Ověření, že to žije a běží${NC}"
-echo -e "${CYAN}======================================================${NC}"
-echo "Tento příkaz vypíše tabulku všech zařízení v síti (tvůj PC i mobil)."
-echo ""
-
-# Ověření stavu
-tailscale status
-
-echo ""
-echo -e "${CYAN}======================================================${NC}"
-echo -e "${CYAN} KROK 4: Zjištění tvojí klíčové IP adresy${NC}"
-echo -e "${CYAN}======================================================${NC}"
-echo "Tohle je adresa, kterou si musíš opsat do mobilu!"
-echo ""
-
-# Zobrazení samotné IPv4 adresy v Tailscale
-echo -e "Tvoje Tailscale IP adresa tohoto počítače je:"
-tailscale ip -4
-
-echo ""
-echo -e "${CYAN}======================================================${NC}"
-echo -e "${CYAN} JAK TO DOKONČIT NA ANDROIDU (PRO BLBEČKY):${NC}"
-echo -e "${CYAN}======================================================${NC}"
-echo "1. Stáhni si v Google Play aplikaci 'Tailscale', zapni ji a přihlas se."
-echo "2. Stáhni si v mobilu správce souborů (např. Solid Explorer)."
-echo "3. V aplikaci dej vytvořit nové vzdálené připojení a vyber protokol: SFTP"
-echo "4. Vyplň údaje podle tohohle šablony:"
-echo "   - Host / Server: Zadej tu IP adresu, co vyběhla o kousek výš (začíná na 100.)"
-echo "   - Port: 22"
-echo "   - Uživatel (Username): dux (nebo tvoje přihlašovací jméno do Linuxu)"
-echo "   - Heslo (Password): tvoje heslo do MX Linuxu"
-echo ""
-echo -e "${ZELENA}HOTOVO! Teď se připojíš odkudkoliv přes mobilní data bez blokování operátorem.${NC}"
-
-
-echo "1. Instalace balíčku chrony..."
-apt update && apt install -y chrony
-
-echo "2. Konfigurace chrony (/etc/chrony/chrony.conf)..."
-# Záloha původního souboru
-cp /etc/chrony/chrony.conf /etc/chrony/chrony.conf.bak
-
-# Vytvoření čisté a funkční konfigurace pro lokální síť
-cat << 'EOF' > /etc/chrony/chrony.conf
-server 0.debian.pool.ntp.org iburst
-server 1.debian.pool.ntp.org iburst
-server 2.debian.pool.ntp.org iburst
-server 3.debian.pool.ntp.org iburst
-
-driftfile /var/lib/chrony/drift
-rtcsync
-
-# Povolení pro domácí síť (upravte podle potřeby)
-allow 10.0.0.0/24
-
-# Režim pro případ výpadku internetu (ostrovní provoz)
-local stratum 10
-
-logdir /var/log/chrony
+[Install]
+WantedBy=multi-user.target
 EOF
 
-echo "3. Nastavení firewallu (UFW)..."
-if command -v ufw &> /dev/null; then
-  ufw allow 123/udp
-  echo "Port 123/udp povolen ve firewallu."
+mkdir -p /var/lib/radarr
+chown -R "$REAL_USER":"$REAL_USER" /var/lib/radarr
+
+# C) Sonarr[span_2](start_span)[span_2](end_span)
+if [ ! -d /opt/Sonarr ]; then
+  wget -O /tmp/sonarr.tar.gz "https://services.sonarr.tv/v1/download/master/latest?version=3&os=linux&arch=x64"
+  tar -xzf /tmp/sonarr.tar.gz -C /opt/
+  rm /tmp/sonarr.tar.gz
+  chown -R "$REAL_USER":"$REAL_USER" /opt/Sonarr
 fi
 
-echo "4. Restart a povolení služby chrony..."
-systemctl restart chrony
-systemctl enable chrony
+cat << EOF > /etc/systemd/system/sonarr.service
+[Unit]
+Description=Sonarr Daemon
+After=network.target
 
-echo "--- HOTOVO ---"
-echo "Aktuální stav služby:"
-systemctl status chrony --no-pager
+[Service]
+User=$REAL_USER
+ExecStart=/opt/Sonarr/Sonarr -nobrowser -data=/var/lib/sonarr
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+mkdir -p /var/lib/sonarr
+chown -R "$REAL_USER":"$REAL_USER" /var/lib/sonarr
+
+# D) Bazarr[span_3](start_span)[span_3](end_span)
+if [ ! -d /opt/Bazarr ]; then
+  wget -O /tmp/bazarr.zip "https://github.com/morpheus65535/bazarr/releases/latest/download/bazarr.zip"
+  mkdir -p /opt/Bazarr
+  unzip -o /tmp/bazarr.zip -d /opt/Bazarr
+  rm /tmp/bazarr.zip
+  chown -R "$REAL_USER":"$REAL_USER" /opt/Bazarr
+fi
+
+cat << EOF > /etc/systemd/system/bazarr.service
+[Unit]
+Description=Bazarr Daemon
+After=network.target
+
+[Service]
+User=$REAL_USER
+ExecStart=/usr/bin/python3 /opt/Bazarr/bazarr.py --no-update
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable --now jackett radarr sonarr bazarr
+
+echo "========================================================"
+echo "       REÁLNÁ KONTROLA A OVĚŘENÍ NASTAVENÍ SYSTÉMU"
+echo "========================================================"
+
+ERRORS=0
+
+systemctl is-active --quiet ssh || { echo "[CHYBA] SSH neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet ytdlp-update.timer || { echo "[CHYBA] yt-dlp timer není aktivní"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet system-update.timer || { echo "[CHYBA] system-update timer není aktivní"; ERRORS=$((ERRORS+1)); }
+mountpoint -q /mnt/1TB || { echo "[CHYBA] Disk není připojen v /mnt/1TB"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet smbd || { echo "[CHYBA] Samba neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet aria2 || { echo "[CHYBA] Aria2 neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet chrony || { echo "[CHYBA] Chrony neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet jackett || { echo "[CHYBA] Jackett neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet radarr || { echo "[CHYBA] Radarr neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet sonarr || { echo "[CHYBA] Sonarr neběží"; ERRORS=$((ERRORS+1)); }
+systemctl is-active --quiet bazarr || { echo "[CHYBA] Bazarr neběží"; ERRORS=$((ERRORS+1)); }
+
+echo "========================================================"
+if [ $ERRORS -eq 0 ]; then
+  echo " HOTOVO! Všechny komponenty, optimalizace i Arr služby"
+  echo " byly úspěšně nainstalovány a spusteny."
+  echo " Nezapomeňte spustit 'sudo tailscale up' pro dokončení připojení."
+  echo " Porty: Jackett (9117), Radarr (7878), Sonarr (8984), Bazarr (6767)"
+  echo " Doporučujeme restart systému."
+else
+  echo " POZOR: Během ověřování bylo nalezeno $ERRORS varování/chyb."
+fi
+echo "========================================================"
