@@ -6,59 +6,58 @@ title: Osobní stránky
 <div class="main-content">
 
 <details open>
-            <summary>Oblíbené</summary>
-            <div class="links-grid">
-
-                <a href="https://www.dropbox.com/scl/fo/w3x5naidjcghoyhwep3wn/AGoYubQUkgXLRpw30je_hcY?rlkey=pmpgz4soem6w0a59bmspkx8x4&st=8zztvg1l&dl=0" target="_blank">Torrenty</a>
-                <a href="katalog_disku_E.html" target="_blank">Katalog</a>
-                        <a href="investice.html" target="_blank">Investice</a>
-                <a href="https://sssstp-login.edookit.net" target="_blank">Edookit</a>
-                <a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
-                <a href="https://wttr.in/duchcov" target="_blank">Počasí</a>
-                <a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a>
-                <a href="https://app.raindrop.io/account/login" target="_blank">Raindrop.io</a>
-                <a href="https://uiwjs.github.io/react-md-editor/" target="_blank">Markdown editor</a>
-                <a href="https://vault.bitwarden.com/#/vault" target="_blank">Bitwarden</a>
-                <a href="http://free-website-translation.com/" target="_blank">Web prekladac</a>
-                <a href="https://hackmd.io/?nav=overview" target="_blank">Hackmd</a>
-                <a href="https://lastpass.com/?ac=1" target="_blank">Lastpass</a>
-                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
-                <a href="https://keep.google.com/#home" target="_blank">Gkeep</a>
-                <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-                <a href="https://translate.google.cz/" target="_blank">Gtranslate</a>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-                <a href="https://uloz.to" target="_blank">Uloz.to</a>
-                <a href="https://prehraj.to/" target="_blank">Prehraj.to</a>
-                <a href="https://www.csfd.cz/" target="_blank">Čsfd</a>
-                <a href="https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/" target="_blank">Filmy nfa</a>
-                <a href="https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==" target="_blank">Filmy stazeni</a>
-                <a href="https://github.com/bedjan/openbox" target="_blank">Openbox</a>
-                <a href="https://www.onlineocr.net/" target="_blank">OCR</a>
-                <a href="https://vyzivujicitradice.cz/" target="_blank">Zdrava vyziva</a>
-                <a href="https://ceskepodcasty.cz/" target="_blank">Podcasty</a>
-                <a href="https://lindat.mff.cuni.cz/services/translation/" target="_blank">Matfyz prekladac</a>
-                <a href="https://lindat.cz/translation/" target="_blank">Ukrajinsky prekladac vs. CZ</a>
-                <a href="https://www.postaonline.cz/trackandtrace" target="_blank">Posta dorucene sledovani</a>
-                <a href="https://claude.ai/onboarding?returnTo=%2F%3F" target="_blank">Claude AI</a>
-                <a href="https://www.sledujserialy.io" target="_blank">Sleduj serialy</a>
-                <a href="https://www.rajce.idnes.cz/lipova-lipka/album/kulisci/1511277136" target="_blank">Jirka fotky</a>
-                <a href="https://app.gisonline.cz/chytre-mapy/" target="_blank">Chytre mapy</a>
-                <a href="https://www.epochtimes.cz/" target="_blank">Epochtimes</a>
-            </div>
-        </details>
-
-<details>
-            <summary>Další</summary>
-            <div class="links-grid">
-<a href="https://praceveskole.cz/volna-mista?location=duchcov%3A25" target="_blank">Škola hledání práce</a>
-            </div>
+<summary>Oblíbené</summary>
+<div class="links-grid">
+<a href="https://www.dropbox.com/scl/fo/w3x5naidjcghoyhwep3wn/AGoYubQUkgXLRpw30je_hcY?rlkey=pmpgz4soem6w0a59bmspkx8x4&st=8zztvg1l&dl=0" target="_blank">Torrenty</a>
+<a href="katalog_disku_E.html" target="_blank">Katalog</a>
+<a href="investice.html" target="_blank">Investice</a>
+<a href="https://sssstp-login.edookit.net" target="_blank">Edookit</a>
+<a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
+<a href="https://wttr.in/duchcov" target="_blank">Počasí</a>
+<a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a>
+<a href="https://app.raindrop.io/account/login" target="_blank">Raindrop.io</a>
+<a href="https://uiwjs.github.io/react-md-editor/" target="_blank">Markdown editor</a>
+<a href="https://vault.bitwarden.com/#/vault" target="_blank">Bitwarden</a>
+<a href="http://free-website-translation.com/" target="_blank">Web prekladac</a>
+<a href="https://hackmd.io/?nav=overview" target="_blank">Hackmd</a>
+<a href="https://lastpass.com/?ac=1" target="_blank">Lastpass</a>
+<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+<a href="https://keep.google.com/#home" target="_blank">Gkeep</a>
+<a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+<a href="https://translate.google.cz/" target="_blank">Gtranslate</a>
+<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+<a href="https://uloz.to" target="_blank">Uloz.to</a>
+<a href="https://prehraj.to/" target="_blank">Prehraj.to</a>
+<a href="https://www.csfd.cz/" target="_blank">Čsfd</a>
+<a href="https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/" target="_blank">Filmy nfa</a>
+<a href="https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==" target="_blank">Filmy stazeni</a>
+<a href="https://github.com/bedjan/openbox" target="_blank">Openbox</a>
+<a href="https://www.onlineocr.net/" target="_blank">OCR</a>
+<a href="https://vyzivujicitradice.cz/" target="_blank">Zdrava vyziva</a>
+<a href="https://ceskepodcasty.cz/" target="_blank">Podcasty</a>
+<a href="https://lindat.mff.cuni.cz/services/translation/" target="_blank">Matfyz prekladac</a>
+<a href="https://lindat.cz/translation/" target="_blank">Ukrajinsky prekladac vs. CZ</a>
+<a href="https://www.postaonline.cz/trackandtrace" target="_blank">Posta dorucene sledovani</a>
+<a href="https://claude.ai/onboarding?returnTo=%2F%3F" target="_blank">Claude AI</a>
+<a href="https://www.sledujserialy.io" target="_blank">Sleduj serialy</a>
+<a href="https://www.rajce.idnes.cz/lipova-lipka/album/kulisci/1511277136" target="_blank">Jirka fotky</a>
+<a href="https://app.gisonline.cz/chytre-mapy/" target="_blank">Chytre mapy</a>
+<a href="https://www.epochtimes.cz/" target="_blank">Epochtimes</a>
+</div>
 </details>
 
 <details>
-            <summary>TV</summary>
-            <div class="links-grid">
+<summary>Další</summary>
+<div class="links-grid">
+<a href="https://praceveskole.cz/volna-mista?location=duchcov%3A25" target="_blank">Škola hledání práce</a>
+</div>
+</details>
+
+<details>
+<summary>TV</summary>
+<div class="links-grid">
                 <a href="https://rdy.cz/tv" target="_blank">Zkracene tv</a>
                 <a href="https://mrkaj.si/" target="_blank">Mrkaj si</a>
                 <a href="https://uzi.si/" target="_blank">Uzi si</a>
@@ -82,8 +81,8 @@ title: Osobní stránky
                 <a href="https://www.hellspy.to/" target="_blank">Hellspy</a>
                 <a href="https://www.ivysilani.cz/" target="_blank">Ivysilani</a>
                <a href="https://tv.sosac.tv/cs/" target="_blank">Sosac</a>
-            </div>
-        </details>
+</div>
+</details>
 
 
 <details>
