@@ -6,24 +6,6 @@ title: Osobní stránky
 <div class="main-content">
 
 <details open>
-            <summary>Škola</summary>
-            <div class="links-grid">
-                <a href="https://github.com/bedjan/ucitel/blob/main/rozvrh.md" target="_blank">Rozvrh</a>
-                <a href="https://portal.ujep.cz" target="_blank">Stag</a>
-                <a href="https://moodle.pf.ujep.cz/my/" target="_blank">Moodle</a>
-                <a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a>
-               <a href="https://portal.ujep.cz/portal/studium/uchazec/eprihlaska.html" target="_blank">Epřihláška ke studiu</a>
-                <a href="http://spcul.atwebpages.com/" target="_blank">SPC UL web</a>
-                <a href="https://github.com/bedjan/ucitel" target="_blank">Ucitel</a>
-                <a href="https://markdowntohtml.com/" target="_blank">Markdown to html</a>    
-                <a href="https://my.pcloud.com/" target="_blank">Pcloud</a>  
-                <a href="https://www.terabox.com/main?category=all" target="_blank">Terabox</a>  
-                <a href="https://www.dropbox.com/home" target="_blank">Dropbox</a>  
-            </div>
-        </details>
-
-
-<details>
             <summary>Oblíbené</summary>
             <div class="links-grid">
 <a href="https://praceveskole.cz/volna-mista?location=duchcov%3A25" target="_blank">Škola hledání práce</a>
