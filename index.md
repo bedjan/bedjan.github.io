@@ -415,6 +415,7 @@ title: Osobní stránky
                 <a href="https://dashboard.render.com/" target="_blank">Render</a>
                 <a href="https://vercel.com/bedjans-projects" target="_blank">Vercel</a>
                 <a href="https://app.netlify.com/teams/bedjan/projects" target="_blank">Netlify</a>
+                <a href="https://dash.cloudflare.com" target="_blank">Cloudflare</a>
             </div>
         </details>
 
