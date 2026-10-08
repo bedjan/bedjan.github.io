@@ -3,6 +3,10 @@
 ---
 ### 0. Zelné placky
 
+### Zkrácené
+
+Zelí, cca hrnek mouky polohrubé 2 vejce,teplé mléko 2 lzičky podravka, drcený kmín, pepř, chilli nebo paprika pálivá,1/2 kostky sádla škvarky
+
 Ano, i z čerstvého hlávkového zelí a škvarků budou placky úžasně křupavé, ale musíte upravit postup, protože čerstvé zelí se chová jinak než kysané.
 Kysané zelí stačí vymačkat. Čerstvé hlávkové zelí v sobě drží hodně vody a je tvrdé. Pokud byste ho jen nakrájeli a smíchali s moukou, placky by v troubě pustily vodu, sparily by se a byly by gumové nebo blátivé.
 Abyste docílili dokonalé křupavosti, použijte jeden ze dvou osvědčených triků:
