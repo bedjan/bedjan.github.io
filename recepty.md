@@ -1,7 +1,34 @@
 # 🇨🇿 Velká kuchařka levných a snadných českých jídel
 
 ---
+### 0. Zelné placky
 
+Ano, i z čerstvého hlávkového zelí a škvarků budou placky úžasně křupavé, ale musíte upravit postup, protože čerstvé zelí se chová jinak než kysané.
+Kysané zelí stačí vymačkat. Čerstvé hlávkové zelí v sobě drží hodně vody a je tvrdé. Pokud byste ho jen nakrájeli a smíchali s moukou, placky by v troubě pustily vodu, sparily by se a byly by gumové nebo blátivé.
+Abyste docílili dokonalé křupavosti, použijte jeden ze dvou osvědčených triků:
+
+Trik č. 1: Povařit a důkladně vymačkat (Nejjistější metoda)
+
+1. Hlávkové zelí nakrouhejte na tenké nudličky.
+2. Hoďte ho do hrnce s vroucí osolenou vodou a vařte zhruba 5 minut, aby změklo.
+3. Zelí sceďte, nechte vychladnout a pak ho rukama silou vymačkejte přes cedník, abyste z něj dostali maximum vody.
+4. Teprve pak ho smíchejte se škvarky, moukou a vajíčkem. Těsto naneste na plech v co nejtenčí vrstvě (kolem 0,5 až 1 cm). Kraje se v troubě vypečou dozlatova a budou krásně křupat.
+
+Trik č. 2: Solná masáž (Rychlejší metoda bez vaření)
+
+1. Nakrouhané čerstvé zelí dejte do mísy, bohatě ho osolte a rukama ho silou mačkejte a prohněťte.
+2. Nechte ho 15 minut stát. Zelí působením soli zkřehne a pustí spoustu šťávy.
+3. Následně ho opět dokonale vymačkejte dosucha.
+
+💡 3 pravidla pro maximální křupavost v troubě:
+
+• Horký vzduch a vysoká teplota: Troubu rozpalte na 200 °C. Vyšší teplota zajistí, že se povrch rychle zatáhne a škvarky pustí tuk, na kterém se placky zespodu doslova usmaží.
+• Tenké těsto: Ať už děláte na plechu jednotlivé placičky, nebo celistvý plát, lžící směs roztáhněte do tenka. Tlusté placky zůstanou uvnitř měkké.
+• Sádlo pod plech: Pečicí papír na plechu ještě lehce potřete sádlem. Spodní strana placek bude pak neuvěřitelně křupavá.
+Chcete rovnou přesné poměry surovin (kolik mouky a vajec přidat na půlku hlávky zelí), aby těsto nebylo moc tekuté?
+Nebo dáme do těsta i trochu piva, které křupavost ještě znásobí?
+
+---
 ## 🍲 LEVNÉ A RYCHLÉ POLÉVKY
 
 ### 1. Staročeská Česnečka (Oukrop)
