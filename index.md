@@ -15,6 +15,7 @@ title: Osobní stránky
 <a href="https://sssstp-login.edookit.net" target="_blank">Edookit</a>
 <a href="https://app.simplenote.com/" target="_blank">Simplenote</a>
 <a href="https://wttr.in/duchcov" target="_blank">Počasí</a>
+<a href="https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins" target="_blank">Qbittorent engines</a>  
 <a href="https://calendar.google.com/calendar/u/0/r?opentasks=1" target="_blank">Tasks</a>
 <a href="https://app.raindrop.io/account/login" target="_blank">Raindrop.io</a>
 <a href="https://uiwjs.github.io/react-md-editor/" target="_blank">Markdown editor</a>
