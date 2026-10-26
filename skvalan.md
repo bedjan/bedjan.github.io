@@ -1,8 +1,8 @@
 # 🧪 Kompletní průvodce a využití Skvalanu (Squalane)
 
-**Skvalan (INCI: *Squalane*)** je 100% čistý, čirý rostlinný olej bez zápachu. Získává se nejčastěji fermentací cukrové třtiny nebo z olivového oleje. 
+**Skvalan (INCI: *Squalane*)** je 100% čistý, čirý rostlinný olej bez zápachu. Získává se najčastěji fermentací cukrové třtiny nebo z olivového oleje. 
 
-Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidské i psí tělo přirozeně tvoří v kožním mazu. Díky tomu ho pokožka přijímá bez jakéhokoliv podráždění.
+Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidské i psí tělo přirozeně tvoří v kožním mazu. Věk s nízkou hladinou skvalenu vede k vysušování kůže. Skvalan tělo přijímá jako vlastní látku bez rizika podráždění.
 
 ---
 
@@ -14,19 +14,47 @@ Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidsk�
 
 ---
 
-## 🧴 Využití pro lidi (Péče o tělo a pleť)
+## 📅 Každodenní praktické rutiny (Krok za krokem)
 
-### 1. Obličej a vousy
-* **Náhrada pleťového krému / séra:** Uzamyká vlhkost v kůži a zanechává ji jemnou.
-  * *Jak používat:* Naneste **2–3 kapky** na *navlhčený* obličej (ideálně po sprše nebo po použití pleťové/obyčejné vody) a jemně vmasírujte.
-* **Péče po holení:** Zklidňuje zarudnutí, mikroranky a podráždění. Neštípe.
-  * *Jak používat:* **2–4 kapky** rozetřete v dlaních a vklepejte do oholené tváře či krku.
-* **Péče o vousy:** Zjemňuje tvrdé vousy a vyživuje pokožku pod nimi bez pocitu mastnoty.
+### 🧔 Denní rutina pro MUŽE
 
-### 2. Vlasy a tělo
-* **Suché konečky vlasů:** Pomáhá scelovat roztřepené vlasy a dodává lesk.
-  * *Jak používat:* **1–2 kapky** rozetřete v dlaních a zapracujte do vlhkých nebo suchých konečků.
-* **Suchá pokožka a ruce:** Ideální na vysušené klouby, lokty nebo popraskanou kůži v zimě.
+#### 🌅 Ráno:
+1. **Opláchnutí tváře:** Opláchněte obličej vlažnou vodou.
+2. **Aplikace:** Do ještě vlhké dlaně nakapejte **2 kapky skvalanu**, rozetřete v dlaních a vklepejte do obličeje a okolí očí. Kůže bude celý den hydratovaná a nebude se lesknout.
+
+#### 🪒 Po holení:
+1. Po oholení plnovousu nebo krku opláchněte zbytky pěny studenou vodou.
+2. Do dlaní dejte **3–4 kapky skvalanu**.
+3. Jemně vmasírujte do oholené pokožky. Zklidní zarudnutí a mikroranky bez nepříjemného štípání.
+
+#### 🌙 Večer (Péče o vousy):
+* Do suchých nebo mírně vlhkých vousů zapracujte **2–3 kapky**. Zjemní tvrdé vousy, podpoří jejich lesk a vyživí pokožku pod nimi, čímž předchází tvorbě lupů ve vousech.
+
+---
+
+### 👩 Denní rutina pro ŽENY
+
+#### 🌅 Ranní péče pod makeup:
+1. **Hydratace:** Po vyčištění pleti naneste hyaluronové sérum nebo pleťovou vodu.
+2. **Zamknutí vlhkosti:** Do vlhké pleti zapracujte **2 kapky skvalanu**.
+3. **Makeup:** Počkejte 60 sekund a naneste makeup/BB krém. Skvalan vyhladí texturu pleti, takže makeup neslévá do vráskách a nevytváří suchá místa.
+
+#### 🌙 Večerní regenerační péče:
+1. **Odličování / Čištění:** Smíchejte na dlani **3 kapky skvalanu** s kapkou jemného čisticího gelu pro účinné smytí voděodolného makeupu a nečistot.
+2. **Noční péče:** Vmasírujte **3–5 kapek** na obličej, krk a dekolt. Můžete smíchat přímo v dlani se svým oblíbeným nočním krémem pro zvýšení jeho účinku.
+
+---
+
+## 💇‍♀️ Široké možnosti využití pro vlasy a tělo
+
+### 1. Péče o vlasy
+* **Sérum na roztřepené konečky:** Po umytí vlasů rozetřete **1–2 kapky** v dlaních a zapracujte do ještě vlhkých konečků. Zabraňuje krepatění a třepení.
+* **Hloubková zábalová kúra:** Před mytím vlasů naneste do délek 1–2 lžičky skvalanu, nechte 20 minut působit pod ručníkem a následně vlasy dvakrát promejte šamponem.
+
+### 2. Péče o tělo a pokožku
+* **Kůžička okolo nehtů (Manikúra):** Kapku skvalanu vmasírujte do nehtových lůžek. Změkčí ztvrdlou kůžičku a zpevní nehty.
+* **Suché lokty a paty:** Po sprše naneste pár kapek přímo na vysušená místa na těle.
+* **Podrážděná kůže po opalování:** Zklidňuje kůži spálenou od slunce a urychluje její regeneraci.
 
 ---
 
@@ -34,7 +62,7 @@ Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidsk�
 
 Při smíchání s destilovanou vodou vytvoří ultralehkou emulzi, která po srsti dokonale klouže. Uvolňuje dredy a uzly, snižuje elektrizování srsti v zimě a špína se na kůži méně lepí.
 
-### Presný recept a příprava:
+### Přesný recept a příprava:
 1. Vezměte **200 ml destilované vody** (z drogerie nebo benzínky).
 2. Nalijte ji do čistého rozprašovače.
 3. Přidejte **20 až 30 kapek skvalanu** (necelou půlku čajové lžičky).
@@ -44,13 +72,14 @@ Při smíchání s destilovanou vodou vytvoří ultralehkou emulzi, která po sr
 * **Před každým použitím protřepte:** Jelikož ve spreji není chemický emulgátor, olej plave na hladině. Rychlým protřepáním se na chvíli rozptýlí do jemných kapiček.
 * **Aplikace:** Zlehka pošplíchejte suchou nebo mírně vlhkou srst psa ze vzdálenosti cca 20 cm.
 * **Rozčesávání:** Srst prohrábněte prsty nebo jemným kartáčem. Dredy se uvolní podstatně snáze a bez vytrhávání chlupů.
+* **Péče o tlapky v zimě:** Čistý kapkový skvalan lze vmasírovat přímo do psích polštářků na tlapkách jako ochranu před posypovou solí a mrazem.
 
 ---
 
 ## 📊 Spotřeba a trvanlivost
 
 * **Spotřeba na 1 náplň spreje (200 ml):** cca 1 ml skvalanu.
-* **Vydatnost balení 100 ml:** Vystačí na **až 100 plných rozprašovačů** nebo na více než rok každodenní péče o obličej a vousy.
+* **Vydatnost balení 100 ml:** Vystačí na **až 100 plných rozprašovačů** nebo na více než rok každodenní péče o obličej, vousy a vlasy pro dvě osoby.
 * **Trvanlivost:** V chladu a temnu vydrží bez jakékoliv změny kvality **2 až 3 roky**.
 
 ---
