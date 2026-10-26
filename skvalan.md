@@ -1,8 +1,8 @@
 # 🧪 Kompletní průvodce a využití Skvalanu (Squalane)
 
-**Skvalan (INCI: *Squalane*)** je 100% čistý, čirý rostlinný olej bez zápachu. Získává se najčastěji fermentací cukrové třtiny nebo z olivového oleje. 
+**Skvalan (INCI: *Squalane*)** je 100% čistý, čirý rostlinný olej bez zápachu. Získává se nejčastěji fermentací cukrové třtiny nebo z olivového oleje. 
 
-Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidské i psí tělo přirozeně tvoří v kožním mazu. Věk s nízkou hladinou skvalenu vede k vysušování kůže. Skvalan tělo přijímá jako vlastní látku bez rizika podráždění.
+Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidské i psí tělo přirozeně tvoří v kožním mazu. Nízká hladina skvalenu s věkem nebo při kožních nemocech vede k vysušování a zánětům. Skvalan tělo přijímá jako vlastní látku bez rizika podráždění.
 
 ---
 
@@ -11,6 +11,26 @@ Představuje hydrogenovanou a stabilní formu látky *skvalen*, kterou si lidsk�
 * **Nekomedogenní:** Neucpává póry, nezpůsobuje akné ani černé tečky.
 * **Neustále čerstvý:** Na rozdíl od běžných rostlinných olejů **nežlukne**, neoxiduje a vydrží roky.
 * **Pro koho je vhodný:** Pro muže, ženy, děti i domácí mazlíčky (včetně citlivých jedinců a alergiků).
+
+---
+
+## 🩺 Podpůrná péče při dermatologických problémech a kožních nemocech
+
+> **Důležité upozornění:** Skvalan je přírodní kosmetická emoliencie (zvláčňovadlo), nikoli lék. Samotné chronické kožní nemoci neléčí, ale slouží jako **vynikající podporovatel kožní bariéry (tzv. emoliens)** při konvenční léčbě předepsané dermatologem.
+
+### 1. Lupénka (Psoriáza)
+* **Jak pomáhá:** Psoriáza způsobuje zrychlené červenání kůže a tvorbu suchých stříbřitých šupin. Skvalan změkčuje ztvrdlá ložiska, usnadňuje jemné odlupování šupinek bez krvácení a zklidňuje napjatou kůži na loktech, kolenou či ve kštici.
+* **Aplikace:** Zlehka vmasírujte **2–4 kapky** přímo na zanícená ložiska 2× denně po koupeli.
+
+### 2. Atopický ekzém a kontaktní dermatitida
+* **Jak pomáhá:** Pokožka ekzematiků má narušenou kožní bariéru a ztrácí schopnost zadržovat vodu. Skvalan doplňuje chybějící kožní tuky (lipidy) a zabraňuje odpařování vlhkosti, čímž výrazně snižuje nepříjemné svědění a pnutí.
+* **Aplikace:** Nanášejte na lehce vlhkou pokožku po umytí pro zamknutí hydratace.
+
+### 3. Rosacea (Růžovka) a podrážděná / citlivá pleť
+* **Jak pomáhá:** Kůže trpící růžovkou reaguje podrážděním a zčervenáním téměř na jakýkoliv běžný krém či parfemaci. Čistý skvalan neobsahuje žádné alergeny, konzervační látky ani parfémy, takže zklidňuje zarudnutí bez pálivého efektu.
+
+### 4. Seboroická dermatitida (Seborea)
+* **Jak pomáhá:** Působí jako lehká péče o vlasovou pokožku, která nezhoršuje kvasinkové infekce tak jako běžné těžké rostlinné oleje (např. olivový nebo kokosový).
 
 ---
 
