@@ -11,13 +11,13 @@
 
 # CHLADNÉ FRÁZE PROTI NARCISOVI
 
-„Ne.“ (Zkrátka bez jakýchkoli vysvětlení nebo omluv.)
-„To je tvůj pohled na věc, já to vidím jinak.“
-„Klidně si mysli, co chceš.“
-„V tomhle rozhovoru odmítám pokračovat.“
-„Vím, co tímhle zkoušíš dokázat, ale na mě to nefunguje.“
-„Na mých pocitech záleží, ať si o tom myslíš cokoliv.“
-„Vrátíme se k tomu, až zase vychladneš.“
-„Tohle s tebou řešit nehodlám.“
-„Tohle je tvůj boj, ne můj.“
-„Obejdu se bez tvého schválení.“
+1. „Ne.“ (Zkrátka bez jakýchkoli vysvětlení nebo omluv.)
+2. „To je tvůj pohled na věc, já to vidím jinak.“
+3. „Klidně si mysli, co chceš.“
+4. „V tomhle rozhovoru odmítám pokračovat.“
+5. „Vím, co tímhle zkoušíš dokázat, ale na mě to nefunguje.“
+6. „Na mých pocitech záleží, ať si o tom myslíš cokoliv.“
+7. „Vrátíme se k tomu, až zase vychladneš.“
+8. „Tohle s tebou řešit nehodlám.“
+9. „Tohle je tvůj boj, ne můj.“
+10. „Obejdu se bez tvého schválení.“
